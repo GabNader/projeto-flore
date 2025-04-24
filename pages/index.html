@@ -11,10 +11,11 @@
 <body>
   <header class="header">
     <div class="logo-menu">
-      <button aria-label="Abrir menu" onclick="openMenu()">
+      <button aria-label="Abrir menu" class="hamburger-btn" onclick="openMenu()">
         <img src="../assets/imagens/svg/menu.svg" alt="Menu" class="hamburger" width="30" height="30">
       </button>
-      <h1 class="logo">Floré</h1>
+      <a href="index.html" class="logo-link">
+      <h1 class="logo">Floré</h1></a>
     </div>
     <div class="icons"> 
       <button aria-label="Favoritos">
@@ -25,6 +26,29 @@
       </button>
     </div>
   </header>
+  <div class="menu-overlay"></div>
+  <div class="sideMenu">
+    <div class="voltar">
+      <img src="/assets/imagens/svg/arrow-ios-back.svg" alt="Voltar" class="icone-voltar">
+      VOLTAR
+    </div>
+    <div class="search-container">
+      <input type="text" id="buscar" placeholder="Buscar...">
+      <button class="btn-busca">
+        <img src="/assets/imagens/svg/search.svg" alt="Buscar" class="icone-lupa">
+      </button>
+    </div>
+
+    <ul id="sideMenuItem">
+      <li><a href="vestido-longo.html">VESTIDO LONGO</a></li>
+      <li><a href="#">VESTIDO CURTO</a></li>
+      <li><a href="#">VESTIDO MIDI</a></li>
+      <li><a href="#">MAIS VENDIDOS</a></li>
+      <li><a href="#">SOBRE</a></li>
+    </ul>
+
+  </div>
+
   <main>
    <div class="main-image">
       <picture>
@@ -34,6 +58,8 @@
     </div>
 
     <h2 class="mais-vendidos">Mais vendidos</h2> 
+  
+    </div>
     <br>
     <br>
     <br>
@@ -69,4 +95,5 @@
 <p>aasd</p>
   </main>  
 </body>
+<script src="/assets/js/script.js"></script>
 </html>
