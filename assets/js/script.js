@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', function() {
     hamburgerBtn.addEventListener('click', function() {
       sideMenu.classList.add('active');
       menuOverlay.classList.add('active');
-      document.body.style.overflow = 'hidden';
     });
 
     voltarBtn.addEventListener('click', function() {
@@ -19,8 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     function closeMenu() {
-      sideMenu.classList.remove('active');
-      menuOverlay.classList.remove('active');
-      document.body.style.overflow = 'auto';
+      document.querySelector('.sideMenu').classList.remove('active');
+      document.querySelector('.menu-overlay').classList.remove('active');
     }
   });
