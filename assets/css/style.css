@@ -50,6 +50,8 @@ button {
 .icon {
   font-size: 1.5rem;
   cursor: pointer;
+  width: 30px;
+  height: 30px;
 }
 
 .icons {
