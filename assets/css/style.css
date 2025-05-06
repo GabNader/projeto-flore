@@ -152,14 +152,14 @@ button {
   height: 20px;
 }
 
-#sideMenuItem {
+.sideMenuItem {
   list-style: none;
   padding: 0;
   margin: 0;
   width: 100%;
 }
 
-#sideMenuItem li a {
+.sideMenuItem li a {
   display: block;
   background-color: #eca3c3;
   padding: 14px;
@@ -171,6 +171,6 @@ button {
   box-sizing: border-box;
 }
 
-#sideMenuItem li a:hover {
+.sideMenuItem li a:hover {
   background-color: #D94389;
 }
