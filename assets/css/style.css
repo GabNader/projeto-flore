@@ -163,7 +163,6 @@ button {
 .sideMenuItem li a:hover {
   background-color: #D94389;
 }
-/* Estilos base compartilhados */
 .products-container {
     width: 95%;
     max-width: 1900px;
@@ -189,7 +188,7 @@ button {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: flex-start;
+    justify-content: space-between;
 }
 
 .carousel-container {
