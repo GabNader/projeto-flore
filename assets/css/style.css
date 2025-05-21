@@ -4,15 +4,37 @@ body {
   font-size: 20px;
   overflow-x: hidden;
 }
+
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.5rem;
+  padding: 24px;
   position: sticky;
   top: 0;
   background-color: white;
   z-index: 100;
+}
+
+.logo-menu, .icons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo-link {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-decoration: none;
+}
+
+.logo {
+  font-family: 'Marvel', sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+  color: #D94389;
+  margin: 0;
 }
 
 button {
@@ -22,42 +44,9 @@ button {
   cursor: pointer;
 }
 
-.logo-menu {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.logo {
-  font-family: 'Marvel', sans-serif;
-  font-size: 50px;
-  font-weight: 400;
-  color: #D94389;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin: 0;
-}
-.logo-link {
-  text-decoration: none;
-  display: inline-block;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.hamburger,
-.icon {
-  font-size: 1.5rem;
-  cursor: pointer;
+.hamburger, .icon {
   width: 30px;
   height: 30px;
-}
-
-.icons {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
 }
 
 .main-image img {
