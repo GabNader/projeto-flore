@@ -11,39 +11,39 @@
 <body>
   <header class="header">
     <div class="logo-menu">
-      <button aria-label="Abrir menu" class="hamburger-btn" onclick="openMenu()">
-        <img src="../assets/imagens/svg/menu.svg" alt="Menu" class="hamburger" width="30" height="30">
+      <button class="hamburger-btn">
+        <img class="hamburger" src="../assets/imagens/svg/menu.svg" alt="Menu">
       </button>
       <a href="index.html" class="logo-link">
       <h1 class="logo">Floré</h1></a>
     </div>
     <div class="icons"> 
-      <button aria-label="Favoritos">
-        <img src="../assets/imagens/svg/heart.svg" alt="Favoritos" class="icon" width="30" height="30">
+      <button>
+        <img class="icon" src="../assets/imagens/svg/heart.svg" alt="Favoritos">
       </button>
-      <button aria-label="Carrinho de compras">
-        <img src="../assets/imagens/svg/shopping-cart.svg" alt="Carrinho" class="icon" width="30" height="30">
+      <button>
+        <img class="icon" src="../assets/imagens/svg/shopping-cart.svg" alt="Carrinho">
       </button>
     </div>
   </header>
   <div class="menu-overlay"></div>
   <div class="sideMenu">
     <div class="voltar">
-      <img src="../assets/imagens/svg/arrow-ios-back.svg" alt="Voltar" class="icone-voltar">
+      <img class="icone-voltar" src="../assets/imagens/svg/arrow-ios-back.svg" alt="Voltar">
       VOLTAR
     </div>
     <div class="search-container">
-      <input type="text" id="buscar" placeholder="Buscar...">
+      <input class="input-busca" type="text" id="buscar" placeholder="Buscar...">
       <button class="btn-busca">
-        <img src="../assets/imagens/svg/search.svg" alt="Buscar" class="icone-lupa">
+        <img class="icone-lupa" src="../assets/imagens/svg/search.svg" alt="Buscar">
       </button>
     </div>
 
-    <ul id="sideMenuItem">
+    <ul class="sideMenuItem">
       <li><a href="vestido-longo.html">VESTIDO LONGO</a></li>
-      <li><a href="#">VESTIDO CURTO</a></li>
-      <li><a href="#">VESTIDO MIDI</a></li>
-      <li><a href="#">MAIS VENDIDOS</a></li>
+      <li><a href="vestido-curto.html">VESTIDO CURTO</a></li>
+      <li><a href="vestido-midi.html">VESTIDO MIDI</a></li>
+      <li><a href="mais-vendidos.html">MAIS VENDIDOS</a></li>
       <li><a href="#">SOBRE</a></li>
     </ul>
 
@@ -56,10 +56,105 @@
         <img src="../assets/imagens/hero/1200x478.jpg" alt="Imagem principal" />
       </picture>
     </div>
+    <div class="carousel-container">
+    <h1 class="carousel-title">Mais vendidos</h1>
+    
+    <button class="carousel-button carousel-button-prev">&#10094;</button>
+    <button class="carousel-button carousel-button-next">&#10095;</button>
+    
+    <ul class="carousel-track">
+        <li class="product-card">
+            <div class="product-image">
+                <img src="../assets/imagens/produtos/vestido-longo/VESTIDO4-LONGO-ESTAMPADO-RELICARIO-TROPICAL 1.jpg" alt="Produto">
+            </div>
+            <div class="product-info">
+                <h2 class="product-title">Vestido Longo Estampado Relicário Tropical</h2>
+                <span class="product-price">R$ 579,00 ou 5x de R$115,80</span>
+            </div>
+        </li>
+        
+        <li class="product-card">
+            <div class="product-image">
+                <img src="../assets/imagens/produtos/vestido-longo/VESTIDO4-LONGO-ESTAMPADO-RELICARIO-TROPICAL 1.jpg" alt="Produto">
+            </div>
+            <div class="product-info">
+                <h2 class="product-title">Vestido Longo Estampado Relicário Tropical</h2>
+                <span class="product-price">R$ 579,00 ou 5x de R$115,80</span>
+            </div>
+        </li>
 
-    <h2 class="mais-vendidos">Mais vendidos</h2> 
-  
-    </div>
+        <li class="product-card">
+            <div class="product-image">
+                <img src="../assets/imagens/produtos/vestido-longo/VESTIDO4-LONGO-ESTAMPADO-RELICARIO-TROPICAL 1.jpg" alt="Produto">
+            </div>
+            <div class="product-info">
+                <h2 class="product-title">Vestido Longo Estampado Relicário Tropical</h2>
+                <span class="product-price">R$ 579,00 ou 5x de R$115,80</span>
+            </div>
+        </li>
+
+        <li class="product-card">
+            <div class="product-image">
+                <img src="../assets/imagens/produtos/vestido-longo/VESTIDO4-LONGO-ESTAMPADO-RELICARIO-TROPICAL 1.jpg" alt="Produto">
+            </div>
+            <div class="product-info">
+                <h2 class="product-title">Vestido Longo Estampado Relicário Tropical</h2>
+                <span class="product-price">R$ 579,00 ou 5x de R$115,80</span>
+            </div>
+        </li>
+
+        <li class="product-card">
+            <div class="product-image">
+                <img src="../assets/imagens/produtos/vestido-longo/VESTIDO4-LONGO-ESTAMPADO-RELICARIO-TROPICAL 1.jpg" alt="Produto">
+            </div>
+            <div class="product-info">
+                <h2 class="product-title">Vestido Longo Estampado Relicário Tropical</h2>
+                <span class="product-price">R$ 579,00 ou 5x de R$115,80</span>
+            </div>
+        </li>
+
+        <li class="product-card">
+            <div class="product-image">
+                <img src="../assets/imagens/produtos/vestido-longo/VESTIDO4-LONGO-ESTAMPADO-RELICARIO-TROPICAL 1.jpg" alt="Produto">
+            </div>
+            <div class="product-info">
+                <h2 class="product-title">Vestido Longo Estampado Relicário Tropical</h2>
+                <span class="product-price">R$ 579,00 ou 5x de R$115,80</span>
+            </div>
+        </li>
+
+        <li class="product-card">
+            <div class="product-image">
+                <img src="../assets/imagens/produtos/vestido-longo/VESTIDO4-LONGO-ESTAMPADO-RELICARIO-TROPICAL 1.jpg" alt="Produto">
+            </div>
+            <div class="product-info">
+                <h2 class="product-title">Vestido Longo Estampado Relicário Tropical</h2>
+                <span class="product-price">R$ 579,00 ou 5x de R$115,80</span>
+            </div>
+        </li>
+
+        <li class="product-card">
+            <div class="product-image">
+                <img src="../assets/imagens/produtos/vestido-longo/VESTIDO4-LONGO-ESTAMPADO-RELICARIO-TROPICAL 1.jpg" alt="Produto">
+            </div>
+            <div class="product-info">
+                <h2 class="product-title">Vestido Longo Estampado Relicário Tropical</h2>
+                <span class="product-price">R$ 579,00 ou 5x de R$115,80</span>
+            </div>
+        </li>
+
+        <li class="product-card">
+            <div class="product-image">
+                <img src="../assets/imagens/produtos/vestido-longo/VESTIDO4-LONGO-ESTAMPADO-RELICARIO-TROPICAL 1.jpg" alt="Produto">
+            </div>
+            <div class="product-info">
+                <h2 class="product-title">Vestido Longo Estampado Relicário Tropical</h2>
+                <span class="product-price">R$ 579,00 ou 5x de R$115,80</span>
+            </div>
+        </li>
+    </ul>
+</div>
+    
     <br>
     <br>
     <br>
@@ -74,6 +169,15 @@
     <br>
     <br>
     <br>
+    <p>teste iza</p>
+    <br>
+    <br>
+    <br>
+    <p>teste lari</p>
+    <br>
+    <br>
+    <br>
+    <p>TESTE GIT PC DA FACUL</p>
     <br>
     <br>
     <br>
@@ -86,13 +190,6 @@
     <br>
     <br>
     <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-<p>aasd</p>
   </main>  
 </body>
 <script src="../assets/js/script.js"></script>
