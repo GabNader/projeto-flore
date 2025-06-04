@@ -1,0 +1,54 @@
+/* components/app-header/app-header.css */
+/* components/app-header/app-header.css */
+:host {
+  display: block; /* Garante que <app-header> ocupe a largura total */
+  margin: 0;
+  padding: 0;
+  width: 100%; /* Garante que o host ocupe 100% da largura */
+  position: fixed; /* Aplica o sticky à própria tag <app-header> */
+  top: 0;
+  z-index: 100;
+}
+
+.header {
+  /* Remova position: sticky, top, z-index daqui, pois já estão no :host */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px;
+  background-color: white;
+}
+/* ... o restante do seu CSS para .logo-menu, .icons, etc. ... */
+.logo-menu, .icons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Ajuste o caminho do href para o index.html, pois agora ele será relativo à sua página principal */
+.logo-link {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-decoration: none;
+}
+
+.logo {
+  font-family: 'Marvel', sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+  color: #D94389;
+  margin: 0;
+}
+
+button {
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.hamburger, .icon {
+  width: 30px;
+  height: 30px;
+}

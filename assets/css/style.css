@@ -1,10 +1,14 @@
-body {
-  margin: 0;
-  font-family: 'Marvel', sans-serif;
-  font-size: 20px;
-  overflow-x: hidden;
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Garante que body ocupe 100% da altura da viewport */
 }
-
+body {
+    font-family: 'Marvel', sans-serif;
+    font-size: 20px;
+    overflow-x: hidden;
+    padding-top: 33px;
+}
 .header {
   display: flex;
   align-items: center;
