@@ -28,7 +28,7 @@ class AppHeaderComponent extends HTMLElement {
     `;
   }
 
-  connectedCallback() { // ESTA FUNÇÃO PRECISA TER ESTE CONTEÚDO AGORA
+  connectedCallback() {
     const hamburgerBtn = this.shadowRoot.querySelector('.hamburger-btn');
     const cartBtn = this.shadowRoot.querySelector('.cart-btn');
 

@@ -1,31 +1,26 @@
-/* components/app-header/app-header.css */
-/* components/app-header/app-header.css */
 :host {
-  display: block; /* Garante que <app-header> ocupe a largura total */
+  display: block; 
   margin: 0;
   padding: 0;
-  width: 100%; /* Garante que o host ocupe 100% da largura */
-  position: fixed; /* Aplica o sticky à própria tag <app-header> */
+  width: 100%; 
+  position: fixed; 
   top: 0;
   z-index: 100;
 }
 
 .header {
-  /* Remova position: sticky, top, z-index daqui, pois já estão no :host */
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 24px;
   background-color: white;
 }
-/* ... o restante do seu CSS para .logo-menu, .icons, etc. ... */
 .logo-menu, .icons {
   display: flex;
   align-items: center;
   gap: 16px;
 }
 
-/* Ajuste o caminho do href para o index.html, pois agora ele será relativo à sua página principal */
 .logo-link {
   position: absolute;
   left: 50%;

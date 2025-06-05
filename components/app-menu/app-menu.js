@@ -36,7 +36,6 @@ class AppMenuComponent extends HTMLElement {
     const menuOverlay = this.shadowRoot.querySelector('.menu-overlay');
     const voltarBtn = this.shadowRoot.querySelector('.voltar');
 
-    // Funções para abrir e fechar o menu (agora dentro do componente de menu)
     const openMenu = () => {
       sideMenu.classList.add('active');
       menuOverlay.classList.add('active');
