@@ -1,7 +1,9 @@
 html, body {
     margin: 0;
     padding: 0;
-    height: 100%;
+    width: 100%; /* Garante que HTML e Body ocupem 100% da largura do viewport */
+    overflow-x: hidden; /* FORÇA a remoção da barra de rolagem horizontal em TODO O DOCUMENTO */
+    min-width: 0; /* Garante que eles possam encolher */
 }
 body {
     font-family: 'Marvel', sans-serif;
@@ -9,10 +11,16 @@ body {
     overflow-x: hidden;
     padding-top: 33px;
 }
-.main-image img {
-  width: 100%;
-  height: auto;
-  display: block;
+img, video, iframe, embed, object {
+    max-width: 100%; /* Garante que nunca excedam a largura do contêiner pai */
+    height: auto; /* Mantém a proporção */
+    display: block; /* Para evitar espaços indesejados abaixo de imagens */
+}
+.main-image {
+    width: 100%;
+    overflow: hidden;
+    padding: 0; /* Zera qualquer padding que possa causar transbordo */
+    margin: 0;  /* Zera qualquer margem que possa causar transbordo */
 }
 
 .mais-vendidos {
@@ -208,6 +216,15 @@ body {
     font-size: 19px;
     margin-top: 10px;
 }
+.carousel-container {
+    width: 100%; /* Mude de 95% para 100% aqui para garantir total ocupação do espaço */
+    max-width: 100%; /* É redundante com width: 100% mas não faz mal */
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden; /* Corta o conteúdo do carrossel */
+    padding: 0; /* Zera qualquer padding que possa causar transbordo */
+}
+
 .carousel-container .carousel-button {
     position: absolute;
     top: 50%;
