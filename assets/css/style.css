@@ -241,3 +241,12 @@ body {
 .carousel-container .carousel-button-next {
     right: 10px;
 }
+@media (max-width: 480px) {
+    .carousel-track .product-card {
+        flex: 0 0 50%; 
+        min-width: 0; 
+    }
+}
+.carousel-track .product-card {
+    list-style-type: none;
+}

@@ -1,11 +1,6 @@
-// assets/js/script.js
 
 document.addEventListener('DOMContentLoaded', function() {
-    // A lógica de menu lateral e carrinho agora é gerenciada pelos componentes
-    // (app-header.js e app-menu.js, e app-cart.js se criado)
-    // e se comunicam via Custom Events.
 
-    // Seu código do carrossel permanece aqui
     const track = document.querySelector('.carousel-track');
     const nextButton = document.querySelector('.carousel-button-next');
     const prevButton = document.querySelector('.carousel-button-prev');
@@ -34,21 +29,34 @@ document.addEventListener('DOMContentLoaded', function() {
             }
 
             if (cards.length > 0) {
-                cardWidth = cards[0].getBoundingClientRect().width + 10;
+              
+                
+                
+                cardWidth = cards[0].getBoundingClientRect().width; 
+                
+               
+                
             } else {
                 cardWidth = 0;
             }
 
-            totalScrollableWidth = cardWidth * cards.length - (cardsToShow * cardWidth);
-            scrollAmount = cardsToShow * cardWidth;
+            
+            const itemSpacing = parseFloat(window.getComputedStyle(track).gap) || 0; 
+            totalScrollableWidth = (cardWidth + itemSpacing) * cards.length - (cardsToShow * (cardWidth + itemSpacing));
+            scrollAmount = cardsToShow * (cardWidth + itemSpacing);
 
+            
+            totalScrollableWidth = Math.max(0, totalScrollableWidth);
+            
             track.style.transform = 'translateX(0)';
             currentPosition = 0;
         }
 
         function moveNext() {
-            if (currentPosition > -totalScrollableWidth) {
-                currentPosition = Math.max(currentPosition - scrollAmount, -totalScrollableWidth);
+            
+            const maxScrollPosition = -(totalScrollableWidth);
+            if (currentPosition > maxScrollPosition) {
+                currentPosition = Math.max(currentPosition - scrollAmount, maxScrollPosition);
                 track.style.transform = `translateX(${currentPosition}px)`;
             }
         }
