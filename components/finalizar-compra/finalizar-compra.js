@@ -6,7 +6,7 @@ class AppCheckoutComponent extends HTMLElement {
     this.selectedPayment = 'card';
 
     this.shadowRoot.innerHTML = `
-      <link rel="stylesheet" href="../components/app-checkout/app-checkout.css">
+      <link rel="stylesheet" href="../components/finalizar-compra/finalizar-compra.css">
       
       <div class="checkout-overlay">
         <div class="checkout-container">
