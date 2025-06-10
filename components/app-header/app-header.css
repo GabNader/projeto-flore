@@ -1,0 +1,49 @@
+:host {
+  display: block; 
+  margin: 0;
+  padding: 0;
+  width: 100%; 
+  position: fixed; 
+  top: 0;
+  z-index: 100;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px;
+  background-color: white;
+}
+.logo-menu, .icons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo-link {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-decoration: none;
+}
+
+.logo {
+  font-family: 'Marvel', sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+  color: #D94389;
+  margin: 0;
+}
+
+button {
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.hamburger, .icon {
+  width: 30px;
+  height: 30px;
+}
