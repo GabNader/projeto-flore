@@ -54,11 +54,8 @@ class AppMenuComponent extends HTMLElement {
       menuOverlay.addEventListener('click', closeMenu);
     }
 
-    // Ouve o evento 'openMenu' que é disparado pelo app-header (ou por qualquer lugar que o chame)
-    // Usamos 'window' porque o evento borbulha até lá.
     window.addEventListener('openMenu', openMenu);
-    // Também ouve o evento 'openCart' para fechar o menu se o carrinho for aberto
-    window.addEventListener('openCart', closeMenu); // Fechar o menu quando o carrinho abre
+    window.addEventListener('openCart', closeMenu); 
   }
 }
 

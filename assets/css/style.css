@@ -1,9 +1,9 @@
 html, body {
     margin: 0;
     padding: 0;
-    width: 100%; /* Garante que HTML e Body ocupem 100% da largura do viewport */
-    overflow-x: hidden; /* FORÇA a remoção da barra de rolagem horizontal em TODO O DOCUMENTO */
-    min-width: 0; /* Garante que eles possam encolher */
+    width: 100%;
+    overflow-x: hidden;
+    min-width: 0;
 }
 body {
     font-family: 'Marvel', sans-serif;
@@ -12,15 +12,15 @@ body {
     padding-top: 33px;
 }
 img, video, iframe, embed, object {
-    max-width: 100%; /* Garante que nunca excedam a largura do contêiner pai */
-    height: auto; /* Mantém a proporção */
-    display: block; /* Para evitar espaços indesejados abaixo de imagens */
+    max-width: 100%; 
+    height: auto;
+    display: block; 
 }
 .main-image {
     width: 100%;
     overflow: hidden;
-    padding: 0; /* Zera qualquer padding que possa causar transbordo */
-    margin: 0;  /* Zera qualquer margem que possa causar transbordo */
+    padding: 0; 
+    margin: 0;  
 }
 
 .mais-vendidos {
@@ -51,7 +51,6 @@ img, video, iframe, embed, object {
     color: #333;
 }
 
-/* Estilos para o container de produtos */
 .products-grid {
     display: flex;
     flex-wrap: wrap;
@@ -84,7 +83,7 @@ img, video, iframe, embed, object {
     list-style-type: none;
 }
 
-/* Estilos dos cards de produtos */
+
 .product-card {
     background-color: white;
     border-radius: 8px;
@@ -97,66 +96,64 @@ img, video, iframe, embed, object {
     transform: translateY(-5px);
 }
 
-/* Tamanhos para carrossel */
+
 .carousel-track .product-card {
-    flex: 0 0 calc(12.5% - 10px); /* 8 produtos em desktop */
+    flex: 0 0 calc(12.5% - 10px); 
     margin: 0;
     list-style-type: none;
 }
 
-/* Tamanhos para grid normal */
+
 .products-grid .product-card {
-    flex: 0 0 calc(25% - 20px); /* 4 produtos por linha em desktop para páginas normais */
+    flex: 0 0 calc(25% - 20px);
 }
 
-/* Media queries para carrossel */
+
 @media (max-width: 1400px) {
     .carousel-track .product-card {
-        flex: 0 0 calc(16.66% - 10px); /* 6 produtos em telas médias */
+        flex: 0 0 calc(16.66% - 10px);
     }
 }
 
 @media (max-width: 1024px) {
     .carousel-track .product-card {
-        flex: 0 0 calc(20% - 10px); /* 5 produtos em telas menores */
+        flex: 0 0 calc(20% - 10px); 
     }
     .products-grid .product-card {
-        flex: 0 0 calc(33.33% - 20px); /* 3 produtos por linha */
+        flex: 0 0 calc(33.33% - 20px); 
     }
 }
 
 @media (max-width: 768px) {
     .carousel-track .product-card {
-        flex: 0 0 calc(25% - 10px); /* 4 produtos em tablets */
+        flex: 0 0 calc(25% - 10px);
     }
     .products-grid .product-card {
-        flex: 0 0 calc(50% - 20px); /* 2 produtos por linha */
+        flex: 0 0 calc(50% - 20px);
     }
 }
 
 @media (max-width: 580px) {
     .carousel-track .product-card {
-        flex: 0 0 calc(33.33% - 10px); /* 3 produtos em mobile landscape */
+        flex: 0 0 calc(33.33% - 10px);
     }
 }
 
 @media (max-width: 480px) {
     .carousel-track .product-card {
-        flex: 0 0 calc(50% - 10px); /* 2 produtos em mobile portrait */
+        flex: 0 0 calc(50% - 10px);
     }
     .products-grid .product-card {
-        flex: 0 0 calc(100% - 20px); /* 1 produto por linha em mobile */
+        flex: 0 0 calc(100% - 20px);
     }
 }
 
-/* Estilos para imagem do produto */
 .product-image {
     width: 100%;
     height: 180px;
     overflow: hidden;
 }
 
-/* Altura maior para os cards nas páginas normais */
 .products-grid .product-image {
     height: 600px;
 }
@@ -173,7 +170,6 @@ img, video, iframe, embed, object {
     transform: scale(1.05);
 }
 
-/* Estilos para informações do produto */
 .product-info {
     padding: 12px;
 }
@@ -217,12 +213,11 @@ img, video, iframe, embed, object {
     margin-top: 10px;
 }
 .carousel-container {
-    width: 100%; /* Mude de 95% para 100% aqui para garantir total ocupação do espaço */
-    max-width: 100%; /* É redundante com width: 100% mas não faz mal */
+    width: 100%; /
     margin: 0 auto;
     position: relative;
-    overflow: hidden; /* Corta o conteúdo do carrossel */
-    padding: 0; /* Zera qualquer padding que possa causar transbordo */
+    overflow: hidden;
+    padding: 0;
 }
 
 .carousel-container .carousel-button {

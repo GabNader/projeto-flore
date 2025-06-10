@@ -1,4 +1,3 @@
-// components/app-header/app-header.js
 
 class AppHeaderComponent extends HTMLElement {
   constructor() {
