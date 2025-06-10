@@ -42,7 +42,7 @@ body {
 }
 
 .cart-item img {
-  width: 80px;
+  width: 90px;
   height: 120px;
   object-fit: cover;
   margin-right: 10px;
@@ -67,14 +67,22 @@ body {
 .item-controls {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 8px;
 }
 
 .item-controls button {
   background: none;
-  border: none;
-  font-size: 16px;
+  border: 1px solid #8f8686;
+  font-size: 14px;
   cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 28px;
+  height: 28px;
+}
 }
 
 .remove-btn {
@@ -91,4 +99,28 @@ body {
   font-size: 16px;
   cursor: pointer;
   font-weight: bold;
+}
+
+.item-controls button .icon {
+  width: 16px;
+  height: 16px;
+  display: block;
+  margin: auto;
+}
+
+
+.close-btn {
+  background: none;
+  border: none;
+  color: rgb(20, 4, 4);
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.item-controls button:hover {
+  background-color: #f5f5f5;
+}
+
+.checkout-btn:hover {
+  background-color: #b8356f;
 }
