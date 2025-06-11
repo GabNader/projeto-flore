@@ -5,17 +5,20 @@ html, body {
     overflow-x: hidden;
     min-width: 0;
 }
+
 body {
     font-family: 'Marvel', sans-serif;
     font-size: 20px;
     overflow-x: hidden;
     padding-top: 33px;
 }
+
 img, video, iframe, embed, object {
     max-width: 100%; 
     height: auto;
     display: block; 
 }
+
 .main-image {
     width: 100%;
     overflow: hidden;
@@ -24,101 +27,105 @@ img, video, iframe, embed, object {
 }
 
 .mais-vendidos {
-  font-family: 'Marvel', sans-serif;
-  font-size: 30px;
-  font-weight: 400;
-  color: black;
-  text-align: center;
-  margin-top: 2rem;
+    font-family: 'Marvel', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: black;
+    text-align: center;
+    margin-top: 2rem;
 }
+
 .products-container {
     width: 95%;
     max-width: 1900px;
     margin: 0 auto;
     position: relative;
 }
+
 .section-title {
     text-align: left;
     margin-bottom: 30px;
     font-size: 32px;
     color: #333;
 }
+
 .products-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: space-between;
 }
+
+/* Regras principais para product-card */
 .product-card {
+    /* Layout responsivo consolidado */
+    flex: 0 0 calc(25% - 20px); /* 4 por linha - padrão */
+    margin: 0;
+    list-style-type: none;
+    transition: transform 0.3s ease;
+    /* Propriedades visuais para cards sem link */
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
 }
 
 .product-card:hover {
     transform: translateY(-5px);
 }
-.product-card {
-    flex: 0 0 calc(12.5% - 10px); 
-    margin: 0;
-    list-style-type: none;
+
+.product-card-link {
+    text-decoration: none;
+    color: inherit; 
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 
-
-.products-grid .product-card {
-    flex: 0 0 calc(25% - 20px);
+/* Remove propriedades visuais do card quando há link */
+.product-card:has(.product-card-link) {
+    background: none;
+    border-radius: 0;
+    box-shadow: none;
+    overflow: visible;
 }
 
-
+/* Media queries organizadas em ordem decrescente */
 @media (max-width: 1400px) {
-     .product-card {
-        flex: 0 0 calc(16.66% - 10px);
+    .product-card {
+        flex: 0 0 calc(25% - 20px); /* 4 por linha */
     }
 }
 
 @media (max-width: 1024px) {
-     .product-card {
-        flex: 0 0 calc(20% - 10px); 
-    }
-    .products-grid .product-card {
-        flex: 0 0 calc(33.33% - 20px); 
+    .product-card {
+        flex: 0 0 calc(33.33% - 20px); /* 3 por linha */
     }
 }
 
 @media (max-width: 768px) {
-     .product-card {
-        flex: 0 0 calc(25% - 10px);
-    }
-    .products-grid .product-card {
-        flex: 0 0 calc(50% - 20px);
-    }
-}
-
-@media (max-width: 580px) {
-     .product-card {
-        flex: 0 0 calc(33.33% - 10px);
+    .product-card {
+        flex: 0 0 calc(50% - 20px); /* 2 por linha */
     }
 }
 
 @media (max-width: 480px) {
     .product-card {
-        flex: 0 0 calc(50% - 10px);
-    }
-    .products-grid .product-card {
-        flex: 0 0 calc(100% - 20px);
+        flex: 0 0 calc(100% - 20px); /* 1 por linha */
     }
 }
 
 .product-image {
     width: 100%;
-    height: 180px;
+    height: 600px; /* Altura padrão para a página de produtos */
     overflow: hidden;
-}
-
-.products-grid .product-image {
-    height: 600px;
 }
 
 .product-image img {
@@ -134,10 +141,6 @@ img, video, iframe, embed, object {
 }
 
 .product-info {
-    padding: 12px;
-}
-
-.products-grid .product-info {
     padding: 20px;
     flex-grow: 1;
     display: flex;
@@ -146,32 +149,21 @@ img, video, iframe, embed, object {
 }
 
 .product-title {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 400;
     margin-bottom: 8px;
     text-align: left;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.products-grid .product-title {
-    font-size: 20px;
     white-space: normal;
     line-height: 1.3;
     height: 2.6em;
     overflow: hidden;
-    
 }
 
 .product-price {
-    font-size: 18px;
+    font-size: 19px;
     color: #333;
     text-align: left;
     display: block;
     font-weight: 700;
-}
-
-.products-grid .product-price {
-    font-size: 19px;
     margin-top: 10px;
 }
