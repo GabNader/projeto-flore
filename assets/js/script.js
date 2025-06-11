@@ -1,4 +1,4 @@
-
+/*
 document.addEventListener('DOMContentLoaded', function() {
 
     const track = document.querySelector('.carousel-track');
@@ -75,3 +75,4 @@ document.addEventListener('DOMContentLoaded', function() {
         calculateCarouselDimensions();
     }
 });
+*/

@@ -80,6 +80,18 @@
     transform: translateY(-5px);
 }
 
+@media (min-width: 1920px) {
+    .carousel-track .product-card {
+        flex: 0 0 calc(12.5% - 8.75px);
+    }
+}
+
+@media (min-width: 1401px) and (max-width: 1919px) {
+    .carousel-track .product-card {
+        flex: 0 0 calc(16.66% - 8.33px); /* 16.66% para 6 cards */
+    }
+}
+
 @media (max-width: 1400px) {
     .carousel-track .product-card {
         flex: 0 0 calc(16.66% - 10px);
