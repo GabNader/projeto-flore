@@ -62,7 +62,7 @@ class AppProductDetail extends HTMLElement {
     }
 
     connectedCallback() {
-        // MUDANÇA AQUI: Chamar loadProductData() para carregar o produto real da URL
+   
         this.loadProductData(); 
     }
 
@@ -76,7 +76,7 @@ class AppProductDetail extends HTMLElement {
             return;
         }
 
-        // productsData é global, vindo de assets/js/products.js
+    
         const product = window.productsData.find(p => p.id === productId);
 
         if (!product) {
@@ -99,16 +99,16 @@ class AppProductDetail extends HTMLElement {
         const sizeSelectEl = this.shadowRoot.querySelector('#size-select');
         const colorSelectEl = this.shadowRoot.querySelector('#color-select');
 
-        // Preencher imagem principal
+    
         if (mainImageEl && product.images && product.images.length > 0) {
             mainImageEl.src = product.images[0];
             mainImageEl.alt = product.name;
         } else if (mainImageEl) {
-            mainImageEl.src = ''; // Limpa se não houver imagens
+            mainImageEl.src = ''; 
             mainImageEl.alt = 'Imagem não disponível';
         }
 
-        // Preencher outros textos
+    
         if (titleEl) titleEl.textContent = product.name;
         if (priceEl) {
             priceEl.textContent = `R$ ${product.price.toFixed(2).replace('.', ',')}`;
@@ -118,7 +118,7 @@ class AppProductDetail extends HTMLElement {
         }
         if (descriptionEl) descriptionEl.textContent = product.description;
 
-        // Preencher galeria de miniaturas e adicionar lógica de clique
+    
         if (thumbnailGalleryEl && product.images && product.images.length > 0) {
             thumbnailGalleryEl.innerHTML = product.images.map((imgSrc, index) => `
                 <img src="${imgSrc}" alt="${product.name} - Vista ${index + 1}" data-index="${index}">
@@ -139,7 +139,7 @@ class AppProductDetail extends HTMLElement {
             thumbnailGalleryEl.innerHTML = '';
         }
 
-        // Preencher opções de tamanho
+
         if (sizeSelectEl && product.sizes && product.sizes.length > 0) {
             sizeSelectEl.innerHTML = '<option value="">Selecione</option>' + 
                 product.sizes.map(size => `<option value="${size}">${size}</option>`).join('');
@@ -148,7 +148,7 @@ class AppProductDetail extends HTMLElement {
             sizeSelectEl.disabled = true;
         }
 
-        // Preencher opções de cor
+
         if (colorSelectEl && product.colors && product.colors.length > 0) {
             colorSelectEl.innerHTML = '<option value="">Selecione</option>' +
                 product.colors.map(color => `<option value="${color}">${color}</option>`).join('');

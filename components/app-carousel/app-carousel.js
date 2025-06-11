@@ -78,12 +78,11 @@ class AppCarousel extends HTMLElement {
       this.track.insertAdjacentHTML('beforeend', cardHtml);
     });
 
-    // ATENÇÃO AQUI: LÓGICA DE CARREGAMENTO DE IMAGENS E CÁLCULO INICIAL
+   
     const images = this.track.querySelectorAll('img');
     let imagesLoadedCount = 0;
     const totalImages = images.length;
 
-    // Se não há imagens nos cards (ex: placeholder), calcula direto
     if (totalImages === 0) {
         this._calculateCarouselDimensions();
         this._updateButtonVisibility();
@@ -93,14 +92,14 @@ class AppCarousel extends HTMLElement {
     images.forEach(img => {
         const imageLoadHandler = () => {
             imagesLoadedCount++;
-            // Se todas as imagens foram carregadas (ou deram erro), então calcula
+         
             if (imagesLoadedCount === totalImages) {
-                // Damos um pequeno atraso para garantir que o navegador renderizou as imagens
+           
                 setTimeout(() => {
                     this._calculateCarouselDimensions();
                     this._updateButtonVisibility();
                 }, 100); 
-                // Remove listeners para evitar chamadas duplicadas
+          
                 images.forEach(i => {
                     i.removeEventListener('load', imageLoadHandler);
                     i.removeEventListener('error', imageLoadHandler);
@@ -108,11 +107,11 @@ class AppCarousel extends HTMLElement {
             }
         };
 
-        if (img.complete) { // Verifica se a imagem já foi carregada pelo cache
+        if (img.complete) { 
             imageLoadHandler();
         } else {
             img.addEventListener('load', imageLoadHandler);
-            img.addEventListener('error', imageLoadHandler); // Em caso de erro, ainda conta como "carregada"
+            img.addEventListener('error', imageLoadHandler); 
         }
     });
   }
