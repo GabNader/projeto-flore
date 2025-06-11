@@ -1,0 +1,186 @@
+/* components/app-product-detail/app-product-detail.css */
+
+:host {
+    display: block;
+    padding: 20px; /* Padding geral para a página de detalhe */
+}
+
+.product-detail-container {
+    max-width: 1200px; /* Largura máxima para o conteúdo da página de detalhe */
+    margin: 0 auto;
+    font-family: 'Marvel', sans-serif;
+    color: #333;
+}
+
+.product-main-content {
+    display: flex;
+    flex-direction: row; /* Padrão desktop: foto na esquerda, info na direita */
+    gap: 40px; /* Espaço entre a foto e as informações */
+    flex-wrap: wrap; /* Permite quebrar em telas menores */
+    justify-content: center; /* Centraliza em telas menores */
+    margin-bottom: 40px;
+}
+
+.product-media {
+    flex: 1; /* Ocupa o espaço disponível */
+    min-width: 300px; /* Largura mínima para a seção de mídia */
+    max-width: 500px; /* Largura máxima para a seção de mídia */
+}
+
+.main-product-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.thumbnail-gallery {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.thumbnail-gallery img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    transition: border-color 0.3s ease;
+}
+
+.thumbnail-gallery img:hover,
+.thumbnail-gallery img.active {
+    border-color: #D94389; /* Cor de destaque da sua marca */
+}
+
+.product-info-panel {
+    flex: 1; /* Ocupa o espaço disponível */
+    min-width: 300px; /* Largura mínima para o painel de info */
+}
+
+.product-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.product-price {
+    font-size: 28px;
+    color: #D94389; /* Sua cor de destaque */
+    font-weight: 700;
+    margin-bottom: 20px;
+    display: block; /* Para garantir que o span ocupe uma linha */
+}
+
+.product-options {
+    margin-bottom: 30px;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.option-group {
+    margin-bottom: 15px;
+}
+
+.option-group label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.option-group select,
+.option-group input[type="number"],
+.product-shipping-info input[type="text"] {
+    width: 100%;
+    max-width: 250px; /* Limita a largura dos campos de input/select */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Marvel', sans-serif;
+}
+
+.add-to-cart-btn,
+.product-shipping-info button {
+    width: 100%;
+    max-width: 250px;
+    padding: 15px 20px;
+    background-color: #D94389;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px; /* Espaço acima do botão */
+}
+
+.add-to-cart-btn:hover,
+.product-shipping-info button:hover {
+    background-color: #c03d7c;
+}
+
+.product-description,
+.product-shipping-info {
+    margin-top: 30px;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.product-description h3,
+.product-shipping-info h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.product-description p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .product-main-content {
+        flex-direction: column; /* Empilha as seções verticalmente em telas menores */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    .product-media,
+    .product-info-panel {
+        width: 100%;
+        max-width: 100%; /* Permite que ocupem toda a largura */
+        min-width: unset; /* Remove min-width fixo para permitir encolher */
+    }
+
+    .product-detail-container {
+        padding: 15px;
+    }
+
+    .product-title {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .product-price {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .option-group select,
+    .option-group input[type="number"],
+    .add-to-cart-btn,
+    .product-shipping-info input[type="text"],
+    .product-shipping-info button {
+        max-width: 100%; /* Campos e botões ocupam a largura total em mobile */
+    }
+
+    .thumbnail-gallery {
+        justify-content: center; /* Centraliza as miniaturas */
+    }
+}
