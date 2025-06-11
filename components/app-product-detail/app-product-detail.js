@@ -1,5 +1,4 @@
 // components/app-product-detail/app-product-detail.js
-// components/app-product-detail/app-product-detail.js
 
 class AppProductDetail extends HTMLElement {
     constructor() {
@@ -15,7 +14,7 @@ class AppProductDetail extends HTMLElement {
                             <img src="" alt=""> 
                         </div>
                         <div class="thumbnail-gallery">
-                            </div>
+                        </div>
                     </div>
 
                     <div class="product-info-panel">
@@ -27,7 +26,6 @@ class AppProductDetail extends HTMLElement {
                                 <label for="size-select">Tamanho:</label>
                                 <select id="size-select">
                                     <option value="">Selecione</option>
-                                    {/* OPÇÕES SERÃO INSERIDAS VIA JS */}
                                 </select>
                             </div>
 
@@ -35,7 +33,6 @@ class AppProductDetail extends HTMLElement {
                                 <label for="color-select">Cor:</label>
                                 <select id="color-select">
                                     <option value="">Selecione</option>
-                                    {/* OPÇÕES SERÃO INSERIDAS VIA JS */}
                                 </select>
                             </div>
 
@@ -65,28 +62,32 @@ class AppProductDetail extends HTMLElement {
     }
 
     connectedCallback() {
-        // Por enquanto, vamos carregar um produto fixo para testar a galeria
-        // Depois, esta parte será substituída pela lógica de carregar da URL.
-        const fixedProduct = {
-            id: 'vestido-curto-francisca', // Use um ID que você tenha no products.js para testar
-            name: 'Vestido Curto Francisca',
-            price: 499.00,
-            installments: '5x de R$99,80',
-            description: 'Um vestido curto elegante e versátil, perfeito para diversas ocasiões. Confeccionado em tecido leve e confortável, com caimento impecável e detalhes sofisticados.',
-            images: [
-                '../assets/imagens/produtos/vestidos-curtos/VESTIDO-CURTO-FRANCISCA-S.webp',
-                '../assets/imagens/produtos/vestidos-curtos/VESTIDO-CURTO-FRANCISCA-2.webp',
-            ],
-            sizes: ['P', 'M', 'G'],
-            colors: ['Preto', 'Branco'],
-            category: 'vestido-curto'
-        };
-        this._renderProduct(fixedProduct);
-        // Quando products.js estiver pronto, loadProductData() será chamado aqui
-        // this.loadProductData(); 
+        // MUDANÇA AQUI: Chamar loadProductData() para carregar o produto real da URL
+        this.loadProductData(); 
     }
 
-    // Método para renderizar os dados do produto no HTML do componente
+    loadProductData() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const productId = urlParams.get('id');
+
+        if (!productId) {
+            console.error('ID do produto não encontrado na URL.');
+            this.shadowRoot.innerHTML = `<p style="text-align: center; margin-top: 50px;">Produto não encontrado. Verifique a URL.</p>`;
+            return;
+        }
+
+        // productsData é global, vindo de assets/js/products.js
+        const product = window.productsData.find(p => p.id === productId);
+
+        if (!product) {
+            console.error(`Produto com ID '${productId}' não encontrado.`);
+            this.shadowRoot.innerHTML = `<p style="text-align: center; margin-top: 50px;">Produto '${productId}' não encontrado na base de dados.</p>`;
+            return;
+        }
+
+        this._renderProduct(product);
+    }
+
     _renderProduct(product) {
         if (!product) return;
 
@@ -102,8 +103,8 @@ class AppProductDetail extends HTMLElement {
         if (mainImageEl && product.images && product.images.length > 0) {
             mainImageEl.src = product.images[0];
             mainImageEl.alt = product.name;
-        } else if (mainImageEl) { // Caso não tenha imagens
-            mainImageEl.src = '';
+        } else if (mainImageEl) {
+            mainImageEl.src = ''; // Limpa se não houver imagens
             mainImageEl.alt = 'Imagem não disponível';
         }
 
@@ -126,19 +127,16 @@ class AppProductDetail extends HTMLElement {
             const thumbnails = this.shadowRoot.querySelectorAll('.thumbnail-gallery img');
             thumbnails.forEach((thumb, index) => {
                 thumb.addEventListener('click', () => {
-                    // Mudar a imagem principal para a miniatura clicada
                     mainImageEl.src = thumb.src;
-                    // Atualizar o estado ativo das miniaturas
                     thumbnails.forEach(t => t.classList.remove('active'));
                     thumb.classList.add('active');
                 });
-                // Ativa a primeira miniatura por padrão
                 if (index === 0) {
                     thumb.classList.add('active');
                 }
             });
         } else if (thumbnailGalleryEl) {
-            thumbnailGalleryEl.innerHTML = ''; // Limpa se não houver miniaturas
+            thumbnailGalleryEl.innerHTML = '';
         }
 
         // Preencher opções de tamanho
@@ -158,12 +156,6 @@ class AppProductDetail extends HTMLElement {
             colorSelectEl.innerHTML = '<option value="">Não disponível</option>';
             colorSelectEl.disabled = true;
         }
-    }
-
-    // [APÓS products.js] Este método será usado quando a lógica de URL estiver ativa
-    loadProductData() {
-        // Implementar depois que products.js estiver pronto
-        // Usará window.productsData.find(...) para carregar o produto real
     }
 }
 

@@ -5,7 +5,7 @@ class AppCarousel extends HTMLElement {
     super();
     this.attachShadow({ mode: 'open' });
 
-    // HTML do carrossel com os product-cards embutidos
+    // HTML do carrossel: removemos os product-cards, eles serão renderizados por JS
     this.shadowRoot.innerHTML = `
       <link rel="stylesheet" href="../components/app-carousel/app-carousel.css">
       <div class="carousel-container">
@@ -19,286 +19,220 @@ class AppCarousel extends HTMLElement {
         </button>
         
         <ul class="carousel-track">
-          <li class="product-card">
-              <div class="product-image">
-                  <img src="../assets/imagens/produtos/vestidos-curtos/VESTIDO-OMBRO-SO-ROSALIA-LENCO-S.webp" alt="Produto1">
-              </div>
-              <div class="product-info">
-                  <h2 class="product-title">Vestido Ombro Rosalia</h2>
-                  <span class="product-price">R$ 449,00 ou 4x de R$112,25</span>
-              </div>
-          </li>
-          
-          <li class="product-card">
-              <div class="product-image">
-                  <img src="../assets/imagens/produtos/vestidos-curtos/VESTIDO-CURTO-JARDIM-FLORIDO.webp" alt="Produto2">
-              </div>
-              <div class="product-info">
-                  <h2 class="product-title">Vestido Curto Jardim Florido</h2>
-                  <span class="product-price">R$ 398,00 ou 4x de R$99,50</span>
-              </div>
-          </li>
-
-          <li class="product-card">
-              <div class="product-image">
-                  <img src="../assets/imagens/produtos/vestidos-curtos/VESTIDO-CURTO-TRANSPASSE-FLORAL-BELLE.webp" alt="Produto3">
-              </div>
-              <div class="product-info">
-                  <h2 class="product-title">Vestido Curto Transpasse Floral Belle</h2>
-                  <span class="product-price">R$ 498,00 ou 4x de R$99,60</span>
-              </div>
-          </li>
-
-          <li class="product-card">
-              <div class="product-image">
-                  <img src="../assets/imagens/produtos/vestido-longo/VESTIDO-LANGUIDO-FLORAL-ARABASQUE.webp" alt="Produto4">
-              </div>
-              <div class="product-info">
-                  <h2 class="product-title">Vestido Longo Languido Floral Arabasque</h2>
-                  <span class="product-price">R$ 498,00 ou 5x de R$99,50</span>
-              </div>
-          </li>
-
-          <li class="product-card">
-              <div class="product-image">
-                  <img src="../assets/imagens/produtos/vestido-longo/VESTIDO-CROPPED-BALONE-COGU.webp" alt="Produto5">
-              </div>
-              <div class="product-info">
-                  <h2 class="product-title">Vestido Longo Cropped Balonê Cogul</h2>
-                  <span class="product-price">R$ 549,00 ou 5x de R$109,80</span>
-              </div>
-          </li>
-
-          <li class="product-card">
-              <div class="product-image">
-                  <img src="../assets/imagens/produtos/vestidos-curtos/VESTIDO-ALCA-LENCO-JARDIM-REAL.webp" alt="Produto6">
-              </div>
-              <div class="product-info">
-                  <h2 class="product-title">Vestido Curto Jardim Real</h2>
-                  <span class="product-price">R$ 298,00 ou 3x de R$99,33</span>
-              </div>
-          </li>
-
-          <li class="product-card">
-              <div class="product-image">
-                  <img src="../assets/imagens/produtos/vestidos-curtos/VESTIDO-CURTO-TROPICALIA.webp" alt="Produto7">
-              </div>
-              <div class="product-info">
-                  <h2 class="product-title">Vestido Curto Tropicália</h2>
-                  <span class="product-price">R$ 449,00 ou 5x de R$112,25</span>
-              </div>
-          </li>
-
-          <li class="product-card">
-              <div class="product-image">
-                  <img src="../assets/imagens/produtos/vestido-longo/VESTIDO-CROPPED-JARDIM-MARAVILHOSO.webp" alt="Produto8">
-              </div>
-              <div class="product-info">
-                  <h2 class="product-title">Vestido Longo Cropped Jardim Maravilhoso</h2>
-                  <span class="product-price">R$ 449,00 ou 5x de R$112,25</span>
-              </div>
-          </li>
-
-          <li class="product-card">
-              <div class="product-image">
-                  <img src="../assets/imagens/produtos/vestidos-curtos/VESTIDO-CURTO-JARDIM-CHINTZ.webp" alt="Produto9">
-              </div>
-              <div class="product-info">
-                  <h2 class="product-title">Vestido Curto Jardim Chintz</h2>
-                  <span class="product-price">R$ 398,00 ou 4x de R$99,50</span>
-              </div>
-          </li>
-
-          <li class="product-card">
-              <div class="product-image">
-                  <img src="../assets/imagens/produtos/vestidos-curtos/VESTIDO-OMBRO-SO-ROSALIA-LENCO-S.webp" alt="Produto1">
-              </div>
-              <div class="product-info">
-                  <h2 class="product-title">Vestido Ombro Rosalia</h2>
-                  <span class="product-price">R$ 449,00 ou 4x de R$112,25</span>
-              </div>
-          </li>
-
-          <li class="product-card">
-              <div class="product-image">
-                  <img src="../assets/imagens/produtos/vestidos-curtos/VESTIDO-CURTO-JARDIM-FLORIDO.webp" alt="Produto2">
-              </div>
-              <div class="product-info">
-                  <h2 class="product-title">Vestido Curto Jardim Florido</h2>
-                  <span class="product-price">R$ 398,00 ou 4x de R$99,50</span>
-              </div>
-          </li>
-        </ul>
+          </ul>
       </div>
     `;
   }
 
   connectedCallback() {
-    const track = this.shadowRoot.querySelector('.carousel-track');
-    const nextButton = this.shadowRoot.querySelector('.carousel-button-next');
-    const prevButton = this.shadowRoot.querySelector('.carousel-button-prev');
+    this.track = this.shadowRoot.querySelector('.carousel-track');
+    this.nextButton = this.shadowRoot.querySelector('.carousel-button-next');
+    this.prevButton = this.shadowRoot.querySelector('.carousel-button-prev');
 
-    const cards = Array.from(track.children); 
+    // Chamada inicial para renderizar os best sellers
+    this._renderBestSellers();
 
-    let cardsToShow;
-    let cardWidth;
-    let totalScrollableWidth;
-    let scrollAmount;
-    let currentPosition = 0;
-
-    const calculateCarouselDimensions = () => {
-        // Determina quantos cards mostrar baseado na largura da tela
-        if (window.innerWidth >= 1920) {
-            cardsToShow = 8;
-        } else if (window.innerWidth >= 1400) {
-            cardsToShow = 6;
-        } else if (window.innerWidth >= 1024) {
-            cardsToShow = 5;
-        } else if (window.innerWidth >= 768) {
-            cardsToShow = 4;
-        } else if (window.innerWidth >= 580) {
-            cardsToShow = 3;
-        } else {
-            cardsToShow = 2;
-        }
-
-        // Se não há cards suficientes para scroll, ajusta a quantidade
-        const cardsAvailableForScroll = cards.length - cardsToShow;
-        if (cardsAvailableForScroll < 2) {
-            // Se sobram menos de 2 cards para scroll, reduz a quantidade mostrada
-            cardsToShow = Math.max(cards.length - 3, 2);
-        }
-
-        // Calcula as dimensões reais dos elementos
-        if (cards.length > 0) {
-            const firstCard = cards[0];
-            const cardRect = firstCard.getBoundingClientRect();
-            cardWidth = cardRect.width;
-        } else {
-            cardWidth = 0;
-            return;
-        }
-        
-        // Obtém o gap real entre os elementos
-        const trackStyles = window.getComputedStyle(track);
-        const itemSpacing = parseFloat(trackStyles.gap) || 0;
-        
-        // Para poucos cards disponíveis para scroll, move de 2 em 2 ao invés de uma "página" completa
-        const remainingCards = cards.length - cardsToShow;
-        if (remainingCards <= 4) {
-            scrollAmount = 2 * cardWidth + itemSpacing; // Move apenas 2 cards por vez
-        } else {
-            scrollAmount = cardsToShow * cardWidth + (cardsToShow - 1) * itemSpacing;
-        }
-        
-        // Calcula o espaço total que todos os cards ocupam
-        const totalCardsWidth = cards.length * cardWidth + (cards.length - 1) * itemSpacing;
-        
-        // Calcula o espaço visível do container
-        const containerWidth = track.parentElement.getBoundingClientRect().width;
-        
-        // Se todos os cards cabem na tela, não precisa de scroll
-        if (totalCardsWidth <= containerWidth || remainingCards <= 0) {
-            totalScrollableWidth = 0;
-        } else {
-            // Calcula quanto pode ser scrollado
-            totalScrollableWidth = totalCardsWidth - containerWidth;
-        }
-        
-        console.log('Debug melhorado:', {
-            cardsToShow,
-            remainingCards,
-            cardWidth,
-            itemSpacing,
-            scrollAmount,
-            totalCards: cards.length,
-            screenWidth: window.innerWidth,
-            totalScrollableWidth
-        });
-        
-        // Reset da posição
-        track.style.transform = 'translateX(0)';
-        currentPosition = 0;
-
-        // Controla a visibilidade dos botões
-        if (prevButton && nextButton) {
-            if (totalScrollableWidth <= 0) {
-                prevButton.style.display = 'none';
-                nextButton.style.display = 'none';
-            } else {
-                prevButton.style.display = 'flex';
-                nextButton.style.display = 'flex';
-            }
-        }
-    };
-
-    const moveNext = () => {
-        if (totalScrollableWidth <= 0) return;
-        
-        const maxScrollPosition = -totalScrollableWidth;
-        
-        console.log('moveNext:', {
-            currentPosition,
-            scrollAmount,
-            maxScrollPosition,
-            wouldBePosition: currentPosition - scrollAmount
-        });
-        
-        if (currentPosition > maxScrollPosition) {
-            // Move uma "página" de cards ou até o final
-            const newPosition = Math.max(currentPosition - scrollAmount, maxScrollPosition);
-            currentPosition = newPosition;
-            track.style.transform = `translateX(${currentPosition}px)`;
-            
-            console.log('Moved to:', currentPosition);
-        }
-    };
-
-    const movePrev = () => {
-        if (totalScrollableWidth <= 0) return;
-        
-        console.log('movePrev:', {
-            currentPosition,
-            scrollAmount,
-            wouldBePosition: currentPosition + scrollAmount
-        });
-        
-        if (currentPosition < 0) {
-            const newPosition = Math.min(currentPosition + scrollAmount, 0);
-            currentPosition = newPosition;
-            track.style.transform = `translateX(${currentPosition}px)`;
-            
-            console.log('Moved to:', currentPosition);
-        }
-    };
-
-    if (nextButton) nextButton.addEventListener('click', moveNext);
-    if (prevButton) prevButton.addEventListener('click', movePrev);
+    // Adiciona event listeners para navegação e resize
+    if (this.nextButton) this.nextButton.addEventListener('click', this._moveNext.bind(this));
+    if (this.prevButton) this.prevButton.addEventListener('click', this._movePrev.bind(this));
     
-    window.addEventListener('resize', calculateCarouselDimensions);
+    window.addEventListener('resize', this._calculateCarouselDimensions.bind(this));
 
-    setTimeout(() => {
-        calculateCarouselDimensions();
-    }, 100);
+    // NÃO CHAMAMOS calculateCarouselDimensions() ou updateButtonVisibility() aqui diretamente,
+    // pois eles serão chamados após o carregamento das imagens em _renderBestSellers.
+  }
 
-    const images = this.shadowRoot.querySelectorAll('img');
-    let imagesLoaded = 0;
-    
-    const checkAllImagesLoaded = () => {
-        imagesLoaded++;
-        if (imagesLoaded === images.length) {
-            calculateCarouselDimensions();
-        }
-    };
+  
+  _renderBestSellers() {
+    if (!window.productsData) {
+      console.error('productsData não encontrado. Certifique-se de que assets/js/products.js foi carregado ANTES de app-carousel.js.');
+      setTimeout(() => this._renderBestSellers(), 500); 
+      return;
+    }
+
+    const bestSellers = window.productsData.filter(p => p.isBestSeller === true);
+    const productsToDisplay = bestSellers.slice(0, 15);
+
+    this.track.innerHTML = ''; // Limpa a trilha
+
+    if (productsToDisplay.length === 0) {
+      this.track.innerHTML = '<p style="text-align: center; width: 100%; margin: 20px 0;">Nenhum produto "Mais Vendido" encontrado.</p>';
+      this._calculateCarouselDimensions(); // Para esconder botões
+      return;
+    }
+
+    productsToDisplay.forEach(product => {
+      const cardHtml = `
+        <li class="product-card">
+          <a href="../pages/produto.html?id=${product.id}" class="product-card-link"> 
+            <div class="product-image">
+              <img src="${product.images[0]}" alt="${product.name}">
+            </div>
+            <div class="product-info">
+              <h2 class="product-title">${product.name}</h2>
+              <span class="product-price">R$ ${product.price.toFixed(2).replace('.', ',')} ou ${product.installments}</span>
+            </div>
+          </a>
+        </li>
+      `;
+      this.track.insertAdjacentHTML('beforeend', cardHtml);
+    });
+
+    // ATENÇÃO AQUI: LÓGICA DE CARREGAMENTO DE IMAGENS E CÁLCULO INICIAL
+    const images = this.track.querySelectorAll('img');
+    let imagesLoadedCount = 0;
+    const totalImages = images.length;
+
+    // Se não há imagens nos cards (ex: placeholder), calcula direto
+    if (totalImages === 0) {
+        this._calculateCarouselDimensions();
+        this._updateButtonVisibility();
+        return;
+    }
 
     images.forEach(img => {
-        if (img.complete) {
-            checkAllImagesLoaded();
+        const imageLoadHandler = () => {
+            imagesLoadedCount++;
+            // Se todas as imagens foram carregadas (ou deram erro), então calcula
+            if (imagesLoadedCount === totalImages) {
+                // Damos um pequeno atraso para garantir que o navegador renderizou as imagens
+                setTimeout(() => {
+                    this._calculateCarouselDimensions();
+                    this._updateButtonVisibility();
+                }, 100); 
+                // Remove listeners para evitar chamadas duplicadas
+                images.forEach(i => {
+                    i.removeEventListener('load', imageLoadHandler);
+                    i.removeEventListener('error', imageLoadHandler);
+                });
+            }
+        };
+
+        if (img.complete) { // Verifica se a imagem já foi carregada pelo cache
+            imageLoadHandler();
         } else {
-            img.addEventListener('load', checkAllImagesLoaded);
-            img.addEventListener('error', checkAllImagesLoaded);
+            img.addEventListener('load', imageLoadHandler);
+            img.addEventListener('error', imageLoadHandler); // Em caso de erro, ainda conta como "carregada"
         }
-    }); 
+    });
+  }
+
+  _calculateCarouselDimensions() {
+    const cards = Array.from(this.track.children); 
+    if (cards.length === 0) {
+        this.cardWidth = 0;
+        this.totalScrollableWidth = 0;
+        this.scrollAmount = 0;
+        this.currentPosition = 0;
+        this._updateButtonVisibility();
+        return;
+    }
+
+    if (window.innerWidth >= 1920) {
+        this.cardsToShow = 8;
+    } else if (window.innerWidth >= 1400) {
+        this.cardsToShow = 6;
+    } else if (window.innerWidth >= 1024) {
+        this.cardsToShow = 5;
+    } else if (window.innerWidth >= 768) {
+        this.cardsToShow = 4;
+    } else if (window.innerWidth >= 580) {
+        this.cardsToShow = 3;
+    } else {
+        this.cardsToShow = 2;
+    }
+
+    const cardsAvailableForScroll = cards.length - this.cardsToShow;
+    if (cardsAvailableForScroll < 2 && cardsAvailableForScroll >=0) {
+        this.cardsToShow = Math.max(cards.length - 1, 1); 
+    }
+
+    const firstCard = cards[0];
+    const cardRect = firstCard.getBoundingClientRect();
+    this.cardWidth = cardRect.width;
+    const trackStyles = window.getComputedStyle(this.track);
+    const itemSpacing = parseFloat(trackStyles.gap) || 0;
+
+    const remainingCards = cards.length - this.cardsToShow;
+    if (remainingCards <= 4 && remainingCards > 0) {
+        this.scrollAmount = 2 * this.cardWidth + itemSpacing;
+        if (this.scrollAmount > (this.totalContentWidth - (this.currentPosition === 0 ? 0 : (-this.currentPosition))) && this.totalContentWidth > 0) {
+             this.scrollAmount = this.totalContentWidth - (this.currentPosition === 0 ? 0 : (-this.currentPosition));
+        }
+    } else {
+        this.scrollAmount = this.cardsToShow * this.cardWidth + (this.cardsToShow - 1) * itemSpacing;
+    }
+    
+    this.totalContentWidth = cards.length * this.cardWidth + (cards.length - 1) * itemSpacing;
+    const containerRect = this.track.parentElement.getBoundingClientRect();
+    this.containerVisibleWidth = containerRect.width;
+
+    this.totalScrollableWidth = Math.max(0, this.totalContentWidth - this.containerVisibleWidth);
+    
+    if (this.totalScrollableWidth > 0 && this.scrollAmount > this.totalScrollableWidth) {
+        this.scrollAmount = this.totalScrollableWidth;
+    }
+    if (this.scrollAmount < (this.cardWidth / 2) && this.totalScrollableWidth > 0) { 
+        this.scrollAmount = this.cardWidth + itemSpacing;
+    }
+    if (this.scrollAmount === 0 && this.totalScrollableWidth > 0) {
+        this.scrollAmount = this.cardWidth + itemSpacing;
+    }
+
+    this.track.style.transform = 'translateX(0)';
+    this.currentPosition = 0;
+    this._updateButtonVisibility();
+
+    console.log('--- calculateCarouselDimensions (Dynamic) ---');
+    console.log('cardsToShow:', this.cardsToShow);
+    console.log('remainingCards:', cards.length - this.cardsToShow);
+    console.log('cardWidth:', this.cardWidth);
+    console.log('itemSpacing:', itemSpacing);
+    console.log('scrollAmount:', this.scrollAmount);
+    console.log('totalCards:', cards.length);
+    console.log('screenWidth:', window.innerWidth);
+    console.log('totalContentWidth (track):', this.totalContentWidth);
+    console.log('containerVisibleWidth (carousel-container):', this.containerVisibleWidth);
+    console.log('totalScrollableWidth:', this.totalScrollableWidth);
+    console.log('---------------------------------');
+  }
+
+  _moveNext() {
+    if (this.totalScrollableWidth <= 0 || this.scrollAmount <= 0) return;
+    
+    const maxScrollPosition = -this.totalScrollableWidth;
+    
+    const newPosition = Math.max(this.currentPosition - this.scrollAmount, maxScrollPosition);
+    this.currentPosition = newPosition;
+    this.track.style.transform = `translateX(${this.currentPosition}px)`;
+    
+    this._updateButtonVisibility();
+  }
+
+  _movePrev() {
+    if (this.totalScrollableWidth <= 0) return;
+    
+    const newPosition = Math.min(this.currentPosition + this.scrollAmount, 0);
+    this.currentPosition = newPosition;
+    this.track.style.transform = `translateX(${this.currentPosition}px)`;
+    
+    this._updateButtonVisibility();
+  }
+
+  _updateButtonVisibility() {
+    if (this.prevButton && this.nextButton) {
+        if (this.currentPosition >= 0) {
+            this.prevButton.style.display = 'none';
+        } else {
+            this.prevButton.style.display = 'flex';
+        }
+        
+        if (this.currentPosition <= -this.totalScrollableWidth) {
+            this.nextButton.style.display = 'none';
+        } else {
+            this.nextButton.style.display = 'flex';
+        }
+    }
   }
 }
 

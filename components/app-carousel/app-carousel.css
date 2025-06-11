@@ -188,3 +188,12 @@
     font-size: 19px;
     margin-top: 10px;
 }
+
+.product-card-link {
+    text-decoration: none; 
+    color: inherit;     
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}

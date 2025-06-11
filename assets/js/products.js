@@ -1,6 +1,6 @@
 // assets/js/products.js
 
-const productsData = [
+window.productsData = [
     // --- VESTIDO LONGO ---
     {
         id: 'vestido-cropped-estampado-lina',
@@ -13,7 +13,8 @@ const productsData = [
         ],
         sizes: ['P', 'M', 'G'],
         colors: ['Verde', 'Estampado', 'Branco'],
-        category: 'vestido-longo'
+        category: 'vestido-longo',
+        isBestSeller: true
     },
     {
         id: 'vestido-estampado-maxi-coracao',
@@ -26,7 +27,8 @@ const productsData = [
         ],
         sizes: ['P', 'M', 'G', 'GG'],
         colors: ['Preto', 'Estampado'],
-        category: 'vestido-longo'
+        category: 'vestido-longo',
+        isBestSeller: true
     },
     {
         id: 'vestido-artesanal-bordado-coracoes',
@@ -39,7 +41,8 @@ const productsData = [
         ],
         sizes: ['M', 'G', 'GG'],
         colors: ['Branco', 'Rosa'],
-        category: 'vestido-longo'
+        category: 'vestido-longo',
+        isBestSeller: true
     },
     {
         id: 'vestido-longo-estampado-relicario-tropical',
@@ -48,11 +51,12 @@ const productsData = [
         installments: '5x de R$115,80',
         description: 'Com estampa tropical que remete a relicários antigos, este vestido longo é uma peça única e cheia de charme. Ideal para o verão, oferece leveza e um caimento perfeito.',
         images: [
-            '../assets/imagens/produtos/vestido-longo/VESTIDO-ARTESANAL-BORDADO-CORACOES.webp', // A imagem alt="Produto 3" estava errada. Ajustado para a imagem correta.
+            '../assets/imagens/produtos/vestido-longo/VESTIDO-ARTESANAL-BORDADO-CORACOES.webp',
         ],
         sizes: ['P', 'M'],
         colors: ['Estampado', 'Azul'],
-        category: 'vestido-longo'
+        category: 'vestido-longo',
+        isBestSeller: true
     },
     {
         id: 'vestido-estampado-marcelle',
@@ -65,7 +69,8 @@ const productsData = [
         ],
         sizes: ['P', 'M', 'G'],
         colors: ['Roxo', 'Estampado'],
-        category: 'vestido-longo'
+        category: 'vestido-longo',
+        isBestSeller: true
     },
     {
         id: 'vestido-mangas-estampado-coracao',
@@ -78,7 +83,8 @@ const productsData = [
         ],
         sizes: ['P', 'M'],
         colors: ['Vermelho', 'Estampado'],
-        category: 'vestido-longo'
+        category: 'vestido-longo',
+        isBestSeller: true
     },
     {
         id: 'vestido-longo-manga-estampado-beatrice-floral',
@@ -91,7 +97,8 @@ const productsData = [
         ],
         sizes: ['M', 'G'],
         colors: ['Floral', 'Branco'],
-        category: 'vestido-longo'
+        category: 'vestido-longo',
+        isBestSeller: true
     },
     {
         id: 'vestido-cropped-balone-estampado-cogul',
@@ -104,11 +111,12 @@ const productsData = [
         ],
         sizes: ['P', 'M', 'G'],
         colors: ['Estampado', 'Amarelo'],
-        category: 'vestido-longo'
+        category: 'vestido-longo',
+        isBestSeller: true
     },
     {
         id: 'vestido-balone-xadrez-junino',
-        name: 'Vestido Balonê Xadrez Junino',
+        name: 'Vestido Balone Xadrez Junino',
         price: 598.00,
         installments: '6x de R$ 99,66',
         description: 'Vestido longo com corte balonê e estampa xadrez junina, trazendo um toque festivo e tradicional. Perfeito para celebrações e momentos de alegria.',
@@ -117,7 +125,8 @@ const productsData = [
         ],
         sizes: ['G', 'GG'],
         colors: ['Xadrez', 'Colorido'],
-        category: 'vestido-longo'
+        category: 'vestido-longo',
+        isBestSeller: true
     },
     {
         id: 'vestido-languido-estampado-floral-arabasque',
@@ -130,7 +139,8 @@ const productsData = [
         ],
         sizes: ['P', 'M'],
         colors: ['Floral', 'Rosa'],
-        category: 'vestido-longo'
+        category: 'vestido-longo',
+        isBestSeller: true
     },
     {
         id: 'vestido-cropped-estampado-jardim-maravilhoso',
@@ -143,7 +153,8 @@ const productsData = [
         ],
         sizes: ['P', 'M'],
         colors: ['Estampado', 'Verde'],
-        category: 'vestido-longo'
+        category: 'vestido-longo',
+        isBestSeller: true
     },
     {
         id: 'vestido-longo-estampado-turmalina',
@@ -156,10 +167,11 @@ const productsData = [
         ],
         sizes: ['M', 'G', 'GG'],
         colors: ['Colorido', 'Azul'],
-        category: 'vestido-longo'
+        category: 'vestido-longo',
+        isBestSeller: true
     },
 
-    // --- VESTIDO CURTO ---
+    // --- VESTIDO CURTO (primeiros 3 para completar 15) ---
     {
         id: 'vestido-curto-estampado-floral-tati',
         name: 'Vestido Curto Estampado Floral Tati',
@@ -171,7 +183,8 @@ const productsData = [
         ],
         sizes: ['P', 'M', 'G'],
         colors: ['Floral', 'Amarelo'],
-        category: 'vestido-curto'
+        category: 'vestido-curto',
+        isBestSeller: true // Este é o 13º best seller
     },
     {
         id: 'vestido-curto-transpasse-floral-belle',
@@ -184,7 +197,8 @@ const productsData = [
         ],
         sizes: ['P', 'M', 'G'],
         colors: ['Floral', 'Rosa'],
-        category: 'vestido-curto'
+        category: 'vestido-curto',
+        isBestSeller: true // Este é o 14º best seller
     },
     {
         id: 'vestido-curto-estampado-francisca',
@@ -197,8 +211,10 @@ const productsData = [
         ],
         sizes: ['M', 'G'],
         colors: ['Estampado', 'Laranja'],
-        category: 'vestido-curto'
+        category: 'vestido-curto',
+        isBestSeller: true // Este é o 15º best seller
     },
+    // --- O RESTANTE DOS PRODUTOS (CURTO E MIDI) ABAIXO TERÃO isBestSeller: false ou a propriedade omitida ---
     {
         id: 'vestido-curto-estampado-jardim-florido',
         name: 'Vestido Curto Estampado Jardim Florido',
@@ -210,6 +226,7 @@ const productsData = [
         ],
         sizes: ['P', 'M'],
         colors: ['Floral', 'Verde'],
+        isBestSeller: false,
         category: 'vestido-curto'
     },
     {
@@ -223,6 +240,7 @@ const productsData = [
         ],
         sizes: ['P', 'M', 'G'],
         colors: ['Estampado', 'Roxo'],
+        isBestSeller: false,
         category: 'vestido-curto'
     },
     {
@@ -236,6 +254,7 @@ const productsData = [
         ],
         sizes: ['P', 'M'],
         colors: ['Floral', 'Azul'],
+        isBestSeller: false,
         category: 'vestido-curto'
     },
     {
@@ -249,6 +268,7 @@ const productsData = [
         ],
         sizes: ['M', 'G'],
         colors: ['Estampado', 'Verde'],
+        isBestSeller: false,
         category: 'vestido-curto'
     },
     {
@@ -262,6 +282,7 @@ const productsData = [
         ],
         sizes: ['P', 'M', 'G'],
         colors: ['Estampado', 'Colorido'],
+        isBestSeller: false,
         category: 'vestido-curto'
     },
     {
@@ -275,6 +296,7 @@ const productsData = [
         ],
         sizes: ['P', 'M'],
         colors: ['Floral', 'Branco'],
+        isBestSeller: false,
         category: 'vestido-curto'
     },
     {
@@ -288,6 +310,7 @@ const productsData = [
         ],
         sizes: ['M', 'G'],
         colors: ['Floral', 'Amarelo'],
+        isBestSeller: false,
         category: 'vestido-curto'
     },
     {
@@ -301,6 +324,7 @@ const productsData = [
         ],
         sizes: ['P', 'M', 'G'],
         colors: ['Floral', 'Verde'],
+        isBestSeller: false,
         category: 'vestido-curto'
     },
     {
@@ -310,10 +334,11 @@ const productsData = [
         installments: '4x de R$ 112,25',
         description: 'Versão curta do vestido Rosalia, com ombro só e detalhe de lenço. Uma peça moderna e descontraída para o seu dia a dia.',
         images: [
-            '../assets/imagens/produtos/vestidos-curtos/VESTIDO-OMBRO-SO-ROSALIA-LENCO-S.webp', // Já usado antes, mas como cópia do Vestido Ombro Rosalia
+            '../assets/imagens/produtos/vestidos-curtos/VESTIDO-OMBRO-SO-ROSALIA-LENCO-S.webp',
         ],
         sizes: ['M', 'G', 'GG'],
         colors: ['Estampado', 'Rosa'],
+        isBestSeller: false,
         category: 'vestido-curto'
     },
 
@@ -329,7 +354,8 @@ const productsData = [
         ],
         sizes: ['P', 'M'],
         colors: ['Onça', 'Preto'],
-        category: 'vestido-midi'
+        category: 'vestido-midi',
+        isBestSeller: false
     },
     {
         id: 'vestido-midi-estampado-marcelle',
@@ -338,11 +364,12 @@ const productsData = [
         installments: '5x de R$ 99,60',
         description: 'Vestido midi com estampa Marcelle, que une a versatilidade do comprimento midi com um design moderno. Ideal para diversas ocasiões, proporcionando estilo e conforto.',
         images: [
-            '../assets/imagens/produtos/vestido-midi/VESTIDO-MIDI-MALU.webp', // A imagem alt="Produto 2" estava errada. Ajustado para a imagem correta.
+            '../assets/imagens/produtos/vestido-midi/VESTIDO-MIDI-MALU.webp',
         ],
         sizes: ['M', 'G'],
         colors: ['Estampado', 'Azul'],
-        category: 'vestido-midi'
+        category: 'vestido-midi',
+        isBestSeller: false
     },
     {
         id: 'vestido-midi-amarracoes',
@@ -355,7 +382,8 @@ const productsData = [
         ],
         sizes: ['P', 'M', 'G'],
         colors: ['Verde', 'Branco'],
-        category: 'vestido-midi'
+        category: 'vestido-midi',
+        isBestSeller: false
     },
     {
         id: 'vestido-cropped-flora-abacaxi',
@@ -368,7 +396,8 @@ const productsData = [
         ],
         sizes: ['P', 'M'],
         colors: ['Estampado', 'Amarelo'],
-        category: 'vestido-midi'
+        category: 'vestido-midi',
+        isBestSeller: false
     },
     {
         id: 'vestido-midi-estampado-delicadeza-em-flor',
@@ -381,7 +410,8 @@ const productsData = [
         ],
         sizes: ['P', 'M', 'G'],
         colors: ['Floral', 'Rosa'],
-        category: 'vestido-midi'
+        category: 'vestido-midi',
+        isBestSeller: false
     },
     {
         id: 'vestido-babados-floral-alice',
@@ -394,7 +424,8 @@ const productsData = [
         ],
         sizes: ['M', 'G'],
         colors: ['Floral', 'Azul'],
-        category: 'vestido-midi'
+        category: 'vestido-midi',
+        isBestSeller: false
     },
     {
         id: 'vestido-midi-estampado-brilho-de-banana',
@@ -407,7 +438,8 @@ const productsData = [
         ],
         sizes: ['P', 'M', 'G'],
         colors: ['Estampado', 'Amarelo'],
-        category: 'vestido-midi'
+        category: 'vestido-midi',
+        isBestSeller: false
     },
     {
         id: 'vestido-midi-estampado-antonia',
@@ -420,7 +452,8 @@ const productsData = [
         ],
         sizes: ['M', 'G'],
         colors: ['Estampado', 'Roxo'],
-        category: 'vestido-midi'
+        category: 'vestido-midi',
+        isBestSeller: false
     },
     {
         id: 'vestido-midi-estampado-sonho-guarana',
@@ -433,7 +466,8 @@ const productsData = [
         ],
         sizes: ['P', 'M'],
         colors: ['Estampado', 'Verde'],
-        category: 'vestido-midi'
+        category: 'vestido-midi',
+        isBestSeller: false
     },
     {
         id: 'vestido-manga-estampado-sonho-guarana',
@@ -446,7 +480,8 @@ const productsData = [
         ],
         sizes: ['P', 'M', 'G'],
         colors: ['Estampado', 'Marrom'],
-        category: 'vestido-midi'
+        category: 'vestido-midi',
+        isBestSeller: false
     },
     {
         id: 'vestido-midi-estampado-mari',
@@ -459,7 +494,8 @@ const productsData = [
         ],
         sizes: ['P', 'M'],
         colors: ['Estampado', 'Azul'],
-        category: 'vestido-midi'
+        category: 'vestido-midi',
+        isBestSeller: false
     },
     {
         id: 'vestido-guipure-tropical',
@@ -472,6 +508,7 @@ const productsData = [
         ],
         sizes: ['M', 'G'],
         colors: ['Branco', 'Tropical'],
-        category: 'vestido-midi'
+        category: 'vestido-midi',
+        isBestSeller: false
     },
 ];
