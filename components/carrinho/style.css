@@ -17,7 +17,7 @@ body {
 }
 
 .cart-header {
-  background-color: #d23c84;
+  background-color: #D94389;
   color: white;
   padding: 20px;
   display: flex;
@@ -92,7 +92,7 @@ body {
 }
 
 .checkout-btn {
-  background-color: #d23c84;
+  background-color: #D94389;
   color: white;
   border: none;
   padding: 15px;
