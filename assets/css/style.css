@@ -23,7 +23,8 @@ img, video, iframe, embed, object {
     width: 100%;
     overflow: hidden;
     padding: 0; 
-    margin: 0;  
+    margin: 0;
+    margin-top: -33px;  
 }
 
 .mais-vendidos {
@@ -39,7 +40,6 @@ img, video, iframe, embed, object {
     display: flex;
     justify-content: space-between; /* Coloca o título à esquerda e o botão à direita */
     align-items: center;
-    margin-bottom: 30px; /* Espaço abaixo do cabeçalho da categoria */
     padding: 0 10px; /* Pequeno padding nas laterais (consistente com o products-container) */
     width: 100%; /* Garante que ocupe a largura total disponível */
 }
