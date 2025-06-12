@@ -30,13 +30,6 @@ class AppProductDetail extends HTMLElement {
                             </div>
 
                             <div class="option-group">
-                                <label for="color-select">Cor:</label>
-                                <select id="color-select">
-                                    <option value="">Selecione</option>
-                                </select>
-                            </div>
-
-                            <div class="option-group">
                                 <label for="quantity-input">Quantidade:</label>
                                 <input type="number" id="quantity-input" value="1" min="1">
                             </div>
@@ -97,7 +90,6 @@ class AppProductDetail extends HTMLElement {
         const descriptionEl = this.shadowRoot.querySelector('.product-description p');
         const thumbnailGalleryEl = this.shadowRoot.querySelector('.thumbnail-gallery');
         const sizeSelectEl = this.shadowRoot.querySelector('#size-select');
-        const colorSelectEl = this.shadowRoot.querySelector('#color-select');
 
     
         if (mainImageEl && product.images && product.images.length > 0) {
@@ -148,14 +140,6 @@ class AppProductDetail extends HTMLElement {
             sizeSelectEl.disabled = true;
         }
 
-
-        if (colorSelectEl && product.colors && product.colors.length > 0) {
-            colorSelectEl.innerHTML = '<option value="">Selecione</option>' +
-                product.colors.map(color => `<option value="${color}">${color}</option>`).join('');
-        } else if (colorSelectEl) {
-            colorSelectEl.innerHTML = '<option value="">Não disponível</option>';
-            colorSelectEl.disabled = true;
-        }
     }
 }
 

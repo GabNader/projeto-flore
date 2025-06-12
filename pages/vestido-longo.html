@@ -12,16 +12,30 @@
   <script src="../components/app-header/app-header.js" defer></script>
   <script src="../components/app-menu/app-menu.js" defer></script> 
   <script src="../components/app-product-detail/app-product-detail.js" defer></script>
+  <script src="../components/app-filter/app-filter.js" defer></script>
 </head>
 <body>
   <app-header></app-header>
 
   <app-menu></app-menu>
 
+  <app-filter></app-filter>
+
   <main>
+
     <section class="products-container">
-      <h2 class="section-title">Vestido Longo</h2>
-      
+            <div class="category-header-wrapper">
+                <h2 class="section-title">Vestido Longo</h2> 
+                <button class="open-filter-btn">
+                    <img src="../assets/imagens/svg/filter.svg" alt="Abrir Filtros">
+                </button>
+            </div>
+          
+            <div class="products-grid">
+            
+            </div>
+        </section>
+
       <div class="products-grid">
         <div class="product-card">
           <a href="produto.html?id=vestido-cropped-estampado-lina" class="product-card-link">

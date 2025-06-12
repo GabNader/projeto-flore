@@ -35,6 +35,38 @@ img, video, iframe, embed, object {
     margin-top: 2rem;
 }
 
+.category-header-wrapper {
+    display: flex;
+    justify-content: space-between; /* Coloca o título à esquerda e o botão à direita */
+    align-items: center;
+    margin-bottom: 30px; /* Espaço abaixo do cabeçalho da categoria */
+    padding: 0 10px; /* Pequeno padding nas laterais (consistente com o products-container) */
+    width: 100%; /* Garante que ocupe a largura total disponível */
+}
+
+/* Estilos para o botão de filtro (sem fundo, maior) */
+.open-filter-btn {
+    background: transparent; /* Remove o fundo */
+    border: none; /* Remove a borda */
+    padding: 0; /* Remove o padding padrão */
+    cursor: pointer;
+    display: flex; /* Para alinhar o ícone */
+    align-items: center;
+    justify-content: center; /* Centraliza o ícone se o botão for maior */
+    gap: 8px; /* Espaço entre ícone e texto, se houver */
+    transition: transform 0.2s ease-in-out; /* Adiciona transição para hover */
+}
+
+.open-filter-btn:hover {
+    transform: scale(1.1); /* Um leve aumento no tamanho ao passar o mouse */
+}
+
+.open-filter-btn img {
+    width: 35px; /* Aumentado o tamanho do ícone */
+    height: 35px; /* Aumentado o tamanho do ícone */
+    filter: none; /* Remove qualquer filtro de cor anterior se não quiser */
+}
+
 .products-container {
     width: 95%;
     max-width: 1900px;
