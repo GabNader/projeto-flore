@@ -100,31 +100,57 @@
     color: #333;
 }
 
-/* NOVO ESTILO: Container para as opções de filtro (Tamanho, Cor) */
+/* Container padrão para as opções de filtro */
 .filter-options-grid {
-    display: flex; /* MUDANÇA: Usamos flexbox para flexibilidade */
-    flex-wrap: wrap; /* MUDANÇA: Permite que as pílulas quebrem para a próxima linha */
-    gap: 8px; /* MUDANÇA: Espaço entre as pílulas */
-    margin-top: 5px; /* Ajuste o espaçamento superior */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 5px;
+}
+
+/* Estilo específico para TAMANHO - 2 por linha */
+.filter-group[data-filter-type="sizes"] .filter-options-grid {
+    display: grid;
+    grid-template-columns: repeat(2, max-content); /* Colunas ajustam ao conteúdo */
+    gap: 8px;
+    justify-content: start; /* Alinha à esquerda para não esticar */
+}
+
+/* Estilo específico para PREÇO - 1 por linha, alinhado à esquerda */
+.filter-group[data-filter-type="price"] .filter-options-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinha à esquerda */
+    gap: 8px;
+}
+
+/* Botões de preço com largura fixa (tamanho do maior texto) */
+.filter-group[data-filter-type="price"] .filter-options-grid label {
+    width: 170px; /* Largura fixa baseada no "Acima de R$1000" */
+}
+
+/* Estilo específico para COR - 3 por linha */
+.filter-group[data-filter-type="colors"] .filter-options-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* 3 colunas iguais */
+    gap: 8px;
 }
 
 /* Estiliza cada LABEL como uma pílula/tag clicável */
 .filter-options-grid label {
-    /* Remove o display: flex aqui e use-o no span interno se for necessário alinhar icones*/
-    /* display: flex; /* REMOVIDO PARA ESTILO DE PILULA */
-    align-items: center; /* Alinha o texto verticalmente */
-    justify-content: center; /* Centraliza o texto horizontalmente */
-    padding: 8px 15px; /* MUDANÇA: Padding interno para as pílulas */
+    align-items: center;
+    justify-content: center;
+    padding: 8px 15px;
     border: 1px solid #ccc;
-    border-radius: 20px; /* MUDANÇA: Bordas mais arredondadas para estilo de pílula */
+    border-radius: 4px; /* MUDANÇA: Border radius bem sutil */
     cursor: pointer;
-    font-size: 15px; /* MUDANÇA: Tamanho da fonte ligeiramente maior */
+    font-size: 15px;
     color: #555;
     background-color: #f9f9f9;
     transition: all 0.2s ease;
-    white-space: nowrap; /* Garante que o texto da pílula não quebre */
-    min-width: 40px; /* Largura mínima para pequenas pílulas (P, M) */
-    text-align: center; /* Garante alinhamento central do texto */
+    white-space: nowrap;
+    min-width: 40px;
+    text-align: center;
 }
 
 /* Esconde o checkbox real, mas o mantém funcional */
@@ -137,11 +163,11 @@
 
 /* Estilo para a pílula/tag quando selecionada */
 .filter-options-grid label:has(input[type="checkbox"]:checked) {
-    border-color: #D94389; /* Borda da cor da marca */
-    background-color: #D94389; /* Fundo da cor da marca */
-    color: white; /* MUDANÇA: Texto branco quando selecionado */
+    border-color: #D94389;
+    background-color: #D94389;
+    color: white;
     font-weight: bold;
-    box-shadow: 0 2px 5px rgba(217, 67, 137, 0.3); /* Sombra sutil para destaque */
+    box-shadow: 0 2px 5px rgba(217, 67, 137, 0.3);
 }
 
 /* Estilo de hover para as pílulas */
@@ -153,24 +179,37 @@
 /* Media query para 1 coluna em mobile muito pequeno, se necessário */
 @media (max-width: 420px) {
     .filter-sidebar {
-        width: 90%; /* Ocupa 90% da largura da tela */
-        right: -90%; /* Esconde para fora */
-        transform: translateX(-90%); /* Move para dentro */
+        width: 90%;
+        right: -90%;
+        transform: translateX(-90%);
     }
     .filter-sections {
-        padding-right: 0; /* Remove padding lateral para telas muito pequenas */
+        padding-right: 0;
     }
+    
+    /* Ajustes para mobile - todos ficam em coluna única */
+    .filter-group[data-filter-type="sizes"] .filter-options-grid {
+        grid-template-columns: repeat(2, max-content); /* Mantém tamanho natural no mobile */
+        justify-content: start;
+    }
+    .filter-group[data-filter-type="colors"] .filter-options-grid {
+        grid-template-columns: 1fr 1fr; /* 2 colunas no mobile */
+    }
+    
+    /* Ajusta largura dos botões de preço no mobile */
+    .filter-group[data-filter-type="price"] .filter-options-grid label {
+        width: 150px; /* Largura menor para mobile */
+    }
+    
     .filter-options-grid {
-        justify-content: flex-start; /* Alinha as pílulas à esquerda */
-        gap: 6px; /* Reduz um pouco o gap */
+        gap: 6px;
     }
     .filter-options-grid label {
-        padding: 6px 12px; /* Reduz padding */
+        padding: 6px 12px;
         font-size: 14px;
-        min-width: unset; /* Permite encolher mais livremente */
+        min-width: unset;
     }
 }
-
 
 .filter-actions {
     border-top: 1px solid #eee;

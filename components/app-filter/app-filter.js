@@ -44,6 +44,7 @@ class AppFilter extends HTMLElement {
                             <label><input type="checkbox" name="color" value="Vermelho"><span>Vermelho</span></label>
                             <label><input type="checkbox" name="color" value="Azul"><span>Azul</span></label>
                             <label><input type="checkbox" name="color" value="Preto"><span>Preto</span></label>
+                            <label><input type="checkbox" name="color" value="Lilás"><span>Lilás</span></label>
                             <label><input type="checkbox" name="color" value="Branco"><span>Branco</span></label>
                             <label><input type="checkbox" name="color" value="Verde"><span>Verde</span></label>
                             <label><input type="checkbox" name="color" value="Amarelo"><span>Amarelo</span></label>
