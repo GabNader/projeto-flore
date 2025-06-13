@@ -20,8 +20,8 @@
 .filter-sidebar {
     position: fixed;
     top: 0;
-    right: -380px; /* MUDANÇA: Largura do painel de filtro */
-    width: 380px; /* MUDANÇA: Nova largura do componente de filtro */
+    right: -380px; /* Inicia fora da tela */
+    width: 380px;
     height: 100vh;
     background-color: #fff;
     padding: 20px;
@@ -34,7 +34,7 @@
 }
 
 .filter-sidebar.active {
-    transform: translateX(-380px); /* MUDANÇA: Move para aparecer (mesma largura) */
+    transform: translateX(-380px); /* Move para aparecer */
 }
 
 .filter-overlay.active {
@@ -44,7 +44,8 @@
 
 .filter-header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    position: relative;
     align-items: center;
     margin-bottom: 20px;
     padding-bottom: 10px;
@@ -62,6 +63,8 @@
     border: none;
     padding: 0;
     cursor: pointer;
+    position: absolute;
+    left: 0;
 }
 
 .close-filter-btn img {
@@ -76,6 +79,8 @@
     font-size: 16px;
     cursor: pointer;
     font-weight: bold;
+    position: absolute;
+    right: 0;
 }
 
 .filter-sections {
@@ -111,28 +116,28 @@
 /* Estilo específico para TAMANHO - 2 por linha */
 .filter-group[data-filter-type="sizes"] .filter-options-grid {
     display: grid;
-    grid-template-columns: repeat(2, max-content); /* Colunas ajustam ao conteúdo */
+    grid-template-columns: repeat(2, max-content);
     gap: 8px;
-    justify-content: start; /* Alinha à esquerda para não esticar */
+    justify-content: start;
 }
 
 /* Estilo específico para PREÇO - 1 por linha, alinhado à esquerda */
 .filter-group[data-filter-type="price"] .filter-options-grid {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Alinha à esquerda */
+    align-items: flex-start;
     gap: 8px;
 }
 
-/* Botões de preço com largura fixa (tamanho do maior texto) */
+/* Botões de preço com largura fixa */
 .filter-group[data-filter-type="price"] .filter-options-grid label {
-    width: 170px; /* Largura fixa baseada no "Acima de R$1000" */
+    width: 170px;
 }
 
 /* Estilo específico para COR - 3 por linha */
 .filter-group[data-filter-type="colors"] .filter-options-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* 3 colunas iguais */
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 8px;
 }
 
@@ -142,7 +147,7 @@
     justify-content: center;
     padding: 8px 15px;
     border: 1px solid #ccc;
-    border-radius: 4px; /* MUDANÇA: Border radius bem sutil */
+    border-radius: 4px;
     cursor: pointer;
     font-size: 15px;
     color: #555;
@@ -176,29 +181,33 @@
     border-color: #aaa;
 }
 
-/* Media query para 1 coluna em mobile muito pequeno, se necessário */
+/* Media query para mobile */
 @media (max-width: 420px) {
     .filter-sidebar {
         width: 90%;
-        right: -90%;
-        transform: translateX(-90%);
+        right: -90%; /* MUDANÇA: Inicia completamente fora da tela */
     }
+    
+    .filter-sidebar.active {
+        transform: translateX(-100%); /* MUDANÇA: Move 100% para aparecer */
+    }
+    
     .filter-sections {
         padding-right: 0;
     }
     
     /* Ajustes para mobile - todos ficam em coluna única */
     .filter-group[data-filter-type="sizes"] .filter-options-grid {
-        grid-template-columns: repeat(2, max-content); /* Mantém tamanho natural no mobile */
+        grid-template-columns: repeat(2, max-content);
         justify-content: start;
     }
     .filter-group[data-filter-type="colors"] .filter-options-grid {
-        grid-template-columns: 1fr 1fr; /* 2 colunas no mobile */
+        grid-template-columns: 1fr 1fr;
     }
     
     /* Ajusta largura dos botões de preço no mobile */
     .filter-group[data-filter-type="price"] .filter-options-grid label {
-        width: 150px; /* Largura menor para mobile */
+        width: 150px;
     }
     
     .filter-options-grid {
@@ -224,11 +233,13 @@
     color: white;
     border: none;
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 28px;
+    font-family: 'Marvel', sans-serif;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 .apply-filters-btn:hover {
     background-color: #c03d7c;
+    
 }

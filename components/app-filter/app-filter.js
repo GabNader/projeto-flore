@@ -60,7 +60,7 @@ class AppFilter extends HTMLElement {
                     </div>
                 </div>
                 <div class="filter-actions">
-                    <button class="apply-filters-btn">Aplicar Filtros</button>
+                    <button class="apply-filters-btn">APLICAR FILTROS</button>
                 </div>
             </aside>
         `;
@@ -115,7 +115,6 @@ class AppFilter extends HTMLElement {
             filterSidebar.classList.add('active');
             filterOverlay.classList.add('active');
             window.dispatchEvent(new CustomEvent('closeMenu', { bubbles: true, composed: true }));
-            // window.dispatchEvent(new CustomEvent('closeCart', { bubbles: true, composed: true })); // Se houver carrinho
         });
     }
 

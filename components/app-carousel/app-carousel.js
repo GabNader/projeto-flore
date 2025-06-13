@@ -5,7 +5,6 @@ class AppCarousel extends HTMLElement {
     super();
     this.attachShadow({ mode: 'open' });
 
-    // HTML do carrossel: removemos os product-cards, eles serão renderizados por JS
     this.shadowRoot.innerHTML = `
       <link rel="stylesheet" href="../components/app-carousel/app-carousel.css">
       <div class="carousel-container">
@@ -29,17 +28,13 @@ class AppCarousel extends HTMLElement {
     this.nextButton = this.shadowRoot.querySelector('.carousel-button-next');
     this.prevButton = this.shadowRoot.querySelector('.carousel-button-prev');
 
-    // Chamada inicial para renderizar os best sellers
     this._renderBestSellers();
 
-    // Adiciona event listeners para navegação e resize
     if (this.nextButton) this.nextButton.addEventListener('click', this._moveNext.bind(this));
     if (this.prevButton) this.prevButton.addEventListener('click', this._movePrev.bind(this));
     
     window.addEventListener('resize', this._calculateCarouselDimensions.bind(this));
 
-    // NÃO CHAMAMOS calculateCarouselDimensions() ou updateButtonVisibility() aqui diretamente,
-    // pois eles serão chamados após o carregamento das imagens em _renderBestSellers.
   }
 
   
@@ -53,11 +48,11 @@ class AppCarousel extends HTMLElement {
     const bestSellers = window.productsData.filter(p => p.isBestSeller === true);
     const productsToDisplay = bestSellers.slice(0, 15);
 
-    this.track.innerHTML = ''; // Limpa a trilha
+    this.track.innerHTML = ''; 
 
     if (productsToDisplay.length === 0) {
       this.track.innerHTML = '<p style="text-align: center; width: 100%; margin: 20px 0;">Nenhum produto "Mais Vendido" encontrado.</p>';
-      this._calculateCarouselDimensions(); // Para esconder botões
+      this._calculateCarouselDimensions();
       return;
     }
 
