@@ -8,7 +8,8 @@
   <link rel="stylesheet" href="../assets/css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Marvel:wght@400&display=swap" rel="stylesheet">
   
-  <script src="../assets/js/products.js" defer></script> 
+  <script src="../assets/js/products.js" defer></script>
+  <script src="../assets/js/category-page.js" defer></script> 
   <script src="../components/app-header/app-header.js" defer></script>
   <script src="../components/app-menu/app-menu.js" defer></script> 
   <script src="../components/app-product-detail/app-product-detail.js" defer></script>
@@ -25,163 +26,16 @@
 
     <section class="products-container">
             <div class="category-header-wrapper">
-                <h2 class="section-title">Vestido Longo</h2> 
+                <h2 class="section-title" data-category="vestido-longo">Vestido Longo</h2> 
                 <button class="open-filter-btn">
                     <img src="../assets/imagens/svg/filter.svg" alt="Abrir Filtros">
                 </button>
             </div>
-          
-            <div class="products-grid">
             
+            <div class="products-grid" id="product-list-grid">
             </div>
-        </section>
+          </section>
 
-      <div class="products-grid">
-        <div class="product-card">
-          <a href="produto.html?id=vestido-cropped-estampado-lina" class="product-card-link">
-            <div class="product-image">
-              <img src="../assets/imagens/produtos/vestido-longo/VESTIDO-CROPPED-LINA.webp" alt="Vestido Cropped Estampado Lina">
-            </div>
-            <div class="product-info">
-              <h2 class="product-title">Vestido Cropped Estampado Lina</h2>
-              <span class="product-price">R$ 449,00 ou 5x de R$ 112,25</span>
-            </div>
-          </a>
-        </div>
-        
-        <div class="product-card">
-          <a href="produto.html?id=vestido-estampado-maxi-coracao" class="product-card-link">
-            <div class="product-image">
-              <img src="../assets/imagens/produtos/vestido-longo/VESTIDO-MAXI-CORACAO.webp" alt="Vestido Estampado Maxi Coração">
-            </div>
-            <div class="product-info">
-              <h2 class="product-title">Vestido Estampado Maxi Coração</h2>
-              <span class="product-price">R$ 1.298 ou 6x de R$ 216,33</span>
-            </div>
-          </a>
-        </div>
-
-        <div class="product-card">
-          <a href="produto.html?id=vestido-artesanal-bordado-coracoes" class="product-card-link">
-            <div class="product-image">
-              <img src="../assets/imagens/produtos/vestido-longo/VESTIDO-ARTESANAL-BORDADO-CORACOES.webp" alt="Vestido Artesanal Bordado Corações">
-            </div>
-            <div class="product-info">
-              <h2 class="product-title">Vestido Artesanal Bordado Corações</h2>
-              <span class="product-price">R$ 1.298 ou 6x de R$ 216,33</span>
-            </div>
-          </a>
-        </div>
-
-        <div class="product-card">
-          <a href="produto.html?id=vestido-longo-estampado-relicario-tropical" class="product-card-link">
-            <div class="product-image">
-              <img src="../assets/imagens/produtos/vestido-longo/VESTIDO-LONGO-COELHOS.webp" alt="Vestido Longo Estampado Relicário Tropical">
-            </div>
-            <div class="product-info">
-              <h2 class="product-title">Vestido Longo Estampado Relicário Tropical</h2>
-              <span class="product-price">R$ 579,00 ou 5x de R$115,80</span>
-            </div>
-          </a>
-        </div>
-
-        <div class="product-card">
-          <a href="produto.html?id=vestido-estampado-marcelle" class="product-card-link">
-            <div class="product-image">
-              <img src="../assets/imagens/produtos/vestido-longo/VESTIDO-MARCELLE.webp" alt="Vestido Estampado Marcelle">
-            </div>
-            <div class="product-info">
-              <h2 class="product-title">Vestido Estampado Marcelle</h2>
-              <span class="product-price">R$ 798,00 ou 6x de R$ 133,00</span>
-            </div>
-          </a>
-        </div>
-
-        <div class="product-card">
-          <a href="produto.html?id=vestido-mangas-estampado-coracao" class="product-card-link">
-            <div class="product-image">
-              <img src="../assets/imagens/produtos/vestido-longo/VESTIDO-MANGAS-CORACAO.webp" alt="Vestido Mangas Estampado Coração">
-            </div>
-            <div class="product-info">
-              <h2 class="product-title">Vestido Mangas Estampado Coração</h2>
-              <span class="product-price">R$ 698,00 ou 6x de R$ 116,33</span>
-            </div>
-          </a>
-        </div>
-                
-        <div class="product-card">
-          <a href="produto.html?id=vestido-longo-manga-estampado-beatrice-floral" class="product-card-link">
-            <div class="product-image">
-              <img src="../assets/imagens/produtos/vestido-longo/VESTIDO-LONGO-MG-BEATRICE-FLORAL.webp" alt="Vestido Longo Manga Estampado Beatrice Floral">
-            </div>
-            <div class="product-info">
-              <h2 class="product-title">Vestido Longo Manga Estampado Beatrice Floral</h2>
-              <span class="product-price">R$ 649,00 ou 6x de R$ 108,16</span>
-            </div>
-          </a>
-        </div>
-
-        <div class="product-card">
-          <a href="produto.html?id=vestido-cropped-balone-estampado-cogul" class="product-card-link">
-            <div class="product-image">
-              <img src="../assets/imagens/produtos/vestido-longo/VESTIDO-CROPPED-BALONE-COGU.webp" alt="Vestido Cropped Balonê Estampado Cogul">
-            </div>
-            <div class="product-info">
-              <h2 class="product-title">Vestido Cropped Balonê Estampado Cogul</h2>
-              <span class="product-price">R$ 549,00 ou 5x de R$ 109,80</span>
-            </div>
-          </a>
-        </div>       
-        
-        <div class="product-card">
-          <a href="produto.html?id=vestido-balone-xadrez-junino" class="product-card-link">
-            <div class="product-image">
-              <img src="../assets/imagens/produtos/vestido-longo/VESTIDO-BALONE-XADREZ-JUNINO-E.webp" alt="Vestido Balonê Xadrez Junino">
-            </div>
-            <div class="product-info">
-              <h2 class="product-title">Vestido Balonê Xadrez Junino</h2>
-              <span class="product-price">R$ 598,00 ou 6x de R$ 99,66</span>
-            </div>
-          </a>
-        </div>        
-
-        <div class="product-card">
-          <a href="produto.html?id=vestido-languido-estampado-floral-arabasque" class="product-card-link">
-            <div class="product-image">
-              <img src="../assets/imagens/produtos/vestido-longo/VESTIDO-LANGUIDO-FLORAL-ARABASQUE.webp" alt="Vestido Languido Estampado Floral Arabasque">
-            </div>
-            <div class="product-info">
-              <h2 class="product-title">Vestido Languido Estampado Floral Arabasque</h2>
-              <span class="product-price">R$ 498,00 ou 5x de R$ 99,60</span>
-            </div>
-          </a>
-        </div>        
-    
-        <div class="product-card">
-          <a href="produto.html?id=vestido-cropped-estampado-jardim-maravilhoso" class="product-card-link">
-            <div class="product-image">
-              <img src="../assets/imagens/produtos/vestido-longo/VESTIDO-CROPPED-JARDIM-MARAVILHOSO.webp" alt="Vestido Cropped Estampado Jardim Maravilhoso">
-            </div>
-            <div class="product-info">
-              <h2 class="product-title">Vestido Cropped Estampado Jardim Maravilhoso</h2>
-              <span class="product-price">R$ 449,00 ou 4x de R$ 112,25</span>
-            </div>
-          </a>
-        </div>        
-    
-        <div class="product-card">
-          <a href="produto.html?id=vestido-longo-estampado-turmalina" class="product-card-link">
-            <div class="product-image">
-              <img src="../assets/imagens/produtos/vestido-longo/VESTIDO-LONGO-TURMALINA.webp" alt="Vestido Longo Estampado Turmalina">
-            </div>
-            <div class="product-info">
-              <h2 class="product-title">Vestido Longo Estampado Turmalina</h2>
-              <span class="product-price">R$ 998,00 ou 6x de R$ 166,33</span>
-            </div>
-          </a>
-        </div>        
-      </div>
-    </section>
   </main>
 </body>
 <script src="../assets/js/script.js" defer></script>

@@ -171,7 +171,6 @@ window.productsData = [
         isBestSeller: true
     },
 
-    // --- VESTIDO CURTO (primeiros 3 para completar 15) ---
     {
         id: 'vestido-curto-estampado-floral-tati',
         name: 'Vestido Curto Estampado Floral Tati',
@@ -180,11 +179,12 @@ window.productsData = [
         description: 'Um vestido curto com estampa floral delicada e design leve, ideal para o dia a dia e passeios. O corte Tati proporciona um caimento confortável e charmoso.',
         images: [
             '../assets/imagens/produtos/vestidos-curtos/VESTIDO-CURTO-FLORAL-TATI.webp',
+            '../assets/imagens/produtos/vestidos-curtos/VESTIDO-CURTO-FLORAL-TATI2.webp'
         ],
         sizes: ['P', 'M', 'G'],
-        colors: ['Floral', 'Amarelo'],
+        colors: ['Floral', 'Azul'],
         category: 'vestido-curto',
-        isBestSeller: true // Este é o 13º best seller
+        isBestSeller: true
     },
     {
         id: 'vestido-curto-transpasse-floral-belle',
@@ -196,9 +196,9 @@ window.productsData = [
             '../assets/imagens/produtos/vestidos-curtos/VESTIDO-CURTO-TRANSPASSE-FLORAL-BELLE.webp',
         ],
         sizes: ['P', 'M', 'G'],
-        colors: ['Floral', 'Rosa'],
+        colors: ['Floral', 'Preto', 'Colorido'],
         category: 'vestido-curto',
-        isBestSeller: true // Este é o 14º best seller
+        isBestSeller: true
     },
     {
         id: 'vestido-curto-estampado-francisca',
