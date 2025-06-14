@@ -376,9 +376,9 @@ window.productsData = [
         name: 'Vestido Midi Amarrações',
         price: 579.00,
         installments: '5x de R$ 115,80',
-        description: 'Vestido midi com detalhes de amarrações, que permite ajustar o caimento e criar diferentes estilos. Uma peça versátil e moderna para o seu guarda-roupa.',
+        description: 'vestido midi estampado floral belle. com alças delicadas e decote quadrado, é fluido e confortável, perfeito para ocasiões casuais ou um passeio descontraído. confeccionado em tecido leve e respirável, seus detalhes são pensados para elevar qualquer look.',
         images: [
-            '../assets/imagens/produtos/vestido-midi/VESTIDO-MIDI-AMARRACOES.webp',
+            '../assets\imagens\produtos\vestido-midi\VESTIDO-MIDI-FLORAL-BELLE.webp',
         ],
         sizes: ['P', 'M', 'G'],
         colors: ['Verde', 'Branco'],
