@@ -4,13 +4,13 @@ html, body {
     width: 100%;
     overflow-x: hidden;
     min-width: 0;
+    padding-top: 40px;
 }
 
 body {
     font-family: 'Marvel', sans-serif;
     font-size: 20px;
     overflow-x: hidden;
-    padding-top: 33px;
 }
 
 img, video, iframe, embed, object {
@@ -24,7 +24,7 @@ img, video, iframe, embed, object {
     overflow: hidden;
     padding: 0; 
     margin: 0;
-    margin-top: -33px;  
+    margin-top: -90px;  
 }
 
 .mais-vendidos {
@@ -42,6 +42,7 @@ img, video, iframe, embed, object {
     align-items: center;
     padding: 0 10px; /* Pequeno padding nas laterais (consistente com o products-container) */
     width: 100%; /* Garante que ocupe a largura total disponível */
+    margin-top: -50px;
 }
 
 /* Estilos para o botão de filtro (sem fundo, maior) */

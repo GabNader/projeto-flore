@@ -1,0 +1,63 @@
+/* components/app-breadcrumb/app-breadcrumb.css */
+
+:host {
+    display: block;
+    padding: 15px 0; /* Padding superior e inferior */
+    font-family: 'Marvel', sans-serif;
+    font-size: 16px;
+    color: #666;
+}
+
+.breadcrumb-nav {
+    max-width: 1200px; /* Largura máxima, alinhado com o conteúdo principal */
+    margin: 0 auto;
+    padding: 0 15px; /* Padding lateral */
+}
+
+.breadcrumb-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Permite quebrar se o caminho for muito longo */
+    align-items: center;
+}
+
+.breadcrumb-item {
+    display: flex;
+    align-items: center;
+    white-space: nowrap; /* Evita quebras de linha dentro do item */
+}
+
+.breadcrumb-item a {
+    text-decoration: none;
+    color: #D94389; /* Sua cor primária */
+    transition: color 0.2s ease;
+}
+
+.breadcrumb-item a:hover {
+    color: #e05e9e; /* Tom mais claro no hover */
+}
+
+.breadcrumb-item span {
+    color: #333; /* Cor para o texto do item ativo/último */
+    font-weight: bold;
+}
+
+.separator {
+    margin: 0 8px; /* Espaço ao redor do separador */
+    color: #999; /* Cor do separador */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .breadcrumb-nav {
+        padding: 0 10px; /* Padding lateral menor em mobile */
+    }
+    .breadcrumb-item {
+        font-size: 14px; /* Fonte menor em mobile */
+    }
+    .separator {
+        margin: 0 5px; /* Espaço menor para o separador */
+    }
+}
