@@ -35,7 +35,7 @@ window.productsData = [
         name: 'Vestido Longo Estampado Coelhos',
         price: 1298.00,
         installments: '6x de R$ 216,33',
-        description: 'Um vestido longo artesanal deslumbrante, perfeito para ocasiões especiais. Apresenta delicados bordados de corações por toda a peça, um tecido leve e caimento elegante. Combine com acessórios discretos para um look sofisticado.',
+        description: 'Vestido longo estampado coelhos. Apresenta decote redondo com amarração sutil, mangas curtas bufantes que trazem um toque especial e caimento fluido, garantindo conforto e movimento.',
         images: [
             '../assets/imagens/produtos/vestido-longo/VESTIDO-LONGO-COELHOS.webp',
         ],
@@ -49,7 +49,7 @@ window.productsData = [
         name: 'Vestido Artesanal Bordado Corações',
         price: 579.00,
         installments: '5x de R$115,80',
-        description: 'Com estampa tropical que remete a relicários antigos, este vestido longo é uma peça única e cheia de charme. Ideal para o verão, oferece leveza e um caimento perfeito.',
+        description: 'Vestido artesanal bordado corações. Sem alças, o design abraça simplicidade e criatividade, com bordados delicados de corações que adicionam um toque especial à peça. O corte fluido e a barra assimétrica criam movimento e leveza',
         images: [
             '../assets/imagens/produtos/vestido-longo/VESTIDO-ARTESANAL-BORDADO-CORACOES.webp',
         ],
@@ -328,8 +328,8 @@ window.productsData = [
         category: 'vestido-curto'
     },
     {
-        id: 'vestido-ombro-rosalia-lenco-s',
-        name: 'Vestido Ombro Rosalia Lenco S',
+        id: 'vestido-ombro-rosalia-lenco',
+        name: 'Vestido Ombro Rosalia LenÇO',
         price: 449.00,
         installments: '4x de R$ 112,25',
         description: 'Versão curta do vestido Rosalia, com ombro só e detalhe de lenço. Uma peça moderna e descontraída para o seu dia a dia.',
