@@ -4,7 +4,7 @@ ESTRUTURA:
 
 assets: recursos de mídia, bem como css e javascript geral;
 possui uma pasta css para o style.css geral;
-uma pasta js com o script.js geral);
+uma pasta js com o script.js geral;
 uma pasta imagens, separada em favicon, svg, produtos.
 
 pages: aqui temos os arquivos HTML de cada página, separado por pastas. além do style.CSS especifico de cada página.

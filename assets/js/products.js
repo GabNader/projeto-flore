@@ -12,7 +12,7 @@ window.productsData = [
             '../assets/imagens/produtos/vestido-longo/VESTIDO-CROPPED-LINA.webp',
         ],
         sizes: ['P', 'M', 'G'],
-        colors: ['Verde', 'Estampado', 'Branco'],
+        colors: ['Verde', 'Estampado'],
         category: 'vestido-longo',
         isBestSeller: true
     },
@@ -25,35 +25,35 @@ window.productsData = [
         images: [
             '../assets/imagens/produtos/vestido-longo/VESTIDO-MAXI-CORACAO.webp',
         ],
-        sizes: ['P', 'M', 'G', 'GG'],
-        colors: ['Preto', 'Estampado'],
+        sizes: ['P', 'M', 'G'],
+        colors: ['Vermelho', 'Estampado'],
+        category: 'vestido-longo',
+        isBestSeller: true
+    },
+    {
+        id: 'vestido-longo-coelhos',
+        name: 'Vestido Longo Estampado Coelhos',
+        price: 1298.00,
+        installments: '6x de R$ 216,33',
+        description: 'Vestido longo estampado coelhos. Apresenta decote redondo com amarração sutil, mangas curtas bufantes que trazem um toque especial e caimento fluido, garantindo conforto e movimento.',
+        images: [
+            '../assets/imagens/produtos/vestido-longo/VESTIDO-LONGO-COELHOS.webp',
+        ],
+        sizes: ['P', 'M', 'G'],
+        colors: ['Vermelho', 'Colorido', 'Estampado'],
         category: 'vestido-longo',
         isBestSeller: true
     },
     {
         id: 'vestido-artesanal-bordado-coracoes',
         name: 'Vestido Artesanal Bordado Corações',
-        price: 1298.00,
-        installments: '6x de R$ 216,33',
-        description: 'Um vestido longo artesanal deslumbrante, perfeito para ocasiões especiais. Apresenta delicados bordados de corações por toda a peça, um tecido leve e caimento elegante. Combine com acessórios discretos para um look sofisticado.',
-        images: [
-            '../assets/imagens/produtos/vestido-longo/VESTIDO-LONGO-COELHOS.webp',
-        ],
-        sizes: ['M', 'G', 'GG'],
-        colors: ['Branco', 'Rosa'],
-        category: 'vestido-longo',
-        isBestSeller: true
-    },
-    {
-        id: 'vestido-longo-estampado-relicario-tropical',
-        name: 'Vestido Longo Estampado Relicário Tropical',
         price: 579.00,
         installments: '5x de R$115,80',
-        description: 'Com estampa tropical que remete a relicários antigos, este vestido longo é uma peça única e cheia de charme. Ideal para o verão, oferece leveza e um caimento perfeito.',
+        description: 'Vestido artesanal bordado corações. Sem alças, o design abraça simplicidade e criatividade, com bordados delicados de corações que adicionam um toque especial à peça. O corte fluido e a barra assimétrica criam movimento e leveza',
         images: [
             '../assets/imagens/produtos/vestido-longo/VESTIDO-ARTESANAL-BORDADO-CORACOES.webp',
         ],
-        sizes: ['P', 'M'],
+        sizes: ['P', 'M', 'G'],
         colors: ['Estampado', 'Azul'],
         category: 'vestido-longo',
         isBestSeller: true
@@ -68,7 +68,7 @@ window.productsData = [
             '../assets/imagens/produtos/vestido-longo/VESTIDO-MARCELLE.webp',
         ],
         sizes: ['P', 'M', 'G'],
-        colors: ['Roxo', 'Estampado'],
+        colors: ['Preto', 'Estampado'],
         category: 'vestido-longo',
         isBestSeller: true
     },
@@ -81,8 +81,8 @@ window.productsData = [
         images: [
             '../assets/imagens/produtos/vestido-longo/VESTIDO-MANGAS-CORACAO.webp',
         ],
-        sizes: ['P', 'M'],
-        colors: ['Vermelho', 'Estampado'],
+        sizes: ['P', 'M', 'G'],
+        colors: ['Vermelho', 'Branco', 'Estampado'],
         category: 'vestido-longo',
         isBestSeller: true
     },
@@ -95,8 +95,8 @@ window.productsData = [
         images: [
             '../assets/imagens/produtos/vestido-longo/VESTIDO-LONGO-MG-BEATRICE-FLORAL.webp',
         ],
-        sizes: ['M', 'G'],
-        colors: ['Floral', 'Branco'],
+        sizes: ['P', 'M', 'G'],
+        colors: ['Floral', 'Verde' ,'Estampado'],
         category: 'vestido-longo',
         isBestSeller: true
     },
@@ -110,7 +110,7 @@ window.productsData = [
             '../assets/imagens/produtos/vestido-longo/VESTIDO-CROPPED-BALONE-COGU.webp',
         ],
         sizes: ['P', 'M', 'G'],
-        colors: ['Estampado', 'Amarelo'],
+        colors: ['Estampado', 'Branco'],
         category: 'vestido-longo',
         isBestSeller: true
     },
@@ -123,8 +123,8 @@ window.productsData = [
         images: [
             '../assets/imagens/produtos/vestido-longo/VESTIDO-BALONE-XADREZ-JUNINO-E.webp',
         ],
-        sizes: ['G', 'GG'],
-        colors: ['Xadrez', 'Colorido'],
+        sizes: ['P', 'M', 'G'],
+        colors: ['Xadrez', 'Vermelho'],
         category: 'vestido-longo',
         isBestSeller: true
     },
@@ -137,8 +137,8 @@ window.productsData = [
         images: [
             '../assets/imagens/produtos/vestido-longo/VESTIDO-LANGUIDO-FLORAL-ARABASQUE.webp',
         ],
-        sizes: ['P', 'M'],
-        colors: ['Floral', 'Rosa'],
+        sizes: ['P', 'M', 'G'],
+        colors: ['Floral', 'Branco', 'Estampado'],
         category: 'vestido-longo',
         isBestSeller: true
     },
@@ -151,8 +151,8 @@ window.productsData = [
         images: [
             '../assets/imagens/produtos/vestido-longo/VESTIDO-CROPPED-JARDIM-MARAVILHOSO.webp',
         ],
-        sizes: ['P', 'M'],
-        colors: ['Estampado', 'Verde'],
+        sizes: ['P', 'M', 'G'],
+        colors: ['Estampado', 'Preto', 'Floral'],
         category: 'vestido-longo',
         isBestSeller: true
     },
@@ -165,12 +165,12 @@ window.productsData = [
         images: [
             '../assets/imagens/produtos/vestido-longo/VESTIDO-LONGO-TURMALINA.webp',
         ],
-        sizes: ['M', 'G', 'GG'],
-        colors: ['Colorido', 'Azul'],
+        sizes: ['P', 'M', 'G'],
+        colors: ['Colorido', 'Estampado'],
         category: 'vestido-longo',
         isBestSeller: true
     },
-
+    // --- Vestidos Curtos ---
     {
         id: 'vestido-curto-estampado-floral-tati',
         name: 'Vestido Curto Estampado Floral Tati',
@@ -196,7 +196,7 @@ window.productsData = [
             '../assets/imagens/produtos/vestidos-curtos/VESTIDO-CURTO-TRANSPASSE-FLORAL-BELLE.webp',
         ],
         sizes: ['P', 'M', 'G'],
-        colors: ['Floral', 'Preto', 'Colorido'],
+        colors: ['Floral', 'Preto', 'Colorido', 'Estampado'],
         category: 'vestido-curto',
         isBestSeller: true
     },
@@ -209,8 +209,8 @@ window.productsData = [
         images: [
             '../assets/imagens/produtos/vestidos-curtos/VESTIDO-CURTO-FRANCISCA-S.webp',
         ],
-        sizes: ['M', 'G'],
-        colors: ['Estampado', 'Laranja'],
+        sizes: ['P', 'M', 'G'],
+        colors: ['Estampado', 'Branco', 'Floral'],
         category: 'vestido-curto',
         isBestSeller: true // Este é o 15º best seller
     },
@@ -224,8 +224,8 @@ window.productsData = [
         images: [
             '../assets/imagens/produtos/vestidos-curtos/VESTIDO-CURTO-JARDIM-FLORIDO.webp',
         ],
-        sizes: ['P', 'M'],
-        colors: ['Floral', 'Verde'],
+        sizes: ['P', 'M', 'G'],
+        colors: ['Floral', 'Verde', 'Estampado', 'Preto'],
         isBestSeller: false,
         category: 'vestido-curto'
     },
@@ -239,7 +239,7 @@ window.productsData = [
             '../assets/imagens/produtos/vestidos-curtos/VESTIDO-CURTO-MARCELLE.webp',
         ],
         sizes: ['P', 'M', 'G'],
-        colors: ['Estampado', 'Roxo'],
+        colors: ['Estampado', 'Preto', 'Floral', 'Verde'],
         isBestSeller: false,
         category: 'vestido-curto'
     },
@@ -252,8 +252,8 @@ window.productsData = [
         images: [
             '../assets/imagens/produtos/vestidos-curtos/VESTIDO-ALCA-LENCO-JARDIM-REAL.webp',
         ],
-        sizes: ['P', 'M'],
-        colors: ['Floral', 'Azul'],
+        sizes: ['P', 'M', 'G'],
+        colors: ['Floral', 'Preto', 'Estampado'],
         isBestSeller: false,
         category: 'vestido-curto'
     },
@@ -266,8 +266,8 @@ window.productsData = [
         images: [
             '../assets/imagens/produtos/vestidos-curtos/VESTIDO-CURTO-MANGA-COQUEIRADA.webp',
         ],
-        sizes: ['M', 'G'],
-        colors: ['Estampado', 'Verde'],
+        sizes: ['P', 'M', 'G'],
+        colors: ['Estampado', 'Preto', 'Branco'],
         isBestSeller: false,
         category: 'vestido-curto'
     },
@@ -281,7 +281,7 @@ window.productsData = [
             '../assets/imagens/produtos/vestidos-curtos/VESTIDO-CURTO-TROPICALIA.webp',
         ],
         sizes: ['P', 'M', 'G'],
-        colors: ['Estampado', 'Colorido'],
+        colors: ['Estampado', 'Colorido', 'Amarelo', 'Florido'],
         isBestSeller: false,
         category: 'vestido-curto'
     },
@@ -294,8 +294,8 @@ window.productsData = [
         images: [
             '../assets/imagens/produtos/vestidos-curtos/VESTIDO-CURTO-FLORAL-ARABESQUE.webp',
         ],
-        sizes: ['P', 'M'],
-        colors: ['Floral', 'Branco'],
+        sizes: ['P', 'M', 'G'],
+        colors: ['Floral', 'Branco', 'Verde', 'Estampado'],
         isBestSeller: false,
         category: 'vestido-curto'
     },
@@ -308,8 +308,8 @@ window.productsData = [
         images: [
             '../assets/imagens/produtos/vestidos-curtos/VESTIDO-CURTO-JARDIM-CHINTZ.webp',
         ],
-        sizes: ['M', 'G'],
-        colors: ['Floral', 'Amarelo'],
+        sizes: ['P', 'M', 'G'],
+        colors: ['Floral', 'Estampado', 'Preto', 'Azul'],
         isBestSeller: false,
         category: 'vestido-curto'
     },
@@ -323,21 +323,21 @@ window.productsData = [
             '../assets/imagens/produtos/vestidos-curtos/VESTIDO-CURTO-LENCO-JARDIM-REAL.webp',
         ],
         sizes: ['P', 'M', 'G'],
-        colors: ['Floral', 'Verde'],
+        colors: ['Floral', 'Verde', 'Estampado'],
         isBestSeller: false,
         category: 'vestido-curto'
     },
     {
-        id: 'vestido-ombro-rosalia-lenco-s',
-        name: 'Vestido Ombro Rosalia Lenco S',
+        id: 'vestido-ombro-rosalia-lenco',
+        name: 'Vestido Ombro Rosalia LenÇO',
         price: 449.00,
         installments: '4x de R$ 112,25',
         description: 'Versão curta do vestido Rosalia, com ombro só e detalhe de lenço. Uma peça moderna e descontraída para o seu dia a dia.',
         images: [
             '../assets/imagens/produtos/vestidos-curtos/VESTIDO-OMBRO-SO-ROSALIA-LENCO-S.webp',
         ],
-        sizes: ['M', 'G', 'GG'],
-        colors: ['Estampado', 'Rosa'],
+        sizes: ['P', 'M', 'G'],
+        colors: ['Estampado', 'Floral', 'Branco'],
         isBestSeller: false,
         category: 'vestido-curto'
     },
@@ -352,7 +352,7 @@ window.productsData = [
         images: [
             '../assets/imagens/produtos/vestido-midi/VESTIDO-TRICOT-JACQUARD-LUREX-ONCA.webp',
         ],
-        sizes: ['P', 'M'],
+        sizes: ['P', 'M', 'G'],
         colors: ['Onça', 'Preto'],
         category: 'vestido-midi',
         isBestSeller: false
@@ -366,8 +366,8 @@ window.productsData = [
         images: [
             '../assets/imagens/produtos/vestido-midi/VESTIDO-MIDI-MALU.webp',
         ],
-        sizes: ['M', 'G'],
-        colors: ['Estampado', 'Azul'],
+        sizes: ['P', 'M', 'G'],
+        colors: ['Estampado', 'Azul', 'Branco'],
         category: 'vestido-midi',
         isBestSeller: false
     },
@@ -381,7 +381,7 @@ window.productsData = [
             '../assets/imagens/produtos/vestido-midi/VESTIDO-MIDI-FLORAL-BELLE.webp',
         ],
         sizes: ['P', 'M', 'G'],
-        colors: ['Verde', 'Branco'],
+        colors: ['Floral', 'Preto', 'Estampado'],
         category: 'vestido-midi',
         isBestSeller: false
     },
@@ -394,8 +394,8 @@ window.productsData = [
         images: [
             '../assets/imagens/produtos/vestido-midi/VESTIDO-MIDI-FLORAL-TATI.webp',
         ],
-        sizes: ['P', 'M'],
-        colors: ['Estampado', 'Amarelo'],
+        sizes: ['P', 'M', 'G'],
+        colors: ['Estampado', 'Floral', 'Azul'],
         category: 'vestido-midi',
         isBestSeller: false
     },
@@ -409,7 +409,7 @@ window.productsData = [
             '../assets/imagens/produtos/vestido-midi/VESTIDO-CROPPED-BALONE-COGU.webp',
         ],
         sizes: ['P', 'M', 'G'],
-        colors: ['Floral', 'Rosa'],
+        colors: ['Estampado', 'Branco'],
         category: 'vestido-midi',
         isBestSeller: false
     },
@@ -423,7 +423,7 @@ window.productsData = [
             '../assets/imagens/produtos/vestido-midi/VESTIDO-MIDI-BEATRICE-FLORAL-S.webp',
         ],
         sizes: ['P', 'M', 'G'],
-        colors: ['Floral', 'Azul'],
+        colors: ['Estampado', 'Preto', 'Verde'],
         category: 'vestido-midi',
         isBestSeller: false
     },
@@ -432,12 +432,12 @@ window.productsData = [
         name: 'Vestido Decote Jardim Maravilhoso',
         price: 429.00,
         installments: '4x de R$ 107,25',
-        description: 'Vestido decote u cost jardim maravilhoso. traz um charme autêntico com o decote em u que confere um toque atual à peça. As alças finas promovem um visual leve e as costas abertas oferecem frescor, perfeito para encontros casuais ou eventos ao ar livre.',
+        description: 'Vestido decote jardim maravilhoso. traz um charme autêntico com o decote em u que confere um toque atual à peça. As alças finas promovem um visual leve e as costas abertas oferecem frescor, perfeito para encontros casuais ou eventos ao ar livre.',
         images: [
             '../assets/imagens/produtos/vestido-midi/VESTIDO-DECOTE-U-COST-JARDIM-MARAVILHOSO.webp',
         ],
         sizes: ['P', 'M', 'G'],
-        colors: ['Estampado', 'Amarelo'],
+        colors: ['Estampado', 'Branco'],
         category: 'vestido-midi',
         isBestSeller: false
     },
@@ -446,12 +446,12 @@ window.productsData = [
         name: 'Vestido Midi Estampado Geórgia',
         price: 398.00,
         installments: '4x de R$ 99,50',
-        description: 'Vestido midi estampado geórgia. apresenta um design moderno sem alças, com recortes estratégicos que garantem um ajuste confortável. Confeccionado em tecido leve de viscose, é perfeito para ocasiões casuais e eventos especiais. O acabamento refinado completa o visual charmoso.',
+        description: 'Vestido midi estampado geórgia. Apresenta um design moderno sem alças, com recortes estratégicos que garantem um ajuste confortável. Confeccionado em tecido leve de viscose, é perfeito para ocasiões casuais e eventos especiais. O acabamento refinado completa o visual charmoso.',
         images: [
             '../assets/imagens/produtos/vestido-midi/VESTIDO-MIDI-GEORGIA.webp',
         ],
         sizes: ['P', 'M', 'G'],
-        colors: ['Estampado', 'Roxo'],
+        colors: ['Estampado', 'Preto'],
         category: 'vestido-midi',
         isBestSeller: false
     },
@@ -465,7 +465,7 @@ window.productsData = [
             '../assets/imagens/produtos/vestido-midi/VESTIDO-MIDI-JARDIM-REAL.webp',
         ],
         sizes: ['P', 'M', 'G'],
-        colors: ['Estampado', 'Verde'],
+        colors: ['Estampado', 'Preto', 'Floral'],
         category: 'vestido-midi',
         isBestSeller: false
     },
@@ -479,7 +479,7 @@ window.productsData = [
             '../assets/imagens/produtos/vestido-midi/VESTIDO-MIDI-BALAMANA.webp',
         ],
         sizes: ['P', 'M', 'G'],
-        colors: ['Estampado', 'Marrom'],
+        colors: ['Estampado', 'Floral', 'Verde'],
         category: 'vestido-midi',
         isBestSeller: false
     },
@@ -493,7 +493,7 @@ window.productsData = [
             '../assets/imagens/produtos/vestido-midi/VESTIDO-MIDI-JARDIM-TROPICAL.webp',
         ],
         sizes: ['P', 'M', 'G'],
-        colors: ['Estampado', 'Azul'],
+        colors: ['Estampado', 'Floral', 'Branco', 'Verde'],
         category: 'vestido-midi',
         isBestSeller: false
     },
@@ -507,7 +507,7 @@ window.productsData = [
             '../assets/imagens/produtos/vestido-midi/VESTIDO-MIDI-BRILHO-DE-BANANA.webp',
         ],
         sizes: ['P', 'M', 'G'],
-        colors: ['Branco', 'Tropical'],
+        colors: ['Verde', 'Estampado', 'Floral'],
         category: 'vestido-midi',
         isBestSeller: false
     },
