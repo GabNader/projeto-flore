@@ -1,5 +1,3 @@
-// components/app-product-detail/app-product-detail.js
-
 class AppProductDetail extends HTMLElement {
     constructor() {
         super();

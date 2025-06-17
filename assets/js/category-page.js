@@ -101,16 +101,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
     window.addEventListener('filtersCleared', () => {
         console.log('Filtros limpos.');
-        applyFilters({}); // Re-renderiza tudo sem filtros
+        applyFilters({}); 
     });
 
-    // 4. Chamada inicial para renderizar os produtos ao carregar a página
-    // Damos um pequeno delay para garantir que productsData e o DOM estejam prontos
     setTimeout(() => {
-        if (window.productsData) { // Apenas garante que productsData está lá
-            applyFilters({}); // Renderiza os produtos inicialmente (da categoria da página)
+        if (window.productsData) { 
+            applyFilters({}); 
         } else {
             console.error('productsData não carregado após delay. Falha na renderização inicial.');
         }
-    }, 300); // 300ms de delay
+    }, 300); 
 });

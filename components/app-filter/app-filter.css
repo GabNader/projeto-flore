@@ -1,5 +1,3 @@
-/* components/app-filter/app-filter.css */
-
 :host {
     display: block;
 }
@@ -20,7 +18,7 @@
 .filter-sidebar {
     position: fixed;
     top: 0;
-    right: -380px; /* Inicia fora da tela */
+    right: -380px;
     width: 380px;
     height: 100vh;
     background-color: #fff;
@@ -34,7 +32,7 @@
 }
 
 .filter-sidebar.active {
-    transform: translateX(-380px); /* Move para aparecer */
+    transform: translateX(-380px); 
 }
 
 .filter-overlay.active {
@@ -105,7 +103,7 @@
     color: #333;
 }
 
-/* Container padrão para as opções de filtro */
+
 .filter-options-grid {
     display: flex;
     flex-wrap: wrap;
@@ -113,7 +111,7 @@
     margin-top: 5px;
 }
 
-/* Estilo específico para TAMANHO - 2 por linha */
+
 .filter-group[data-filter-type="sizes"] .filter-options-grid {
     display: grid;
     grid-template-columns: repeat(2, max-content);
@@ -121,7 +119,7 @@
     justify-content: start;
 }
 
-/* Estilo específico para PREÇO - 1 por linha, alinhado à esquerda */
+
 .filter-group[data-filter-type="price"] .filter-options-grid {
     display: flex;
     flex-direction: column;
@@ -129,19 +127,16 @@
     gap: 8px;
 }
 
-/* Botões de preço com largura fixa */
 .filter-group[data-filter-type="price"] .filter-options-grid label {
     width: 170px;
 }
 
-/* Estilo específico para COR - 3 por linha */
 .filter-group[data-filter-type="colors"] .filter-options-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 8px;
 }
 
-/* Estiliza cada LABEL como uma pílula/tag clicável */
 .filter-options-grid label {
     align-items: center;
     justify-content: center;
@@ -158,7 +153,6 @@
     text-align: center;
 }
 
-/* Esconde o checkbox real, mas o mantém funcional */
 .filter-options-grid input[type="checkbox"] {
     position: absolute;
     opacity: 0;
@@ -166,7 +160,6 @@
     height: 0;
 }
 
-/* Estilo para a pílula/tag quando selecionada */
 .filter-options-grid label:has(input[type="checkbox"]:checked) {
     border-color: #D94389;
     background-color: #D94389;
@@ -175,28 +168,27 @@
     box-shadow: 0 2px 5px rgba(217, 67, 137, 0.3);
 }
 
-/* Estilo de hover para as pílulas */
+
 .filter-options-grid label:hover:not(:has(input[type="checkbox"]:checked)) {
     background-color: #e0e0e0;
     border-color: #aaa;
 }
 
-/* Media query para mobile */
 @media (max-width: 420px) {
     .filter-sidebar {
         width: 90%;
-        right: -90%; /* MUDANÇA: Inicia completamente fora da tela */
+        right: -90%; 
     }
     
     .filter-sidebar.active {
-        transform: translateX(-100%); /* MUDANÇA: Move 100% para aparecer */
+        transform: translateX(-100%); 
     }
     
     .filter-sections {
         padding-right: 0;
     }
     
-    /* Ajustes para mobile - todos ficam em coluna única */
+
     .filter-group[data-filter-type="sizes"] .filter-options-grid {
         grid-template-columns: repeat(2, max-content);
         justify-content: start;
@@ -205,7 +197,6 @@
         grid-template-columns: 1fr 1fr;
     }
     
-    /* Ajusta largura dos botões de preço no mobile */
     .filter-group[data-filter-type="price"] .filter-options-grid label {
         width: 150px;
     }

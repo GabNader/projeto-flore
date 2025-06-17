@@ -1,12 +1,10 @@
-/* components/app-product-detail/app-product-detail.css */
-
 :host {
     display: block;
-    padding: 20px; /* Padding geral para a página de detalhe */
+    padding: 20px; 
 }
 
 .product-detail-container {
-    max-width: 1200px; /* Largura máxima para o conteúdo da página de detalhe */
+    max-width: 1200px; 
     margin: 0 auto;
     font-family: 'Marvel', sans-serif;
     color: #333;
@@ -16,17 +14,17 @@
 .product-main-content {
     margin-top: -15px;
     display: flex;
-    flex-direction: row; /* Padrão desktop: foto na esquerda, info na direita */
-    gap: 40px; /* Espaço entre a foto e as informações */
-    flex-wrap: wrap; /* Permite quebrar em telas menores */
-    justify-content: center; /* Centraliza em telas menores */
+    flex-direction: row;
+    gap: 40px; 
+    flex-wrap: wrap; 
+    justify-content: center; 
     margin-bottom: 40px;
 }
 
 .product-media {
-    flex: 1; /* Ocupa o espaço disponível */
-    min-width: 300px; /* Largura mínima para a seção de mídia */
-    max-width: 500px; /* Largura máxima para a seção de mídia */
+    flex: 1; 
+    min-width: 300px;
+    max-width: 500px; 
 }
 
 .main-product-image img {
@@ -55,12 +53,12 @@
 
 .thumbnail-gallery img:hover,
 .thumbnail-gallery img.active {
-    border-color: #D94389; /* Cor de destaque da sua marca */
+    border-color: #D94389; 
 }
 
 .product-info-panel {
-    flex: 1; /* Ocupa o espaço disponível */
-    min-width: 300px; /* Largura mínima para o painel de info */
+    flex: 1;
+    min-width: 300px; 
 }
 
 .product-title {
@@ -72,10 +70,10 @@
 
 .product-price {
     font-size: 28px;
-    color: #D94389; /* Sua cor de destaque */
+    color: #D94389; 
     font-weight: 700;
     margin-bottom: 20px;
-    display: block; /* Para garantir que o span ocupe uma linha */
+    display: block; 
 }
 
 .product-options {
@@ -99,7 +97,7 @@
 .option-group input[type="number"],
 .product-shipping-info input[type="text"] {
     width: 100%;
-    max-width: 250px; /* Limita a largura dos campos de input/select */
+    max-width: 250px; 
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -121,7 +119,7 @@
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-top: 10px; /* Espaço acima do botão */
+    margin-top: 10px;
     font-family: 'Marvel','Sans-serif';
 }
 
@@ -148,18 +146,17 @@
     line-height: 1.6;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     .product-main-content {
-        flex-direction: column; /* Empilha as seções verticalmente em telas menores */
-        align-items: center; /* Centraliza os itens */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .product-media,
     .product-info-panel {
         width: 100%;
-        max-width: 100%; /* Permite que ocupem toda a largura */
-        min-width: unset; /* Remove min-width fixo para permitir encolher */
+        max-width: 100%; 
+        min-width: unset; 
     }
 
     .product-detail-container {
@@ -181,10 +178,10 @@
     .add-to-cart-btn,
     .product-shipping-info input[type="text"],
     .product-shipping-info button {
-        max-width: 100%; /* Campos e botões ocupam a largura total em mobile */
+        max-width: 100%; 
     }
 
     .thumbnail-gallery {
-        justify-content: center; /* Centraliza as miniaturas */
+        justify-content: center; 
     }
 }

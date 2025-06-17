@@ -38,34 +38,34 @@ img, video, iframe, embed, object {
 
 .category-header-wrapper {
     display: flex;
-    justify-content: space-between; /* Coloca o título à esquerda e o botão à direita */
+    justify-content: space-between; 
     align-items: center;
-    padding: 0 10px; /* Pequeno padding nas laterais (consistente com o products-container) */
-    width: 100%; /* Garante que ocupe a largura total disponível */
+    padding: 0 10px; 
+    width: 100%; 
     margin-top: -50px;
 }
 
-/* Estilos para o botão de filtro (sem fundo, maior) */
+
 .open-filter-btn {
-    background: transparent; /* Remove o fundo */
-    border: none; /* Remove a borda */
-    padding: 0; /* Remove o padding padrão */
+    background: transparent; 
+    border: none; 
+    padding: 0; 
     cursor: pointer;
-    display: flex; /* Para alinhar o ícone */
+    display: flex; 
     align-items: center;
-    justify-content: center; /* Centraliza o ícone se o botão for maior */
-    gap: 8px; /* Espaço entre ícone e texto, se houver */
-    transition: transform 0.2s ease-in-out; /* Adiciona transição para hover */
+    justify-content: center; 
+    gap: 8px; 
+    transition: transform 0.2s ease-in-out; 
 }
 
 .open-filter-btn:hover {
-    transform: scale(1.1); /* Um leve aumento no tamanho ao passar o mouse */
+    transform: scale(1.1); 
 }
 
 .open-filter-btn img {
-    width: 35px; /* Aumentado o tamanho do ícone */
-    height: 35px; /* Aumentado o tamanho do ícone */
-    filter: none; /* Remove qualquer filtro de cor anterior se não quiser */
+    width: 35px; 
+    height: 35px; 
+    filter: none; 
 }
 
 .products-container {
