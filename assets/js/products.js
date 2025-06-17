@@ -4,10 +4,10 @@ window.productsData = [
     // --- VESTIDO LONGO ---
     {
         id: 'vestido-cropped-estampado-lina',
-        name: 'Vestido Cropped Estampado Lina',
+        name: 'Vestido Estampado Lina',
         price: 449.00,
         installments: '5x de R$ 112,25',
-        description: 'Um vestido longo com corte cropped e estampa exclusiva, ideal para um visual moderno e elegante. Confeccionado em tecido leve, proporciona conforto e estilo em qualquer ocasião.',
+        description: 'Um vestido longo com estampa exclusiva, ideal para um visual moderno e elegante. Confeccionado em tecido leve, proporciona conforto e estilo em qualquer ocasião.',
         images: [
             '../assets/imagens/produtos/vestido-longo/VESTIDO-CROPPED-LINA.webp',
         ],
@@ -21,7 +21,7 @@ window.productsData = [
         name: 'Vestido Estampado Maxi Coração',
         price: 1298.00,
         installments: '6x de R$ 216,33',
-        description: 'Vestido longo com estampa de corações em tamanho maxi, trazendo um toque romântico e ousado. Possui caimento fluído e é perfeito para eventos especiais.',
+        description: 'Vestido longo com estampa de corações, trazendo um toque romântico e ousado. Possui caimento fluído e é perfeito para eventos especiais.',
         images: [
             '../assets/imagens/produtos/vestido-longo/VESTIDO-MAXI-CORACAO.webp',
         ],
@@ -46,7 +46,7 @@ window.productsData = [
     },
     {
         id: 'vestido-artesanal-bordado-coracoes',
-        name: 'Vestido Artesanal Bordado Corações',
+        name: 'Vestido Artesanal Bordado',
         price: 579.00,
         installments: '5x de R$115,80',
         description: 'Vestido artesanal bordado corações. Sem alças, o design abraça simplicidade e criatividade, com bordados delicados de corações que adicionam um toque especial à peça. O corte fluido e a barra assimétrica criam movimento e leveza',
@@ -54,7 +54,7 @@ window.productsData = [
             '../assets/imagens/produtos/vestido-longo/VESTIDO-ARTESANAL-BORDADO-CORACOES.webp',
         ],
         sizes: ['P', 'M', 'G'],
-        colors: ['Estampado', 'Azul'],
+        colors: ['Estampado', 'Branco'],
         category: 'vestido-longo',
         isBestSeller: true
     },
@@ -68,7 +68,7 @@ window.productsData = [
             '../assets/imagens/produtos/vestido-longo/VESTIDO-MARCELLE.webp',
         ],
         sizes: ['P', 'M', 'G'],
-        colors: ['Preto', 'Estampado'],
+        colors: ['Preto', 'Estampado', 'colorido'],
         category: 'vestido-longo',
         isBestSeller: true
     },
@@ -116,7 +116,7 @@ window.productsData = [
     },
     {
         id: 'vestido-balone-xadrez-junino',
-        name: 'Vestido Balone Xadrez Junino',
+        name: 'Vestido Balone Xadrez',
         price: 598.00,
         installments: '6x de R$ 99,66',
         description: 'Vestido longo com corte balonê e estampa xadrez junina, trazendo um toque festivo e tradicional. Perfeito para celebrações e momentos de alegria.',
@@ -144,10 +144,10 @@ window.productsData = [
     },
     {
         id: 'vestido-cropped-estampado-jardim-maravilhoso',
-        name: 'Vestido Cropped Estampado Jardim Maravilhoso',
+        name: 'Vestido  Estampado Jardim Maravilhoso',
         price: 449.00,
         installments: '4x de R$ 112,25',
-        description: 'Vestido longo cropped com estampa de jardim maravilhoso, ideal para quem busca um visual vibrante e cheio de vida. Confeccionado em tecido leve, proporciona frescor e estilo.',
+        description: 'Vestido longo com estampa de jardim maravilhoso, ideal para quem busca um visual vibrante e cheio de vida. Confeccionado em tecido leve, proporciona frescor e estilo.',
         images: [
             '../assets/imagens/produtos/vestido-longo/VESTIDO-CROPPED-JARDIM-MARAVILHOSO.webp',
         ],
