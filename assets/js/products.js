@@ -205,7 +205,7 @@ window.productsData = [
         name: 'Vestido Curto Estampado Francisca',
         price: 529.00,
         installments: '5x de R$ 105,80',
-        description: 'Um vestido curto e vibrante com estampa Francisca, que combina modernidade e conforto. Ideal para um visual descontraído e cheio de personalidade.',
+        description: 'Um vestido curto com estampa Francisca, que combina modernidade e conforto. Ideal para um visual descontraído e cheio de personalidade.',
         images: [
             '../assets/imagens/produtos/vestidos-curtos/VESTIDO-CURTO-FRANCISCA-S.webp',
         ],
@@ -224,8 +224,8 @@ window.productsData = [
         images: [
             '../assets/imagens/produtos/vestidos-curtos/VESTIDO-CURTO-JARDIM-FLORIDO.webp',
         ],
-        sizes: ['P', 'M', 'G'],
-        colors: ['Floral', 'Verde', 'Estampado', 'Preto'],
+        sizes: ['P', 'G'],
+        colors: ['Floral', 'Preto', 'Estampado', 'Preto'],
         isBestSeller: false,
         category: 'vestido-curto'
     },
@@ -238,7 +238,7 @@ window.productsData = [
         images: [
             '../assets/imagens/produtos/vestidos-curtos/VESTIDO-CURTO-MARCELLE.webp',
         ],
-        sizes: ['P', 'M', 'G'],
+        sizes: ['P', 'M'],
         colors: ['Estampado', 'Preto', 'Floral', 'Verde'],
         isBestSeller: false,
         category: 'vestido-curto'
@@ -252,7 +252,7 @@ window.productsData = [
         images: [
             '../assets/imagens/produtos/vestidos-curtos/VESTIDO-ALCA-LENCO-JARDIM-REAL.webp',
         ],
-        sizes: ['P', 'M', 'G'],
+        sizes: ['M', 'G'],
         colors: ['Floral', 'Preto', 'Estampado'],
         isBestSeller: false,
         category: 'vestido-curto'
@@ -262,11 +262,11 @@ window.productsData = [
         name: 'Vestido Curto com Manga Estampado Coqueirada',
         price: 429.00,
         installments: '4x de R$ 107,25',
-        description: 'Vestido curto com mangas e estampa coqueirada, perfeito para um look descontraído e tropical. Confortável e com design moderno.',
+        description: 'Vestido curto com mangas e estampa de coqueiro, perfeito para um look descontraído e tropical. Confortável e com design moderno.',
         images: [
             '../assets/imagens/produtos/vestidos-curtos/VESTIDO-CURTO-MANGA-COQUEIRADA.webp',
         ],
-        sizes: ['P', 'M', 'G'],
+        sizes: ['P', 'M'],
         colors: ['Estampado', 'Preto', 'Branco'],
         isBestSeller: false,
         category: 'vestido-curto'
@@ -276,7 +276,7 @@ window.productsData = [
         name: 'Vestido Curto Estampado Tropicália',
         price: 449.00,
         installments: '4x de R$ 112,25',
-        description: 'Vestido curto com estampa vibrante Tropicália, que remete à exuberância da fauna e flora. Ideal para um visual alegre e cheio de vida.',
+        description: 'Vestido curto com estampa vibrante tropical, que remete à exuberância da fauna e flora. Ideal para um visual alegre e cheio de vida.',
         images: [
             '../assets/imagens/produtos/vestidos-curtos/VESTIDO-CURTO-TROPICALIA.webp',
         ],
@@ -304,11 +304,11 @@ window.productsData = [
         name: 'Vestido Estampado Jardim Chintz',
         price: 398.00,
         installments: '4x de R$ 99,50',
-        description: 'Vestido curto com estampa Jardim Chintz, que traz a beleza de um jardim em tecido. Leve e com caimento suave, ideal para um visual romântico.',
+        description: 'Vestido curto com estampa que traz a beleza de um jardim em tecido. Leve e com caimento suave, ideal para um visual romântico.',
         images: [
             '../assets/imagens/produtos/vestidos-curtos/VESTIDO-CURTO-JARDIM-CHINTZ.webp',
         ],
-        sizes: ['P', 'M', 'G'],
+        sizes: ['P', 'G'],
         colors: ['Floral', 'Estampado', 'Preto', 'Azul'],
         isBestSeller: false,
         category: 'vestido-curto'
@@ -318,26 +318,26 @@ window.productsData = [
         name: 'Vestido Curto Estampado Jardim Real',
         price: 398.00,
         installments: '4x de R$ 99,50',
-        description: 'Vestido curto com estampa Jardim Real, que inspira um visual elegante e natural. Confortável e versátil, perfeito para diversas ocasiões.',
+        description: 'Vestido curto com estampa que inspira um visual elegante e natural. Confortável e versátil, perfeito para diversas ocasiões.',
         images: [
             '../assets/imagens/produtos/vestidos-curtos/VESTIDO-CURTO-LENCO-JARDIM-REAL.webp',
         ],
         sizes: ['P', 'M', 'G'],
-        colors: ['Floral', 'Verde', 'Estampado'],
+        colors: ['Floral', 'Estampado'],
         isBestSeller: false,
         category: 'vestido-curto'
     },
     {
         id: 'vestido-ombro-rosalia-lenco',
-        name: 'Vestido Ombro Rosalia LenÇO',
+        name: 'Vestido Ombro Rosalia Lenço',
         price: 449.00,
         installments: '4x de R$ 112,25',
-        description: 'Versão curta do vestido Rosalia, com ombro só e detalhe de lenço. Uma peça moderna e descontraída para o seu dia a dia.',
+        description: 'Versão curta do vestido com ombro só e detalhe de lenço. Uma peça moderna e descontraída para o seu dia a dia.',
         images: [
             '../assets/imagens/produtos/vestidos-curtos/VESTIDO-OMBRO-SO-ROSALIA-LENCO-S.webp',
         ],
         sizes: ['P', 'M', 'G'],
-        colors: ['Estampado', 'Floral', 'Branco'],
+        colors: ['Estampado', 'Floral', 'Branco', 'Branco'],
         isBestSeller: false,
         category: 'vestido-curto'
     },
