@@ -16,8 +16,6 @@ class AppBreadcrumb extends HTMLElement {
 
     connectedCallback() {
         this.renderBreadcrumb();
-        // Opcional: Renderizar novamente se a URL mudar (para SPAs, mas não necessário aqui)
-        // window.addEventListener('popstate', this.renderBreadcrumb.bind(this));
     }
 
     renderBreadcrumb() {
@@ -29,10 +27,8 @@ class AppBreadcrumb extends HTMLElement {
         const urlParams = new URLSearchParams(window.location.search);
         const productId = urlParams.get('id');
 
-        // Sempre começa com Home
-        path.push({ name: 'Home', href: '../pages/index.html' }); // Ajuste para index.html em pages
+        path.push({ name: 'Home', href: '../pages/index.html' });
 
-        // Lógica para páginas de categoria (vestido-longo, vestido-curto, etc.)
         if (currentPath.includes('/pages/vestido-longo.html')) {
             path.push({ name: 'Vestido Longo', href: '../pages/vestido-longo.html' });
         } else if (currentPath.includes('/pages/vestido-curto.html')) {
@@ -43,22 +39,17 @@ class AppBreadcrumb extends HTMLElement {
             path.push({ name: 'Mais Vendidos', href: '../pages/mais-vendidos.html' });
         }
         
-        // Lógica para página de produto
         if (currentPath.includes('/pages/produto.html') && productId && window.productsData) {
             const product = window.productsData.find(p => p.id === productId);
             if (product) {
-                // Adiciona a categoria do produto (se houver e não for já o item anterior)
                 if (product.category && !path.some(item => item.name.toLowerCase().includes(product.category.replace('vestido-', '')))) {
-                    // Cuidado: aqui precisamos do link correto para a categoria.
-                    // Podemos inferir o link da categoria a partir do nome.
                     const categoryLink = `../pages/${product.category}.html`;
                     path.push({ name: this._capitalizeWords(product.category.replace('-', ' ')), href: categoryLink });
                 }
-                path.push({ name: product.name, href: window.location.href }); // Link para a própria página de produto
+                path.push({ name: product.name, href: window.location.href });
             }
         }
 
-        // Constrói o HTML do breadcrumb
         breadcrumbList.innerHTML = path.map((item, index) => {
             const isLast = index === path.length - 1;
             return `
@@ -73,7 +64,6 @@ class AppBreadcrumb extends HTMLElement {
         }).join('');
     }
 
-    // Função auxiliar para capitalizar palavras (ex: "vestido longo" -> "Vestido Longo")
     _capitalizeWords(str) {
         return str.replace(/\b\w/g, char => char.toUpperCase());
     }
