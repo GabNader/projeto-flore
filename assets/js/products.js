@@ -348,11 +348,11 @@ window.productsData = [
         name: 'Vestido Tricot Jacquard Lurex Onça',
         price: 749.00,
         installments: '6x de R$ 124,83',
-        description: 'Vestido midi em tricot com estampa de onça em jacquard lurex, trazendo sofisticação e um toque selvagem. Perfeito para quem busca elegância e conforto.',
+        description: 'Vestido midi em tricot com estampa de onça em lurex, trazendo sofisticação e um toque selvagem. Perfeito para quem busca elegância e conforto.',
         images: [
             '../assets/imagens/produtos/vestido-midi/VESTIDO-TRICOT-JACQUARD-LUREX-ONCA.webp',
         ],
-        sizes: ['P', 'M', 'G'],
+        sizes: ['M', 'G'],
         colors: ['Onça', 'Preto'],
         category: 'vestido-midi',
         isBestSeller: false
@@ -376,11 +376,11 @@ window.productsData = [
         name: 'Vestido Midi Floral Belle',
         price: 549.00,
         installments: '4x de R$ 112,25',
-        description: 'Vestido midi floral belle. com alças delicadas e decote quadrado, é fluido e confortável, perfeito para ocasiões casuais ou um passeio descontraído. Confeccionado em tecido leve e respirável, seus detalhes são pensados para elevar qualquer look.',
+        description: 'Vestido midi floral com alças delicadas e decote quadrado, é fluido e confortável, perfeito para ocasiões casuais ou um passeio descontraído. Confeccionado em tecido leve e respirável, seus detalhes são pensados para elevar qualquer look.',
         images: [
             '../assets/imagens/produtos/vestido-midi/VESTIDO-MIDI-FLORAL-BELLE.webp',
         ],
-        sizes: ['P', 'M', 'G'],
+        sizes: ['P', 'M'],
         colors: ['Floral', 'Preto', 'Estampado'],
         category: 'vestido-midi',
         isBestSeller: false
@@ -390,7 +390,7 @@ window.productsData = [
         name: 'Vestido Midi Floral Tati',
         price: 448.00,
         installments: '5x de R$ 99,60',
-        description: 'Vestido midi cropped com estampa Flora Abacaxi, que traz um toque tropical e divertido. Perfeito para dias ensolarados e um visual descontraído.',
+        description: 'Vestido midi com estampa Floral, que traz um toque tropical e divertido. Perfeito para dias ensolarados e um visual descontraído.',
         images: [
             '../assets/imagens/produtos/vestido-midi/VESTIDO-MIDI-FLORAL-TATI.webp',
         ],
@@ -401,14 +401,14 @@ window.productsData = [
     },
     {
         id: 'vestido-cropped-balone-estampado',
-        name: 'Vestido Cropped Balonê Estampado',
+        name: 'Vestido Balonê Estampado',
         price: 368.00,
         installments: '3x de R$ 122,66',
-        description: 'Vestido cropped balonê estampado. traz uma modelagem descontraída e charmosa, com alças finas ajustáveis e decote reto. O corte balonê soma leveza e movimento à peça, tornando-a ideal para passeios ao ar livre ou encontros casuais.',
+        description: 'Vestido balonê estampado. traz uma modelagem descontraída e charmosa, com alças finas ajustáveis e decote reto. O corte balonê soma leveza e movimento à peça, tornando-a ideal para passeios ao ar livre ou encontros casuais.',
         images: [
             '../assets/imagens/produtos/vestido-midi/VESTIDO-CROPPED-BALONE-COGU.webp',
         ],
-        sizes: ['P', 'M', 'G'],
+        sizes: ['M', 'G'],
         colors: ['Estampado', 'Branco'],
         category: 'vestido-midi',
         isBestSeller: false
@@ -418,25 +418,25 @@ window.productsData = [
         name: 'Vestido Beatrice Floral',
         price: 407.00,
         installments: '4x de R$ 101,75',
-        description: 'Vestido midi estampado beatrice floral. Com decote frontal em coração e alças finas ajustáveis, o vestido traz leveza e frescor. A cintura marcada com elástico adiciona conforto, enquanto a saia fluida oferece movimento.',
+        description: 'Vestido midi estampado beatrice floral. Com decote frontal e alças finas ajustáveis, o vestido traz leveza e frescor. A cintura marcada com elástico adiciona conforto, enquanto a saia fluida oferece movimento.',
         images: [
             '../assets/imagens/produtos/vestido-midi/VESTIDO-MIDI-BEATRICE-FLORAL-S.webp',
         ],
-        sizes: ['P', 'M', 'G'],
-        colors: ['Estampado', 'Preto', 'Verde'],
+        sizes: ['P', 'G'],
+        colors: ['Estampado', 'Verde'],
         category: 'vestido-midi',
         isBestSeller: false
     },
     {
         id: 'vestido-decote-jardim-maravilhoso',
-        name: 'Vestido Decote Jardim Maravilhoso',
+        name: 'Vestido Jardim Maravilhoso',
         price: 429.00,
         installments: '4x de R$ 107,25',
-        description: 'Vestido decote jardim maravilhoso. traz um charme autêntico com o decote em u que confere um toque atual à peça. As alças finas promovem um visual leve e as costas abertas oferecem frescor, perfeito para encontros casuais ou eventos ao ar livre.',
+        description: 'Vestido jardim maravilhoso. traz um charme autêntico com o decote canoa que confere um toque atual à peça. As alças promovem um visual leve e as costas abertas oferecem frescor, perfeito para encontros casuais ou eventos ao ar livre.',
         images: [
             '../assets/imagens/produtos/vestido-midi/VESTIDO-DECOTE-U-COST-JARDIM-MARAVILHOSO.webp',
         ],
-        sizes: ['P', 'M', 'G'],
+        sizes: ['M', 'G'],
         colors: ['Estampado', 'Branco'],
         category: 'vestido-midi',
         isBestSeller: false
@@ -446,11 +446,11 @@ window.productsData = [
         name: 'Vestido Midi Estampado Geórgia',
         price: 398.00,
         installments: '4x de R$ 99,50',
-        description: 'Vestido midi estampado geórgia. Apresenta um design moderno sem alças, com recortes estratégicos que garantem um ajuste confortável. Confeccionado em tecido leve de viscose, é perfeito para ocasiões casuais e eventos especiais. O acabamento refinado completa o visual charmoso.',
+        description: 'Vestido midi estampado geórgia. Apresenta um design moderno com alças finas, com recortes estratégicos que garantem um ajuste confortável. Confeccionado em tecido leve de viscose, é perfeito para ocasiões casuais e eventos especiais. O acabamento refinado completa o visual charmoso.',
         images: [
             '../assets/imagens/produtos/vestido-midi/VESTIDO-MIDI-GEORGIA.webp',
         ],
-        sizes: ['P', 'M', 'G'],
+        sizes: ['P', 'G'],
         colors: ['Estampado', 'Preto'],
         category: 'vestido-midi',
         isBestSeller: false
@@ -492,7 +492,7 @@ window.productsData = [
         images: [
             '../assets/imagens/produtos/vestido-midi/VESTIDO-MIDI-JARDIM-TROPICAL.webp',
         ],
-        sizes: ['P', 'M', 'G'],
+        sizes: ['P', 'G'],
         colors: ['Estampado', 'Floral', 'Branco', 'Verde'],
         category: 'vestido-midi',
         isBestSeller: false
@@ -506,8 +506,8 @@ window.productsData = [
         images: [
             '../assets/imagens/produtos/vestido-midi/VESTIDO-MIDI-BRILHO-DE-BANANA.webp',
         ],
-        sizes: ['P', 'M', 'G'],
-        colors: ['Verde', 'Estampado', 'Floral'],
+        sizes: ['P', 'M'],
+        colors: ['Verde', 'Estampado'],
         category: 'vestido-midi',
         isBestSeller: false
     },
