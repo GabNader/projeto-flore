@@ -1,5 +1,3 @@
-/* components/app-carousel/app-carousel.css */
-
 :host {
     display: block;
     margin: 0;
@@ -78,6 +76,18 @@
 
 .product-card:hover {
     transform: translateY(-5px);
+}
+
+@media (min-width: 1920px) {
+    .carousel-track .product-card {
+        flex: 0 0 calc(12.5% - 8.75px);
+    }
+}
+
+@media (min-width: 1401px) and (max-width: 1919px) {
+    .carousel-track .product-card {
+        flex: 0 0 calc(16.66% - 8.33px); /* 16.66% para 6 cards */
+    }
 }
 
 @media (max-width: 1400px) {
@@ -175,4 +185,13 @@
 .products-grid .product-price {
     font-size: 19px;
     margin-top: 10px;
+}
+
+.product-card-link {
+    text-decoration: none; 
+    color: inherit;     
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
 }

@@ -33,14 +33,14 @@ class AppHeaderComponent extends HTMLElement {
 
     if (hamburgerBtn) {
       hamburgerBtn.addEventListener('click', () => {
-        console.log('Botão de hambúrguer clicado no header! Disparando openMenu.'); // Adicione este console.log para depuração
+        console.log('Botão de hambúrguer clicado no header! Disparando openMenu.');
         this.dispatchEvent(new CustomEvent('openMenu', { bubbles: true, composed: true }));
       });
     }
 
     if (cartBtn) {
         cartBtn.addEventListener('click', () => {
-            console.log('Botão de carrinho clicado no header! Disparando openCart.'); // Adicione este console.log para depuração
+            console.log('Botão de carrinho clicado no header! Disparando openCart.');
             this.dispatchEvent(new CustomEvent('openCart', { bubbles: true, composed: true }));
         });
     }

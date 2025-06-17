@@ -1,0 +1,61 @@
+:host {
+    display: block;
+    padding: 15px 0; 
+    font-family: 'Marvel', sans-serif;
+    font-size: 16px;
+    color: #666;
+    margin-top: -15px;
+}
+
+.breadcrumb-nav {
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.breadcrumb-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+}
+
+.breadcrumb-item {
+    display: flex;
+    align-items: center;
+    white-space: nowrap; 
+}
+
+.breadcrumb-item a {
+    text-decoration: none;
+    color: #D94389; 
+    transition: color 0.2s ease;
+}
+
+.breadcrumb-item a:hover {
+    color: #e05e9e; 
+}
+
+.breadcrumb-item span {
+    color: #333; 
+    font-weight: bold;
+}
+
+.separator {
+    margin: 0 8px; 
+    color: #999; 
+}
+
+@media (max-width: 768px) {
+    .breadcrumb-nav {
+        padding: 0 10px; 
+    }
+    .breadcrumb-item {
+        font-size: 14px; 
+    }
+    .separator {
+        margin: 0 5px; 
+    }
+}

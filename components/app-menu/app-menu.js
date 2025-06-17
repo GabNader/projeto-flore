@@ -22,8 +22,8 @@ class AppMenuComponent extends HTMLElement {
 
         <ul class="sideMenuItem">
           <li><a href="vestido-longo.html">VESTIDO LONGO</a></li>
-          <li><a href="vestido-curto.html">VESTIDO CURTO</a></li>
           <li><a href="vestido-midi.html">VESTIDO MIDI</a></li>
+          <li><a href="vestido-curto.html">VESTIDO CURTO</a></li>
           <li><a href="mais-vendidos.html">MAIS VENDIDOS</a></li>
           <li><a href="#">SOBRE</a></li>
         </ul>

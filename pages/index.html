@@ -4,162 +4,29 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Floré</title>
-  <link rel="icon" type="image/x-icon" href="../assets/imagens/favicon/favicon.icoddss">
+  <link rel="icon" type="image/x-icon" href="../assets/imagens/favicon/favicon.ico">
   <link rel="stylesheet" href="../assets/css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Marvel:wght@400&display=swap" rel="stylesheet">
-  
-  <script src="../components/app-header/app-header.js" defer></script>
-  <script src="../components/app-menu/app-menu.js" defer></script> </head>
+  <script src="../assets/js/products.js" defer></script> 
+  <script src="../components/app-header/app-header.js" defer></script>
+  <script src="../components/app-menu/app-menu.js" defer></script> 
+  <script src="../components/app-carousel/app-carousel.js" defer></script>
+  </head>
 <body>
-  <app-header></app-header>
+  <app-header></app-header>
 
-  <app-menu></app-menu>
-  <main>
-   <div class="main-image">
-      <picture>
-        <source media="(max-width: 650px)" srcset="../assets/imagens/hero/650x409.jpg">
-        <img src="../assets/imagens/hero/1200x478.jpg" alt="Imagem principal" />
-      </picture>
-    </div>
-    <div class="carousel-container">
-    <h1 class="carousel-title">Mais vendidos</h1>
-    
-    <button class="carousel-button carousel-button-prev">
-        <img src="../assets/imagens/svg/chevron-left.svg" alt="Anterior">
-    </button>
-    <button class="carousel-button carousel-button-next">
-        <img src="../assets/imagens/svg/chevron-right.svg" alt="Próximo">
-    </button>
-    
-    <ul class="carousel-track">
-        <li class="product-card">
-            <div class="product-image">
-                <img src="../assets\imagens\produtos\vestidos-curtos\VESTIDO-CURTO-ESTAMPADO-ANTONIA.webp" alt="Produto1">
-            </div>
-            <div class="product-info">
-                <h2 class="product-title">Vestido Curto Estampado Antonia</h2>
-                <span class="product-price">R$ 479,00 ou 4x de R$119,75</span>
-            </div>
-        </li>
-        
-        <li class="product-card">
-            <div class="product-image">
-                <img src="../assets\imagens\produtos\vestidos-curtos\VESTIDO-CURTO-JARDIM-FLORIDO.webp" alt="Produto2">
-            </div>
-            <div class="product-info">
-                <h2 class="product-title">Vestido Curto Jardim Florido</h2>
-                <span class="product-price">R$ 398,00 ou 4x de R$99,50</span>
-            </div>
-        </li>
+  <app-menu></app-menu>
+  <main>
+   <div class="main-image">
+      <picture>
+        <source media="(max-width: 650px)" srcset="../assets/imagens/hero/650x409.jpg">
+        <img src="../assets/imagens/hero/1200x478.jpg" alt="Imagem principal" />
+      </picture>
+    </div>
 
-        <li class="product-card">
-            <div class="product-image">
-                <img src="../assets/imagens/produtos/vestido-longo/VESTIDO4-LONGO-ESTAMPADO-RELICARIO-TROPICAL 1.jpg" alt="Produto3">
-            </div>
-            <div class="product-info">
-                <h2 class="product-title">Vestido Longo Estampado Relicário Tropical</h2>
-                <span class="product-price">R$ 579,00 ou 5x de R$115,80</span>
-            </div>
-        </li>
+    <app-carousel></app-carousel>
 
-        <li class="product-card">
-            <div class="product-image">
-                <img src="../assets\imagens\produtos\vestido-longo\VESTIDO-LANGUIDO-FLORAL-ARABASQUE.webp" alt="Produto4">
-            </div>
-            <div class="product-info">
-                <h2 class="product-title">Vestido Longo Languido Floral Arabasque</h2>
-                <span class="product-price">R$ 498,00 ou 5x de R$99,50</span>
-            </div>
-        </li>
-
-        <li class="product-card">
-            <div class="product-image">
-                <img src="../assets\imagens\produtos\vestido-longo\VESTIDO-CROPPED-BALONE-COGU.webp" alt="Produto5">
-            </div>
-            <div class="product-info">
-                <h2 class="product-title">Vestido Longo Estampado Relicário Tropical</h2>
-                <span class="product-price">R$ 549,00 ou 5x de R$109,80</span>
-            </div>
-        </li>
-
-        <li class="product-card">
-            <div class="product-image">
-                <img src="../assets\imagens\produtos\vestidos-curtos\VESTIDO-ALCA-LENCO-JARDIM-REAL.webp" alt="Produto6">
-            </div>
-            <div class="product-info">
-                <h2 class="product-title">Vestido Curto Jardim Real</h2>
-                <span class="product-price">R$ 298,00 ou 3x de R$99,33</span>
-            </div>
-        </li>
-
-        <li class="product-card">
-            <div class="product-image">
-                <img src="../assets\imagens\produtos\vestidos-curtos\VESTIDO-CURTO-TROPICALIA.webp" alt="Produto7">
-            </div>
-            <div class="product-info">
-                <h2 class="product-title">Vestido Curto Tropicália</h2>
-                <span class="product-price">R$ 449,00 ou 5x de R$112,25</span>
-            </div>
-        </li>
-
-        <li class="product-card">
-            <div class="product-image">
-                <img src="../assets\imagens\produtos\vestido-longo\VESTIDO-CROPPED-JARDIM-MARAVILHOSO.webp" alt="Produto8">
-            </div>
-            <div class="product-info">
-                <h2 class="product-title">Vestido Longo Cropped Jardim Maravilhoso</h2>
-                <span class="product-price">R$ 449,00 ou 5x de R$112,25</span>
-            </div>
-        </li>
-
-        <li class="product-card">
-            <div class="product-image">
-                <img src="../assets\imagens\produtos\vestidos-curtos\VESTIDO-CURTO-JARDIM-CHINTZ.webp" alt="Produto9">
-            </div>
-            <div class="product-info">
-                <h2 class="product-title">Vestido Curto Jardim Chintz</h2>
-                <span class="product-price">R$ 398,00 ou 4x de R$99,50</span>
-            </div>
-        </li>
-    </ul>
-</div>
-    
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <p>teste iza</p>
-    <br>
-    <br>
-    <br>
-    <p>teste lari</p>
-    <br>
-    <br>
-    <br>
-    <p>TESTE GIT PC DA FACUL</p>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-  </main>  
+  </main>  
 </body>
 <script src="../assets/js/script.js" defer></script>
 </html>

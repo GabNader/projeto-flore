@@ -3,148 +3,42 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Floré</title>
+  <title>Floré - Vestidos Midi</title>
   <link rel="icon" type="image/x-icon" href="../assets/imagens/favicon/favicon.ico">
   <link rel="stylesheet" href="../assets/css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Marvel:wght@400&display=swap" rel="stylesheet">
-  
-  <script src="../components/app-header/app-header.js" defer></script>
-  <script src="../components/app-menu/app-menu.js" defer></script> </head>
+  
+  <script src="../assets/js/products.js" defer></script>
+  <script src="../assets/js/category-page.js" defer></script> 
+  <script src="../components/app-header/app-header.js" defer></script>
+  <script src="../components/app-menu/app-menu.js" defer></script> 
+  <script src="../components/app-product-detail/app-product-detail.js" defer></script>
+  <script src="../components/app-filter/app-filter.js" defer></script>
+  <script src="../components/app-breadcrumb/app-breadcrumb.js" defer></script>
+</head>
 <body>
-  <app-header></app-header>
+  <app-header></app-header>
 
-  <app-menu></app-menu>
+  <app-menu></app-menu>
 
-  <main>
+  <app-breadcrumb></app-breadcrumb>
+  <app-filter></app-filter>
+
+  <main>
+
     <section class="products-container">
-    <h2 class="section-title">Vestido Midi</h2>
-    
-    <div class="products-grid">
-        <div class="product-card">
-            <div class="product-image">
-                <img src="../assets/imagens/produtos/vestido-midi/VESTIDO-TRICOT-JACQUARD-LUREX-ONCA.webp" alt="Produto 1">
+            <div class="category-header-wrapper">
+                <h2 class="section-title" data-category="vestido-midi">Vestido Midi</h2> 
+                <button class="open-filter-btn">
+                    <img src="../assets/imagens/svg/filter.svg" alt="Abrir Filtros">
+                </button>
             </div>
-            <div class="product-info">
-                <h2 class="product-title">Vestido Tricot Jacquard Lurex Onça</h2>
-                <span class="product-price">R$ 749,00 ou 6x de R$ 124,83</span>
+            
+            <div class="products-grid" id="product-list-grid">
             </div>
-        </div>
-        
-        <div class="product-card">
-            <div class="product-image">
-                <img src="../assets/imagens/produtos/vestido-midi/VESTIDO-MIDI-MALU.webp" alt="Produto 2">
-            </div>
-            <div class="product-info">
-                <h2 class="product-title">Vestido Midi Estampado Marcelle</h2>
-                <span class="product-price">R$ 498,00 ou 5x de R$ 99,60</span>
-            </div>
-        </div>
+          </section>
 
-
-        <div class="product-card">
-            <div class="product-image">
-                <img src="../assets/imagens/produtos/vestido-midi/VESTIDO-MIDI-AMARRACOES.webp" alt="Produto 3">
-            </div>
-            <div class="product-info">
-                <h2 class="product-title">Vestido Midi Amarrações</h2>
-                <span class="product-price">R$ 579,00 ou 5x de R$ 115,80</span>
-            </div>
-        </div>
-
-        <div class="product-card">
-            <div class="product-image">
-                <img src="../assets/imagens/produtos/vestido-midi/VESTIDO-CROPPED-FLORA-ABACAXI.webp" alt="Produto 4">
-            </div>
-            <div class="product-info">
-                <h2 class="product-title">Vestido Cropped Flora Abacaxi</h2>
-                <span class="product-price">R$ 449,00 ou 4x de R$ 112,25</span>
-            </div>
-        </div>
-
-        <div class="product-card">
-            <div class="product-image">
-                <img src="../assets/imagens/produtos/vestido-midi/VESTIDO-MIDI-DELICADEZA-EM-FLOR.webp" alt="Produto 5">
-            </div>
-            <div class="product-info">
-                <h2 class="product-title">Vestido Midi Estampado Delicadeza Em Flor</h2>
-                <span class="product-price">R$ 498,00 ou 5x de R$ 99,60</span>
-            </div>
-        </div>
-
-        <div class="product-card">
-                    <div class="product-image">
-                        <img src="../assets/imagens/produtos/vestido-midi/VESTIDO-BABADOS-FLORAL-ALICE.webp" alt="Produto 6">
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-title">Vestido Babados Floral Alice</h2>
-                        <span class="product-price">R$ 629,00 ou 6x de R$ 104,83</span>
-                    </div>
-                </div>
-                
-        <div class="product-card">
-            <div class="product-image">
-                <img src="../assets/imagens/produtos/vestido-midi/VESTIDO-MIDI-BRILHO-DE-BANANA.webp" alt="Produto 7">
-            </div>
-            <div class="product-info">
-                <h2 class="product-title">Vestido Midi Estampado Brilho De Banana</h2>
-                <span class="product-price">R$ 429,00 ou 4x de R$ 107,25</span>
-            </div>
-        </div>
-
-        <div class="product-card">
-            <div class="product-image">
-                <img src="../assets/imagens/produtos/vestido-midi/VESTIDO-MIDI-ESTAMPADO-ANTONIA.webp" alt="Produto 8">
-            </div>
-            <div class="product-info">
-                <h2 class="product-title">Vestido Midi Estampado Antônia</h2>
-                <span class="product-price">R$ 398,00 ou 4x de R$ 99,50</span>
-            </div>
-        </div>       
-        
-        <div class="product-card">
-            <div class="product-image">
-                <img src="../assets/imagens/produtos/vestido-midi/VESTIDO-MIDI-ESTAMPADO-SONHO-GUARANA.webp" alt="Produto 9">
-            </div>
-            <div class="product-info">
-                <h2 class="product-title">Vestido Midi Estampado Sonho Guaraná</h2>
-                <span class="product-price">R$ 398,00 ou 4x de R$ 99,50</span>
-            </div>
-        </div>        
-
-         <div class="product-card">
-            <div class="product-image">
-                <img src="../assets/imagens/produtos/vestido-midi/VESTIDO-MANGA-ESTAMPADO-SONHO-GUARANA.webp" alt="Produto 10">
-            </div>
-            <div class="product-info">
-                <h2 class="product-title">Vestido Manga Estampado Sonho Guaraná</h2>
-                <span class="product-price">R$ 649,00 ou 6x de R$ 108,16</span>
-            </div>
-        </div>        
-    
-         <div class="product-card">
-            <div class="product-image">
-                <img src="../assets/imagens/produtos/vestido-midi/VESTIDO-MIDI-ESTAMPADO-MARI.webp" alt="Produto 11">
-            </div>
-            <div class="product-info">
-                <h2 class="product-title">Vestido Midi Estampado Mari</h2>
-                <span class="product-price">R$ 398,00 ou 4x de R$ 99,50</span>
-            </div>
-        </div>        
-    
-         <div class="product-card">
-            <div class="product-image">
-                <img src="../assets/imagens/produtos/vestido-midi/VESTIDO-GUIPURE-TROPICAL.webp" alt="Produto 12">
-            </div>
-            <div class="product-info">
-                <h2 class="product-title">Vestido Guipure Tropical</h2>
-                <span class="product-price">R$ 1.198 ou 6x de R$ 199,66</span>
-            </div>
-        </div>        
-    
-    
-    </div>
-</section>
-</main>  
+  </main>
 </body>
 <script src="../assets/js/script.js" defer></script>
 </html>

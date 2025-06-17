@@ -3,148 +3,42 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Floré</title>
+  <title>Floré - Vestidos Curtos</title>
   <link rel="icon" type="image/x-icon" href="../assets/imagens/favicon/favicon.ico">
   <link rel="stylesheet" href="../assets/css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Marvel:wght@400&display=swap" rel="stylesheet">
-  
-  <script src="../components/app-header/app-header.js" defer></script>
-  <script src="../components/app-menu/app-menu.js" defer></script> </head>
+  
+  <script src="../assets/js/products.js" defer></script>
+  <script src="../assets/js/category-page.js" defer></script> 
+  <script src="../components/app-header/app-header.js" defer></script>
+  <script src="../components/app-menu/app-menu.js" defer></script> 
+  <script src="../components/app-product-detail/app-product-detail.js" defer></script>
+  <script src="../components/app-filter/app-filter.js" defer></script>
+  <script src="../components/app-breadcrumb/app-breadcrumb.js" defer></script>
+</head>
 <body>
-  <app-header></app-header>
+  <app-header></app-header>
 
-  <app-menu></app-menu>
+  <app-menu></app-menu>
 
-  <main>
+  <app-breadcrumb></app-breadcrumb>
+  <app-filter></app-filter>
+
+  <main>
+
     <section class="products-container">
-    <h2 class="section-title">Vestido Curto</h2>
-    
-    <div class="products-grid">
-        <div class="product-card">
-            <div class="product-image">
-                <img src="../assets\imagens\produtos\vestidos-curtos\VESTIDO-CURTO-FLORAL-TATI.webp" alt="Produto 1">
+            <div class="category-header-wrapper">
+                <h2 class="section-title" data-category="vestido-curto">Vestido Curto</h2> 
+                <button class="open-filter-btn">
+                    <img src="../assets/imagens/svg/filter.svg" alt="Abrir Filtros">
+                </button>
             </div>
-            <div class="product-info">
-                <h2 class="product-title">Vestido Curto Estampado Floral Tati</h2>
-                <span class="product-price">R$ 449,00 ou 5x de R$ 112,25</span>
+            
+            <div class="products-grid" id="product-list-grid">
             </div>
-        </div>
-        
-        <div class="product-card">
-            <div class="product-image">
-                <img src="../assets\imagens\produtos\vestidos-curtos\VESTIDO-CURTO-ESTAMPADO-VOO-DE-PORCELANA.webp" alt="Produto 2">
-            </div>
-            <div class="product-info">
-                <h2 class="product-title">Vestido Curto Estampado Voo de Porcelana</h2>
-                <span class="product-price">R$ 398,00 ou 4x de R$ 99,50</span>
-            </div>
-        </div>
+          </section>
 
-
-        <div class="product-card">
-            <div class="product-image">
-                <img src="../assets\imagens\produtos\vestidos-curtos\VESTIDO-CURTO-ESTAMPADO-PAISAGEM-NATURAL.webp" alt="Produto 3">
-            </div>
-            <div class="product-info">
-                <h2 class="product-title">Vestido Curto Paisagem Natural</h2>
-                <span class="product-price">R$ 479,00 ou 4x de R$ 119,75</span>
-            </div>
-        </div>
-
-        <div class="product-card">
-            <div class="product-image">
-                <img src="../assets\imagens\produtos\vestidos-curtos\VESTIDO-CURTO-JARDIM-FLORIDO.webp" alt="Produto 4">
-            </div>
-            <div class="product-info">
-                <h2 class="product-title">Vestido Curto Estampado Jardim Florido</h2>
-                <span class="product-price">R$ 398,00 ou 4x de R$99,50</span>
-            </div>
-        </div>
-
-        <div class="product-card">
-            <div class="product-image">
-                <img src="../assets\imagens\produtos\vestidos-curtos\VESTIDO-CURTO-MARCELLE.webp" alt="Produto 5">
-            </div>
-            <div class="product-info">
-                <h2 class="product-title">Vestido Curto Estampado Marcelle</h2>
-                <span class="product-price">R$ 479,00 ou 4x de R$ 119,75</span>
-            </div>
-        </div>
-
-        <div class="product-card">
-                    <div class="product-image">
-                        <img src="../assets\imagens\produtos\vestidos-curtos\VESTIDO-ALCA-LENCO-JARDIM-REAL.webp" alt="Produto 6">
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-title">Vestido Alça Estampado Jardim Real</h2>
-                        <span class="product-price">R$ 298,00 ou 3x de R$ 99,33</span>
-                    </div>
-                </div>
-                
-        <div class="product-card">
-            <div class="product-image">
-                <img src="../assets\imagens\produtos\vestidos-curtos\VESTIDO-CURTO-MANGA-COQUEIRADA.webp" alt="Produto 7">
-            </div>
-            <div class="product-info">
-                <h2 class="product-title">Vestido Curto com Manga Estampado Coqueirada</h2>
-                <span class="product-price">R$ 429,00 ou 4x de R$ 107,25</span>
-            </div>
-        </div>
-
-        <div class="product-card">
-            <div class="product-image">
-                <img src="../assets\imagens\produtos\vestidos-curtos\VESTIDO-CURTO-TROPICALIA.webp" alt="Produto 8">
-            </div>
-            <div class="product-info">
-                <h2 class="product-title">Vestido Curto Estampado Tropicália</h2>
-                <span class="product-price">R$ 449,00 ou 4x de R$ 112,25</span>
-            </div>
-        </div>       
-        
-        <div class="product-card">
-            <div class="product-image">
-                <img src="../assets\imagens\produtos\vestidos-curtos\VESTIDO-CURTO-FLORAL-ARABESQUE.webp" alt="Produto 9">
-            </div>
-            <div class="product-info">
-                <h2 class="product-title">Vestido Curto Estampado Floral Arabesque</h2>
-                <span class="product-price">R$ 298,00 ou 3x de R$ 99,33</span>
-            </div>
-        </div>        
-
-         <div class="product-card">
-            <div class="product-image">
-                <img src="../assets\imagens\produtos\vestidos-curtos\VESTIDO-CURTO-JARDIM-CHINTZ.webp" alt="Produto 10">
-            </div>
-            <div class="product-info">
-                <h2 class="product-title">Vestido Estampado Jardim Chintz</h2>
-                <span class="product-price">R$ 398,00 ou 4x de R$ 99,50</span>
-            </div>
-        </div>        
-    
-         <div class="product-card">
-            <div class="product-image">
-                <img src="../assets\imagens\produtos\vestidos-curtos\VESTIDO-CURTO-ESTAMPADO-AMALFI.webp" alt="Produto 11">
-            </div>
-            <div class="product-info">
-                <h2 class="product-title">Vestido Curto Estampado Amalfi</h2>
-                <span class="product-price">R$ 529,00 ou 5x de R$ 105,80</span>
-            </div>
-        </div>        
-    
-         <div class="product-card">
-            <div class="product-image">
-                <img src="../assets\imagens\produtos\vestidos-curtos\VESTIDO-CURTO-ESTAMPADO-ANTONIA.webp" alt="Produto 12">
-            </div>
-            <div class="product-info">
-                <h2 class="product-title">Vestido Curto Estampado Antônia</h2>
-                <span class="product-price">R$ 479,00 ou 4x de R$ 119,75</span>
-            </div>
-        </div>        
-    
-    
-    </div>
-</section>
-</main>  
+  </main>
 </body>
 <script src="../assets/js/script.js" defer></script>
 </html>
