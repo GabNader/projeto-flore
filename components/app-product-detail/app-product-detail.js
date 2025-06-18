@@ -1,3 +1,5 @@
+// components/app-product-detail/app-product-detail.js
+
 class AppProductDetail extends HTMLElement {
     constructor() {
         super();
@@ -26,7 +28,7 @@ class AppProductDetail extends HTMLElement {
                                     <option value="">Selecione</option>
                                 </select>
                             </div>
-
+                            
                             <div class="option-group">
                                 <label for="quantity-input">Quantidade:</label>
                                 <input type="number" id="quantity-input" value="1" min="1">
@@ -53,8 +55,12 @@ class AppProductDetail extends HTMLElement {
     }
 
     connectedCallback() {
-   
-        this.loadProductData(); 
+        this.loadProductData();
+        // MUDANÇA AQUI: Adicionar listener ao botão de adicionar ao carrinho
+        const addToCartBtn = this.shadowRoot.querySelector('.add-to-cart-btn');
+        if (addToCartBtn) {
+            addToCartBtn.addEventListener('click', this._handleAddToCart.bind(this));
+        }
     }
 
     loadProductData() {
@@ -67,7 +73,6 @@ class AppProductDetail extends HTMLElement {
             return;
         }
 
-    
         const product = window.productsData.find(p => p.id === productId);
 
         if (!product) {
@@ -77,6 +82,7 @@ class AppProductDetail extends HTMLElement {
         }
 
         this._renderProduct(product);
+        this.currentProduct = product; // Salva o produto atual na instância para uso posterior
     }
 
     _renderProduct(product) {
@@ -88,8 +94,10 @@ class AppProductDetail extends HTMLElement {
         const descriptionEl = this.shadowRoot.querySelector('.product-description p');
         const thumbnailGalleryEl = this.shadowRoot.querySelector('.thumbnail-gallery');
         const sizeSelectEl = this.shadowRoot.querySelector('#size-select');
+        const quantityInputEl = this.shadowRoot.querySelector('#quantity-input'); // NOVO: seleciona input de quantidade
 
-    
+
+        // Preencher imagem principal
         if (mainImageEl && product.images && product.images.length > 0) {
             mainImageEl.src = product.images[0];
             mainImageEl.alt = product.name;
@@ -98,7 +106,7 @@ class AppProductDetail extends HTMLElement {
             mainImageEl.alt = 'Imagem não disponível';
         }
 
-    
+        // Preencher outros textos
         if (titleEl) titleEl.textContent = product.name;
         if (priceEl) {
             priceEl.textContent = `R$ ${product.price.toFixed(2).replace('.', ',')}`;
@@ -108,7 +116,7 @@ class AppProductDetail extends HTMLElement {
         }
         if (descriptionEl) descriptionEl.textContent = product.description;
 
-    
+        // Preencher galeria de miniaturas e adicionar lógica de clique
         if (thumbnailGalleryEl && product.images && product.images.length > 0) {
             thumbnailGalleryEl.innerHTML = product.images.map((imgSrc, index) => `
                 <img src="${imgSrc}" alt="${product.name} - Vista ${index + 1}" data-index="${index}">
@@ -129,7 +137,7 @@ class AppProductDetail extends HTMLElement {
             thumbnailGalleryEl.innerHTML = '';
         }
 
-
+        // Preencher opções de tamanho
         if (sizeSelectEl && product.sizes && product.sizes.length > 0) {
             sizeSelectEl.innerHTML = '<option value="">Selecione</option>' + 
                 product.sizes.map(size => `<option value="${size}">${size}</option>`).join('');
@@ -137,7 +145,55 @@ class AppProductDetail extends HTMLElement {
             sizeSelectEl.innerHTML = '<option value="">Não disponível</option>';
             sizeSelectEl.disabled = true;
         }
+        
+        // NOVO: Adicionar valor padrão ao input de quantidade se não houver
+        if (quantityInputEl && !quantityInputEl.value) {
+            quantityInputEl.value = 1;
+        }
+    }
 
+    // NOVO MÉTODO: Lidar com o clique no botão "Adicionar ao Carrinho"
+    _handleAddToCart() {
+        if (!this.currentProduct) {
+            console.error('Nenhum produto selecionado para adicionar ao carrinho.');
+            return;
+        }
+
+        const sizeSelectEl = this.shadowRoot.querySelector('#size-select');
+        const quantityInputEl = this.shadowRoot.querySelector('#quantity-input');
+
+        const selectedSize = sizeSelectEl ? sizeSelectEl.value : null;
+        const selectedQuantity = quantityInputEl ? parseInt(quantityInputEl.value) : 1;
+
+        if (sizeSelectEl && !selectedSize) {
+            alert('Por favor, selecione um tamanho.');
+            sizeSelectEl.focus();
+            return;
+        }
+        if (selectedQuantity < 1) {
+            alert('A quantidade deve ser pelo menos 1.');
+            if (quantityInputEl) quantityInputEl.focus();
+            return;
+        }
+
+        // Constrói o objeto do item do carrinho
+        const itemToAdd = {
+            id: this.currentProduct.id,
+            name: this.currentProduct.name,
+            price: this.currentProduct.price,
+            image: this.currentProduct.images[0], // Pega a primeira imagem
+            size: selectedSize,
+            quantity: selectedQuantity
+        };
+
+        // Dispara um evento personalizado para o carrinho ouvir
+        this.dispatchEvent(new CustomEvent('addToCart', {
+            detail: itemToAdd,
+            bubbles: true,
+            composed: true
+        }));
+
+        alert(`"${itemToAdd.name}" (${itemToAdd.size || 'Tamanho Único'}) adicionado ao carrinho!`);
     }
 }
 
