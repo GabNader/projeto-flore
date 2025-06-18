@@ -4,14 +4,14 @@ window.productsData = [
     // --- VESTIDO LONGO ---
     {
         id: 'vestido-cropped-estampado-lina',
-        name: 'Vestido Cropped Estampado Lina',
+        name: 'Vestido Estampado Lina',
         price: 449.00,
         installments: '5x de R$ 112,25',
-        description: 'Um vestido longo com corte cropped e estampa exclusiva, ideal para um visual moderno e elegante. Confeccionado em tecido leve, proporciona conforto e estilo em qualquer ocasião.',
+        description: 'Um vestido longo com estampa exclusiva, ideal para um visual moderno e elegante. Confeccionado em tecido leve, proporciona conforto e estilo em qualquer ocasião.',
         images: [
             '../assets/imagens/produtos/vestido-longo/VESTIDO-CROPPED-LINA.webp',
         ],
-        sizes: ['P', 'M', 'G'],
+        sizes: ['P', 'G', 'GG'],
         colors: ['Verde', 'Estampado'],
         category: 'vestido-longo',
         isBestSeller: true
@@ -21,11 +21,11 @@ window.productsData = [
         name: 'Vestido Estampado Maxi Coração',
         price: 1298.00,
         installments: '6x de R$ 216,33',
-        description: 'Vestido longo com estampa de corações em tamanho maxi, trazendo um toque romântico e ousado. Possui caimento fluído e é perfeito para eventos especiais.',
+        description: 'Vestido longo com estampa de corações, trazendo um toque romântico e ousado. Possui caimento fluído e é perfeito para eventos especiais.',
         images: [
             '../assets/imagens/produtos/vestido-longo/VESTIDO-MAXI-CORACAO.webp',
         ],
-        sizes: ['P', 'M', 'G'],
+        sizes: ['P', 'M', 'GG'],
         colors: ['Vermelho', 'Estampado'],
         category: 'vestido-longo',
         isBestSeller: true
@@ -39,22 +39,22 @@ window.productsData = [
         images: [
             '../assets/imagens/produtos/vestido-longo/VESTIDO-LONGO-COELHOS.webp',
         ],
-        sizes: ['P', 'M', 'G'],
+        sizes: ['M', 'G'],
         colors: ['Vermelho', 'Colorido', 'Estampado'],
         category: 'vestido-longo',
         isBestSeller: true
     },
     {
         id: 'vestido-artesanal-bordado-coracoes',
-        name: 'Vestido Artesanal Bordado Corações',
+        name: 'Vestido Artesanal Bordado',
         price: 579.00,
         installments: '5x de R$115,80',
         description: 'Vestido artesanal bordado corações. Sem alças, o design abraça simplicidade e criatividade, com bordados delicados de corações que adicionam um toque especial à peça. O corte fluido e a barra assimétrica criam movimento e leveza',
         images: [
             '../assets/imagens/produtos/vestido-longo/VESTIDO-ARTESANAL-BORDADO-CORACOES.webp',
         ],
-        sizes: ['P', 'M', 'G'],
-        colors: ['Estampado', 'Azul'],
+        sizes: ['P', 'M'],
+        colors: ['Estampado', 'Branco'],
         category: 'vestido-longo',
         isBestSeller: true
     },
@@ -67,8 +67,8 @@ window.productsData = [
         images: [
             '../assets/imagens/produtos/vestido-longo/VESTIDO-MARCELLE.webp',
         ],
-        sizes: ['P', 'M', 'G'],
-        colors: ['Preto', 'Estampado'],
+        sizes: ['M', 'GG'],
+        colors: ['Preto', 'Estampado', 'colorido'],
         category: 'vestido-longo',
         isBestSeller: true
     },
@@ -81,7 +81,7 @@ window.productsData = [
         images: [
             '../assets/imagens/produtos/vestido-longo/VESTIDO-MANGAS-CORACAO.webp',
         ],
-        sizes: ['P', 'M', 'G'],
+        sizes: ['P', 'GG'],
         colors: ['Vermelho', 'Branco', 'Estampado'],
         category: 'vestido-longo',
         isBestSeller: true
@@ -95,7 +95,7 @@ window.productsData = [
         images: [
             '../assets/imagens/produtos/vestido-longo/VESTIDO-LONGO-MG-BEATRICE-FLORAL.webp',
         ],
-        sizes: ['P', 'M', 'G'],
+        sizes: ['P', 'GG'],
         colors: ['Floral', 'Verde' ,'Estampado'],
         category: 'vestido-longo',
         isBestSeller: true
@@ -109,14 +109,14 @@ window.productsData = [
         images: [
             '../assets/imagens/produtos/vestido-longo/VESTIDO-CROPPED-BALONE-COGU.webp',
         ],
-        sizes: ['P', 'M', 'G'],
+        sizes: ['P', 'M'],
         colors: ['Estampado', 'Branco'],
         category: 'vestido-longo',
         isBestSeller: true
     },
     {
         id: 'vestido-balone-xadrez-junino',
-        name: 'Vestido Balone Xadrez Junino',
+        name: 'Vestido Balone Xadrez',
         price: 598.00,
         installments: '6x de R$ 99,66',
         description: 'Vestido longo com corte balonê e estampa xadrez junina, trazendo um toque festivo e tradicional. Perfeito para celebrações e momentos de alegria.',
@@ -144,10 +144,10 @@ window.productsData = [
     },
     {
         id: 'vestido-cropped-estampado-jardim-maravilhoso',
-        name: 'Vestido Cropped Estampado Jardim Maravilhoso',
+        name: 'Vestido  Estampado Jardim Maravilhoso',
         price: 449.00,
         installments: '4x de R$ 112,25',
-        description: 'Vestido longo cropped com estampa de jardim maravilhoso, ideal para quem busca um visual vibrante e cheio de vida. Confeccionado em tecido leve, proporciona frescor e estilo.',
+        description: 'Vestido longo com estampa de jardim maravilhoso, ideal para quem busca um visual vibrante e cheio de vida. Confeccionado em tecido leve, proporciona frescor e estilo.',
         images: [
             '../assets/imagens/produtos/vestido-longo/VESTIDO-CROPPED-JARDIM-MARAVILHOSO.webp',
         ],
@@ -205,7 +205,7 @@ window.productsData = [
         name: 'Vestido Curto Estampado Francisca',
         price: 529.00,
         installments: '5x de R$ 105,80',
-        description: 'Um vestido curto e vibrante com estampa Francisca, que combina modernidade e conforto. Ideal para um visual descontraído e cheio de personalidade.',
+        description: 'Um vestido curto com estampa Francisca, que combina modernidade e conforto. Ideal para um visual descontraído e cheio de personalidade.',
         images: [
             '../assets/imagens/produtos/vestidos-curtos/VESTIDO-CURTO-FRANCISCA-S.webp',
         ],
@@ -224,8 +224,8 @@ window.productsData = [
         images: [
             '../assets/imagens/produtos/vestidos-curtos/VESTIDO-CURTO-JARDIM-FLORIDO.webp',
         ],
-        sizes: ['P', 'M', 'G'],
-        colors: ['Floral', 'Verde', 'Estampado', 'Preto'],
+        sizes: ['P', 'G'],
+        colors: ['Floral', 'Preto', 'Estampado', 'Preto'],
         isBestSeller: false,
         category: 'vestido-curto'
     },
@@ -238,7 +238,7 @@ window.productsData = [
         images: [
             '../assets/imagens/produtos/vestidos-curtos/VESTIDO-CURTO-MARCELLE.webp',
         ],
-        sizes: ['P', 'M', 'G'],
+        sizes: ['P', 'M'],
         colors: ['Estampado', 'Preto', 'Floral', 'Verde'],
         isBestSeller: false,
         category: 'vestido-curto'
@@ -252,7 +252,7 @@ window.productsData = [
         images: [
             '../assets/imagens/produtos/vestidos-curtos/VESTIDO-ALCA-LENCO-JARDIM-REAL.webp',
         ],
-        sizes: ['P', 'M', 'G'],
+        sizes: ['M', 'G'],
         colors: ['Floral', 'Preto', 'Estampado'],
         isBestSeller: false,
         category: 'vestido-curto'
@@ -262,11 +262,11 @@ window.productsData = [
         name: 'Vestido Curto com Manga Estampado Coqueirada',
         price: 429.00,
         installments: '4x de R$ 107,25',
-        description: 'Vestido curto com mangas e estampa coqueirada, perfeito para um look descontraído e tropical. Confortável e com design moderno.',
+        description: 'Vestido curto com mangas e estampa de coqueiro, perfeito para um look descontraído e tropical. Confortável e com design moderno.',
         images: [
             '../assets/imagens/produtos/vestidos-curtos/VESTIDO-CURTO-MANGA-COQUEIRADA.webp',
         ],
-        sizes: ['P', 'M', 'G'],
+        sizes: ['P', 'M'],
         colors: ['Estampado', 'Preto', 'Branco'],
         isBestSeller: false,
         category: 'vestido-curto'
@@ -276,7 +276,7 @@ window.productsData = [
         name: 'Vestido Curto Estampado Tropicália',
         price: 449.00,
         installments: '4x de R$ 112,25',
-        description: 'Vestido curto com estampa vibrante Tropicália, que remete à exuberância da fauna e flora. Ideal para um visual alegre e cheio de vida.',
+        description: 'Vestido curto com estampa vibrante tropical, que remete à exuberância da fauna e flora. Ideal para um visual alegre e cheio de vida.',
         images: [
             '../assets/imagens/produtos/vestidos-curtos/VESTIDO-CURTO-TROPICALIA.webp',
         ],
@@ -304,11 +304,11 @@ window.productsData = [
         name: 'Vestido Estampado Jardim Chintz',
         price: 398.00,
         installments: '4x de R$ 99,50',
-        description: 'Vestido curto com estampa Jardim Chintz, que traz a beleza de um jardim em tecido. Leve e com caimento suave, ideal para um visual romântico.',
+        description: 'Vestido curto com estampa que traz a beleza de um jardim em tecido. Leve e com caimento suave, ideal para um visual romântico.',
         images: [
             '../assets/imagens/produtos/vestidos-curtos/VESTIDO-CURTO-JARDIM-CHINTZ.webp',
         ],
-        sizes: ['P', 'M', 'G'],
+        sizes: ['P', 'G'],
         colors: ['Floral', 'Estampado', 'Preto', 'Azul'],
         isBestSeller: false,
         category: 'vestido-curto'
@@ -318,26 +318,26 @@ window.productsData = [
         name: 'Vestido Curto Estampado Jardim Real',
         price: 398.00,
         installments: '4x de R$ 99,50',
-        description: 'Vestido curto com estampa Jardim Real, que inspira um visual elegante e natural. Confortável e versátil, perfeito para diversas ocasiões.',
+        description: 'Vestido curto com estampa que inspira um visual elegante e natural. Confortável e versátil, perfeito para diversas ocasiões.',
         images: [
             '../assets/imagens/produtos/vestidos-curtos/VESTIDO-CURTO-LENCO-JARDIM-REAL.webp',
         ],
         sizes: ['P', 'M', 'G'],
-        colors: ['Floral', 'Verde', 'Estampado'],
+        colors: ['Floral', 'Estampado'],
         isBestSeller: false,
         category: 'vestido-curto'
     },
     {
         id: 'vestido-ombro-rosalia-lenco',
-        name: 'Vestido Ombro Rosalia LenÇO',
+        name: 'Vestido Ombro Rosalia Lenço',
         price: 449.00,
         installments: '4x de R$ 112,25',
-        description: 'Versão curta do vestido Rosalia, com ombro só e detalhe de lenço. Uma peça moderna e descontraída para o seu dia a dia.',
+        description: 'Versão curta do vestido com ombro só e detalhe de lenço. Uma peça moderna e descontraída para o seu dia a dia.',
         images: [
             '../assets/imagens/produtos/vestidos-curtos/VESTIDO-OMBRO-SO-ROSALIA-LENCO-S.webp',
         ],
         sizes: ['P', 'M', 'G'],
-        colors: ['Estampado', 'Floral', 'Branco'],
+        colors: ['Estampado', 'Floral', 'Branco', 'Branco'],
         isBestSeller: false,
         category: 'vestido-curto'
     },
@@ -348,11 +348,12 @@ window.productsData = [
         name: 'Vestido Tricot Jacquard Lurex Onça',
         price: 749.00,
         installments: '6x de R$ 124,83',
-        description: 'Vestido midi em tricot com estampa de onça em jacquard lurex, trazendo sofisticação e um toque selvagem. Perfeito para quem busca elegância e conforto.',
+        description: 'Vestido midi em tricot com estampa de onça em lurex, trazendo sofisticação e um toque selvagem. Perfeito para quem busca elegância e conforto.',
         images: [
             '../assets/imagens/produtos/vestido-midi/VESTIDO-TRICOT-JACQUARD-LUREX-ONCA.webp',
+            '../assets/imagens/produtos/vestido-midi/VESTIDO-TRICOT-JACQUARD-LUREX-ONCA 2.webp'
         ],
-        sizes: ['P', 'M', 'G'],
+        sizes: ['M', 'G'],
         colors: ['Onça', 'Preto'],
         category: 'vestido-midi',
         isBestSeller: false
@@ -365,6 +366,7 @@ window.productsData = [
         description: 'Vestido midi com estampa Marcelle, que une a versatilidade do comprimento midi com um design moderno. Ideal para diversas ocasiões, proporcionando estilo e conforto.',
         images: [
             '../assets/imagens/produtos/vestido-midi/VESTIDO-MIDI-MALU.webp',
+            '../assets/imagens/produtos/vestido-midi/VESTIDO-MIDI-MALU 2.webp'
         ],
         sizes: ['P', 'M', 'G'],
         colors: ['Estampado', 'Azul', 'Branco'],
@@ -376,11 +378,12 @@ window.productsData = [
         name: 'Vestido Midi Floral Belle',
         price: 549.00,
         installments: '4x de R$ 112,25',
-        description: 'Vestido midi floral belle. com alças delicadas e decote quadrado, é fluido e confortável, perfeito para ocasiões casuais ou um passeio descontraído. Confeccionado em tecido leve e respirável, seus detalhes são pensados para elevar qualquer look.',
+        description: 'Vestido midi floral com alças delicadas e decote quadrado, é fluido e confortável, perfeito para ocasiões casuais ou um passeio descontraído. Confeccionado em tecido leve e respirável, seus detalhes são pensados para elevar qualquer look.',
         images: [
             '../assets/imagens/produtos/vestido-midi/VESTIDO-MIDI-FLORAL-BELLE.webp',
+            '../assets/imagens/produtos/vestido-midi/VESTIDO-MIDI-FLORAL-BELLE 2.webp'
         ],
-        sizes: ['P', 'M', 'G'],
+        sizes: ['P', 'M'],
         colors: ['Floral', 'Preto', 'Estampado'],
         category: 'vestido-midi',
         isBestSeller: false
@@ -390,9 +393,10 @@ window.productsData = [
         name: 'Vestido Midi Floral Tati',
         price: 448.00,
         installments: '5x de R$ 99,60',
-        description: 'Vestido midi cropped com estampa Flora Abacaxi, que traz um toque tropical e divertido. Perfeito para dias ensolarados e um visual descontraído.',
+        description: 'Vestido midi com estampa Floral, que traz um toque tropical e divertido. Perfeito para dias ensolarados e um visual descontraído.',
         images: [
             '../assets/imagens/produtos/vestido-midi/VESTIDO-MIDI-FLORAL-TATI.webp',
+            '../assets/imagens/produtos/vestido-midi/VESTIDO-MIDI-FLORAL-TATI 2.webp'
         ],
         sizes: ['P', 'M', 'G'],
         colors: ['Estampado', 'Floral', 'Azul'],
@@ -401,14 +405,15 @@ window.productsData = [
     },
     {
         id: 'vestido-cropped-balone-estampado',
-        name: 'Vestido Cropped Balonê Estampado',
+        name: 'Vestido Balonê Estampado',
         price: 368.00,
         installments: '3x de R$ 122,66',
-        description: 'Vestido cropped balonê estampado. traz uma modelagem descontraída e charmosa, com alças finas ajustáveis e decote reto. O corte balonê soma leveza e movimento à peça, tornando-a ideal para passeios ao ar livre ou encontros casuais.',
+        description: 'Vestido balonê estampado. traz uma modelagem descontraída e charmosa, com alças finas ajustáveis e decote reto. O corte balonê soma leveza e movimento à peça, tornando-a ideal para passeios ao ar livre ou encontros casuais.',
         images: [
             '../assets/imagens/produtos/vestido-midi/VESTIDO-CROPPED-BALONE-COGU.webp',
+            '../assets/imagens/produtos/vestido-midi/VESTIDO-CROPPED-BALONE-COGU 2.webp'
         ],
-        sizes: ['P', 'M', 'G'],
+        sizes: ['M', 'G'],
         colors: ['Estampado', 'Branco'],
         category: 'vestido-midi',
         isBestSeller: false
@@ -418,25 +423,27 @@ window.productsData = [
         name: 'Vestido Beatrice Floral',
         price: 407.00,
         installments: '4x de R$ 101,75',
-        description: 'Vestido midi estampado beatrice floral. Com decote frontal em coração e alças finas ajustáveis, o vestido traz leveza e frescor. A cintura marcada com elástico adiciona conforto, enquanto a saia fluida oferece movimento.',
+        description: 'Vestido midi estampado beatrice floral. Com decote frontal e alças finas ajustáveis, o vestido traz leveza e frescor. A cintura marcada com elástico adiciona conforto, enquanto a saia fluida oferece movimento.',
         images: [
             '../assets/imagens/produtos/vestido-midi/VESTIDO-MIDI-BEATRICE-FLORAL-S.webp',
+            '../assets/imagens/produtos/vestido-midi/VESTIDO-MIDI-BEATRICE-FLORAL-S 2.webp'
         ],
-        sizes: ['P', 'M', 'G'],
-        colors: ['Estampado', 'Preto', 'Verde'],
+        sizes: ['P', 'G'],
+        colors: ['Estampado', 'Verde'],
         category: 'vestido-midi',
         isBestSeller: false
     },
     {
         id: 'vestido-decote-jardim-maravilhoso',
-        name: 'Vestido Decote Jardim Maravilhoso',
+        name: 'Vestido Jardim Maravilhoso',
         price: 429.00,
         installments: '4x de R$ 107,25',
-        description: 'Vestido decote jardim maravilhoso. traz um charme autêntico com o decote em u que confere um toque atual à peça. As alças finas promovem um visual leve e as costas abertas oferecem frescor, perfeito para encontros casuais ou eventos ao ar livre.',
+        description: 'Vestido jardim maravilhoso. traz um charme autêntico com o decote canoa que confere um toque atual à peça. As alças promovem um visual leve e as costas abertas oferecem frescor, perfeito para encontros casuais ou eventos ao ar livre.',
         images: [
             '../assets/imagens/produtos/vestido-midi/VESTIDO-DECOTE-U-COST-JARDIM-MARAVILHOSO.webp',
+            '../assets/imagens/produtos/vestido-midi/VESTIDO-DECOTE-U-COST-JARDIM-MARAVILHOSO 2.webp'
         ],
-        sizes: ['P', 'M', 'G'],
+        sizes: ['M', 'G'],
         colors: ['Estampado', 'Branco'],
         category: 'vestido-midi',
         isBestSeller: false
@@ -446,11 +453,12 @@ window.productsData = [
         name: 'Vestido Midi Estampado Geórgia',
         price: 398.00,
         installments: '4x de R$ 99,50',
-        description: 'Vestido midi estampado geórgia. Apresenta um design moderno sem alças, com recortes estratégicos que garantem um ajuste confortável. Confeccionado em tecido leve de viscose, é perfeito para ocasiões casuais e eventos especiais. O acabamento refinado completa o visual charmoso.',
+        description: 'Vestido midi estampado geórgia. Apresenta um design moderno com alças finas, com recortes estratégicos que garantem um ajuste confortável. Confeccionado em tecido leve de viscose, é perfeito para ocasiões casuais e eventos especiais. O acabamento refinado completa o visual charmoso.',
         images: [
             '../assets/imagens/produtos/vestido-midi/VESTIDO-MIDI-GEORGIA.webp',
+            '../assets/imagens/produtos/vestido-midi/VESTIDO-MIDI-GEORGIA 2.webp'
         ],
-        sizes: ['P', 'M', 'G'],
+        sizes: ['P', 'G'],
         colors: ['Estampado', 'Preto'],
         category: 'vestido-midi',
         isBestSeller: false
@@ -463,6 +471,7 @@ window.productsData = [
         description: 'Vestido midi estampado jardim real. Apresenta decote redondo e alças largas, proporcionando conforto e estilo. A modelagem reta traz leveza e movimento, perfeita para ocasiões casuais.',
         images: [
             '../assets/imagens/produtos/vestido-midi/VESTIDO-MIDI-JARDIM-REAL.webp',
+            '../assets/imagens/produtos/vestido-midi/VESTIDO-MIDI-JARDIM-REAL 2.webp'
         ],
         sizes: ['P', 'M', 'G'],
         colors: ['Estampado', 'Preto', 'Floral'],
@@ -477,6 +486,7 @@ window.productsData = [
         description: 'Vestido midi estampado balamana. com alças finas e decote redondo, apresenta modelagem que valoriza o movimento. Feito de tecido leve, oferece conforto e versatilidade.',
         images: [
             '../assets/imagens/produtos/vestido-midi/VESTIDO-MIDI-BALAMANA.webp',
+            '../assets/imagens/produtos/vestido-midi/VESTIDO-MIDI-BALAMANA 2.webp'
         ],
         sizes: ['P', 'M', 'G'],
         colors: ['Estampado', 'Floral', 'Verde'],
@@ -491,8 +501,9 @@ window.productsData = [
         description: 'Vestido midi estampado jardim tropical apresenta um decote reto e alças ajustáveis, trazendo um toque casual e moderno. Confeccionado em tecido leve, garante conforto e fluidez.',
         images: [
             '../assets/imagens/produtos/vestido-midi/VESTIDO-MIDI-JARDIM-TROPICAL.webp',
+            '../assets/imagens/produtos/vestido-midi/VESTIDO-MIDI-JARDIM-TROPICAL 2.webp'
         ],
-        sizes: ['P', 'M', 'G'],
+        sizes: ['P', 'G'],
         colors: ['Estampado', 'Floral', 'Branco', 'Verde'],
         category: 'vestido-midi',
         isBestSeller: false
@@ -505,9 +516,10 @@ window.productsData = [
         description: 'Vestido midi estampado brilho de banana. apresenta alças finas ajustáveis e decote quadrado, valorizando um toque casual. O corte midi e a fluidez do tecido garantem movimento e leveza, ideal para passeios e encontros especiais. Uma peça que traz originalidade e charme a qualquer look.',
         images: [
             '../assets/imagens/produtos/vestido-midi/VESTIDO-MIDI-BRILHO-DE-BANANA.webp',
+            '../assets/imagens/produtos/vestido-midi/VESTIDO-MIDI-BRILHO-DE-BANANA 2.webp'
         ],
-        sizes: ['P', 'M', 'G'],
-        colors: ['Verde', 'Estampado', 'Floral'],
+        sizes: ['P', 'M'],
+        colors: ['Verde', 'Estampado'],
         category: 'vestido-midi',
         isBestSeller: false
     },
