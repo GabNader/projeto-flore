@@ -225,7 +225,9 @@ window.productsData = [
         description: 'Vestido curto com estampa de jardim florido, trazendo leveza e alegria para o seu dia a dia. Confortável e estiloso, perfeito para um passeio ao ar livre.',
         images: [
             '../assets/imagens/produtos/vestidos-curtos/VESTIDO-CURTO-JARDIM-FLORIDO.webp',
-        ],  '../assets/imagens/produtos/vestidos-curtos/VESTIDO-CURTO-JARDIM-FLORIDO 2.wepb'
+            '../assets/imagens/produtos/vestidos-curtos/VESTIDO-CURTO-JARDIM-FLORIDO 2.webp'
+        ],  
+
         sizes: ['P', 'G'],
         colors: ['Floral', 'Preto', 'Estampado', 'Preto'],
         isBestSeller: false,
@@ -239,7 +241,7 @@ window.productsData = [
         description: 'Vestido curto com estampa Marcelle, que une elegância e um toque contemporâneo. O caimento é perfeito, ideal para diversas ocasiões.',
         images: [
             '../assets/imagens/produtos/vestidos-curtos/VESTIDO-CURTO-MARCELLE.webp',
-            '../assets/imagens/produtos/vestidos-curtos/VESTIDO-CURTO-MARCELLE 2.wepb'
+            '../assets/imagens/produtos/vestidos-curtos/VESTIDO-CURTO-MARCELLE 2.webp'
         ],
         sizes: ['P', 'M'],
         colors: ['Estampado', 'Preto', 'Floral', 'Verde'],
@@ -254,7 +256,7 @@ window.productsData = [
         description: 'Vestido curto de alça com estampa Jardim Real, trazendo a beleza da natureza para seu visual. Leve e confortável, ideal para dias quentes.',
         images: [
             '../assets/imagens/produtos/vestidos-curtos/VESTIDO-ALCA-LENCO-JARDIM-REAL.webp',
-            '../assets/imagens/produtos/vestidos-curtos/VESTIDO-ALCA-LENCO-JARDIM-REAL 2.wepb'
+            '../assets/imagens/produtos/vestidos-curtos/VESTIDO-ALCA-LENCO-JARDIM-REAL 2.webp'
         ],
         sizes: ['M', 'G'],
         colors: ['Floral', 'Preto', 'Estampado'],
@@ -269,7 +271,7 @@ window.productsData = [
         description: 'Vestido curto com mangas e estampa de coqueiro, perfeito para um look descontraído e tropical. Confortável e com design moderno.',
         images: [
             '../assets/imagens/produtos/vestidos-curtos/VESTIDO-CURTO-MANGA-COQUEIRADA.webp',
-            '../assets/imagens/produtos/vestidos-curtos/VESTIDO-CURTO-MANGA-COQUEIRADA 2.wepb'
+            '../assets/imagens/produtos/vestidos-curtos/VESTIDO-CURTO-MANGA-COQUEIRADA 2.webp'
         ],
         sizes: ['P', 'M'],
         colors: ['Estampado', 'Preto', 'Branco'],
@@ -284,7 +286,7 @@ window.productsData = [
         description: 'Vestido curto com estampa vibrante tropical, que remete à exuberância da fauna e flora. Ideal para um visual alegre e cheio de vida.',
         images: [
             '../assets/imagens/produtos/vestidos-curtos/VESTIDO-CURTO-TROPICALIA.webp',
-            '../assets/imagens/produtos/vestidos-curtos/VESTIDO-CURTO-TROPICALIA 2.wepb'
+            '../assets/imagens/produtos/vestidos-curtos/VESTIDO-CURTO-TROPICALIA 2.webp'
         ],
         sizes: ['P', 'M', 'G'],
         colors: ['Estampado', 'Colorido', 'Amarelo', 'Florido'],
