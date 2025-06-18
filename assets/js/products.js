@@ -363,6 +363,7 @@ window.productsData = [
         description: 'Vestido midi em tricot com estampa de onça em lurex, trazendo sofisticação e um toque selvagem. Perfeito para quem busca elegância e conforto.',
         images: [
             '../assets/imagens/produtos/vestido-midi/VESTIDO-TRICOT-JACQUARD-LUREX-ONCA.webp',
+            '../assets/imagens/produtos/vestido-midi/VESTIDO-TRICOT-JACQUARD-LUREX-ONCA 2.webp'
         ],
         sizes: ['M', 'G'],
         colors: ['Onça', 'Preto'],
@@ -377,6 +378,7 @@ window.productsData = [
         description: 'Vestido midi com estampa Marcelle, que une a versatilidade do comprimento midi com um design moderno. Ideal para diversas ocasiões, proporcionando estilo e conforto.',
         images: [
             '../assets/imagens/produtos/vestido-midi/VESTIDO-MIDI-MALU.webp',
+            '../assets/imagens/produtos/vestido-midi/VESTIDO-MIDI-MALU 2.webp'
         ],
         sizes: ['P', 'M', 'G'],
         colors: ['Estampado', 'Azul', 'Branco'],
@@ -391,6 +393,7 @@ window.productsData = [
         description: 'Vestido midi floral com alças delicadas e decote quadrado, é fluido e confortável, perfeito para ocasiões casuais ou um passeio descontraído. Confeccionado em tecido leve e respirável, seus detalhes são pensados para elevar qualquer look.',
         images: [
             '../assets/imagens/produtos/vestido-midi/VESTIDO-MIDI-FLORAL-BELLE.webp',
+            '../assets/imagens/produtos/vestido-midi/VESTIDO-MIDI-FLORAL-BELLE 2.webp'
         ],
         sizes: ['P', 'M'],
         colors: ['Floral', 'Preto', 'Estampado'],
@@ -405,6 +408,7 @@ window.productsData = [
         description: 'Vestido midi com estampa Floral, que traz um toque tropical e divertido. Perfeito para dias ensolarados e um visual descontraído.',
         images: [
             '../assets/imagens/produtos/vestido-midi/VESTIDO-MIDI-FLORAL-TATI.webp',
+            '../assets/imagens/produtos/vestido-midi/VESTIDO-MIDI-FLORAL-TATI 2.webp'
         ],
         sizes: ['P', 'M', 'G'],
         colors: ['Estampado', 'Floral', 'Azul'],
@@ -419,6 +423,7 @@ window.productsData = [
         description: 'Vestido balonê estampado. traz uma modelagem descontraída e charmosa, com alças finas ajustáveis e decote reto. O corte balonê soma leveza e movimento à peça, tornando-a ideal para passeios ao ar livre ou encontros casuais.',
         images: [
             '../assets/imagens/produtos/vestido-midi/VESTIDO-CROPPED-BALONE-COGU.webp',
+            '../assets/imagens/produtos/vestido-midi/VESTIDO-CROPPED-BALONE-COGU 2.webp'
         ],
         sizes: ['M', 'G'],
         colors: ['Estampado', 'Branco'],
@@ -433,6 +438,7 @@ window.productsData = [
         description: 'Vestido midi estampado beatrice floral. Com decote frontal e alças finas ajustáveis, o vestido traz leveza e frescor. A cintura marcada com elástico adiciona conforto, enquanto a saia fluida oferece movimento.',
         images: [
             '../assets/imagens/produtos/vestido-midi/VESTIDO-MIDI-BEATRICE-FLORAL-S.webp',
+            '../assets/imagens/produtos/vestido-midi/VESTIDO-MIDI-BEATRICE-FLORAL-S 2.webp'
         ],
         sizes: ['P', 'G'],
         colors: ['Estampado', 'Verde'],
@@ -447,6 +453,7 @@ window.productsData = [
         description: 'Vestido jardim maravilhoso. traz um charme autêntico com o decote canoa que confere um toque atual à peça. As alças promovem um visual leve e as costas abertas oferecem frescor, perfeito para encontros casuais ou eventos ao ar livre.',
         images: [
             '../assets/imagens/produtos/vestido-midi/VESTIDO-DECOTE-U-COST-JARDIM-MARAVILHOSO.webp',
+            '../assets/imagens/produtos/vestido-midi/VESTIDO-DECOTE-U-COST-JARDIM-MARAVILHOSO 2.webp'
         ],
         sizes: ['M', 'G'],
         colors: ['Estampado', 'Branco'],
@@ -461,6 +468,7 @@ window.productsData = [
         description: 'Vestido midi estampado geórgia. Apresenta um design moderno com alças finas, com recortes estratégicos que garantem um ajuste confortável. Confeccionado em tecido leve de viscose, é perfeito para ocasiões casuais e eventos especiais. O acabamento refinado completa o visual charmoso.',
         images: [
             '../assets/imagens/produtos/vestido-midi/VESTIDO-MIDI-GEORGIA.webp',
+            '../assets/imagens/produtos/vestido-midi/VESTIDO-MIDI-GEORGIA 2.webp'
         ],
         sizes: ['P', 'G'],
         colors: ['Estampado', 'Preto'],
@@ -475,6 +483,7 @@ window.productsData = [
         description: 'Vestido midi estampado jardim real. Apresenta decote redondo e alças largas, proporcionando conforto e estilo. A modelagem reta traz leveza e movimento, perfeita para ocasiões casuais.',
         images: [
             '../assets/imagens/produtos/vestido-midi/VESTIDO-MIDI-JARDIM-REAL.webp',
+            '../assets/imagens/produtos/vestido-midi/VESTIDO-MIDI-JARDIM-REAL 2.webp'
         ],
         sizes: ['P', 'M', 'G'],
         colors: ['Estampado', 'Preto', 'Floral'],
@@ -489,6 +498,7 @@ window.productsData = [
         description: 'Vestido midi estampado balamana. com alças finas e decote redondo, apresenta modelagem que valoriza o movimento. Feito de tecido leve, oferece conforto e versatilidade.',
         images: [
             '../assets/imagens/produtos/vestido-midi/VESTIDO-MIDI-BALAMANA.webp',
+            '../assets/imagens/produtos/vestido-midi/VESTIDO-MIDI-BALAMANA 2.webp'
         ],
         sizes: ['P', 'M', 'G'],
         colors: ['Estampado', 'Floral', 'Verde'],
@@ -503,6 +513,7 @@ window.productsData = [
         description: 'Vestido midi estampado jardim tropical apresenta um decote reto e alças ajustáveis, trazendo um toque casual e moderno. Confeccionado em tecido leve, garante conforto e fluidez.',
         images: [
             '../assets/imagens/produtos/vestido-midi/VESTIDO-MIDI-JARDIM-TROPICAL.webp',
+            '../assets/imagens/produtos/vestido-midi/VESTIDO-MIDI-JARDIM-TROPICAL 2.webp'
         ],
         sizes: ['P', 'G'],
         colors: ['Estampado', 'Floral', 'Branco', 'Verde'],
@@ -517,6 +528,7 @@ window.productsData = [
         description: 'Vestido midi estampado brilho de banana. apresenta alças finas ajustáveis e decote quadrado, valorizando um toque casual. O corte midi e a fluidez do tecido garantem movimento e leveza, ideal para passeios e encontros especiais. Uma peça que traz originalidade e charme a qualquer look.',
         images: [
             '../assets/imagens/produtos/vestido-midi/VESTIDO-MIDI-BRILHO-DE-BANANA.webp',
+            '../assets/imagens/produtos/vestido-midi/VESTIDO-MIDI-BRILHO-DE-BANANA 2.webp'
         ],
         sizes: ['P', 'M'],
         colors: ['Verde', 'Estampado'],
