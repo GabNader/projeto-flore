@@ -10,7 +10,7 @@ window.productsData = [
         description: 'Um vestido longo com estampa exclusiva, ideal para um visual moderno e elegante. Confeccionado em tecido leve, proporciona conforto e estilo em qualquer ocasião.',
         images: [
             '../assets/imagens/produtos/vestido-longo/VESTIDO-CROPPED-LINA.webp',
-        ],
+            '../assets/imagens/produtos/vestido-longo/VESTIDO-CROPPED-LINA 2.webp'],
         sizes: ['P', 'G', 'GG'],
         colors: ['Verde', 'Estampado'],
         category: 'vestido-longo',
@@ -24,6 +24,7 @@ window.productsData = [
         description: 'Vestido longo com estampa de corações, trazendo um toque romântico e ousado. Possui caimento fluído e é perfeito para eventos especiais.',
         images: [
             '../assets/imagens/produtos/vestido-longo/VESTIDO-MAXI-CORACAO.webp',
+            '../assets/imagens/produtos/vestido-longo/VESTIDO-MAXI-CORACAO 2.webp'
         ],
         sizes: ['P', 'M', 'GG'],
         colors: ['Vermelho', 'Estampado'],
@@ -38,6 +39,7 @@ window.productsData = [
         description: 'Vestido longo estampado coelhos. Apresenta decote redondo com amarração sutil, mangas curtas bufantes que trazem um toque especial e caimento fluido, garantindo conforto e movimento.',
         images: [
             '../assets/imagens/produtos/vestido-longo/VESTIDO-LONGO-COELHOS.webp',
+            '../assets/imagens/produtos/vestido-longo/VESTIDO-LONGO-COELHOS 2.webp'
         ],
         sizes: ['M', 'G'],
         colors: ['Vermelho', 'Colorido', 'Estampado'],
@@ -52,6 +54,7 @@ window.productsData = [
         description: 'Vestido artesanal bordado corações. Sem alças, o design abraça simplicidade e criatividade, com bordados delicados de corações que adicionam um toque especial à peça. O corte fluido e a barra assimétrica criam movimento e leveza',
         images: [
             '../assets/imagens/produtos/vestido-longo/VESTIDO-ARTESANAL-BORDADO-CORACOES.webp',
+            '../assets/imagens/produtos/vestido-longo/VESTIDO-ARTESANAL-BORDADO-CORACOES 2.webp'
         ],
         sizes: ['P', 'M'],
         colors: ['Estampado', 'Branco'],
@@ -66,6 +69,7 @@ window.productsData = [
         description: 'Vestido longo com estampa exclusiva Marcelle, que une sofisticação e modernidade. O corte valoriza a silhueta, sendo ideal para eventos que pedem um toque de glamour.',
         images: [
             '../assets/imagens/produtos/vestido-longo/VESTIDO-MARCELLE.webp',
+            '../assets/imagens/produtos/vestido-longo/VESTIDO-MARCELLE 2.webp'
         ],
         sizes: ['M', 'GG'],
         colors: ['Preto', 'Estampado', 'colorido'],
@@ -80,6 +84,7 @@ window.productsData = [
         description: 'Lindo vestido longo com mangas e estampa de corações, combinando delicadeza e estilo. Perfeito para diversas ocasiões, proporcionando conforto e um visual encantador.',
         images: [
             '../assets/imagens/produtos/vestido-longo/VESTIDO-MANGAS-CORACAO.webp',
+            '../assets/imagens/produtos/vestido-longo/VESTIDO-MANGAS-CORACAO 2.webp'
         ],
         sizes: ['P', 'GG'],
         colors: ['Vermelho', 'Branco', 'Estampado'],
@@ -94,6 +99,7 @@ window.productsData = [
         description: 'Vestido longo com mangas e estampa floral Beatrice, que traz a beleza da natureza para seu guarda-roupa. Peça versátil e elegante para o dia a dia ou eventos especiais.',
         images: [
             '../assets/imagens/produtos/vestido-longo/VESTIDO-LONGO-MG-BEATRICE-FLORAL.webp',
+            '../assets/imagens/produtos/vestido-longo/VESTIDO-LONGO-MG-BEATRICE-FLORAL 2.webp'
         ],
         sizes: ['P', 'GG'],
         colors: ['Floral', 'Verde' ,'Estampado'],
@@ -108,6 +114,7 @@ window.productsData = [
         description: 'Vestido longo cropped com design balonê e estampa exclusiva Cogul. Uma peça moderna e confortável, ideal para quem busca estilo e originalidade.',
         images: [
             '../assets/imagens/produtos/vestido-longo/VESTIDO-CROPPED-BALONE-COGU.webp',
+            '../assets/imagens/produtos/vestido-longo/VESTIDO-CROPPED-BALONE-COGU 2.webp'
         ],
         sizes: ['P', 'M'],
         colors: ['Estampado', 'Branco'],
@@ -122,6 +129,7 @@ window.productsData = [
         description: 'Vestido longo com corte balonê e estampa xadrez junina, trazendo um toque festivo e tradicional. Perfeito para celebrações e momentos de alegria.',
         images: [
             '../assets/imagens/produtos/vestido-longo/VESTIDO-BALONE-XADREZ-JUNINO-E.webp',
+            '../assets/imagens/produtos/vestido-longo/VESTIDO-BALONE-XADREZ-JUNINO-E 2.webp'
         ],
         sizes: ['P', 'M', 'G'],
         colors: ['Xadrez', 'Vermelho'],
@@ -136,6 +144,7 @@ window.productsData = [
         description: 'Vestido longo com estampa floral arabesque, que combina delicadeza e um caimento lânguido. Ideal para um visual romântico e confortável.',
         images: [
             '../assets/imagens/produtos/vestido-longo/VESTIDO-LANGUIDO-FLORAL-ARABASQUE.webp',
+            '../assets/imagens/produtos/vestido-longo/VESTIDO-LANGUIDO-FLORAL-ARABASQUE 2.webp'
         ],
         sizes: ['P', 'M', 'G'],
         colors: ['Floral', 'Branco', 'Estampado'],
@@ -150,6 +159,7 @@ window.productsData = [
         description: 'Vestido longo com estampa de jardim maravilhoso, ideal para quem busca um visual vibrante e cheio de vida. Confeccionado em tecido leve, proporciona frescor e estilo.',
         images: [
             '../assets/imagens/produtos/vestido-longo/VESTIDO-CROPPED-JARDIM-MARAVILHOSO.webp',
+            '../assets/imagens/produtos/vestido-longo/VESTIDO-CROPPED-JARDIM-MARAVILHOSO 2.webp'
         ],
         sizes: ['P', 'M', 'G'],
         colors: ['Estampado', 'Preto', 'Floral'],
@@ -164,6 +174,7 @@ window.productsData = [
         description: 'Vestido longo com estampa que remete à beleza da turmalina, com cores vibrantes e um design sofisticado. Perfeito para quem busca uma peça única e marcante.',
         images: [
             '../assets/imagens/produtos/vestido-longo/VESTIDO-LONGO-TURMALINA.webp',
+            '../assets/imagens/produtos/vestido-longo/VESTIDO-LONGO-TURMALINA 2.webp'
         ],
         sizes: ['P', 'M', 'G'],
         colors: ['Colorido', 'Estampado'],
