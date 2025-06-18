@@ -11,7 +11,7 @@ window.productsData = [
         images: [
             '../assets/imagens/produtos/vestido-longo/VESTIDO-CROPPED-LINA.webp',
         ],
-        sizes: ['P', 'M', 'G'],
+        sizes: ['P', 'G', 'GG'],
         colors: ['Verde', 'Estampado'],
         category: 'vestido-longo',
         isBestSeller: true
@@ -25,7 +25,7 @@ window.productsData = [
         images: [
             '../assets/imagens/produtos/vestido-longo/VESTIDO-MAXI-CORACAO.webp',
         ],
-        sizes: ['P', 'M', 'G'],
+        sizes: ['P', 'M', 'GG'],
         colors: ['Vermelho', 'Estampado'],
         category: 'vestido-longo',
         isBestSeller: true
@@ -39,7 +39,7 @@ window.productsData = [
         images: [
             '../assets/imagens/produtos/vestido-longo/VESTIDO-LONGO-COELHOS.webp',
         ],
-        sizes: ['P', 'M', 'G'],
+        sizes: ['M', 'G'],
         colors: ['Vermelho', 'Colorido', 'Estampado'],
         category: 'vestido-longo',
         isBestSeller: true
@@ -53,7 +53,7 @@ window.productsData = [
         images: [
             '../assets/imagens/produtos/vestido-longo/VESTIDO-ARTESANAL-BORDADO-CORACOES.webp',
         ],
-        sizes: ['P', 'M', 'G'],
+        sizes: ['P', 'M'],
         colors: ['Estampado', 'Branco'],
         category: 'vestido-longo',
         isBestSeller: true
@@ -67,7 +67,7 @@ window.productsData = [
         images: [
             '../assets/imagens/produtos/vestido-longo/VESTIDO-MARCELLE.webp',
         ],
-        sizes: ['P', 'M', 'G'],
+        sizes: ['M', 'GG'],
         colors: ['Preto', 'Estampado', 'colorido'],
         category: 'vestido-longo',
         isBestSeller: true
@@ -81,7 +81,7 @@ window.productsData = [
         images: [
             '../assets/imagens/produtos/vestido-longo/VESTIDO-MANGAS-CORACAO.webp',
         ],
-        sizes: ['P', 'M', 'G'],
+        sizes: ['P', 'GG'],
         colors: ['Vermelho', 'Branco', 'Estampado'],
         category: 'vestido-longo',
         isBestSeller: true
@@ -95,7 +95,7 @@ window.productsData = [
         images: [
             '../assets/imagens/produtos/vestido-longo/VESTIDO-LONGO-MG-BEATRICE-FLORAL.webp',
         ],
-        sizes: ['P', 'M', 'G'],
+        sizes: ['P', 'GG'],
         colors: ['Floral', 'Verde' ,'Estampado'],
         category: 'vestido-longo',
         isBestSeller: true
@@ -109,7 +109,7 @@ window.productsData = [
         images: [
             '../assets/imagens/produtos/vestido-longo/VESTIDO-CROPPED-BALONE-COGU.webp',
         ],
-        sizes: ['P', 'M', 'G'],
+        sizes: ['P', 'M'],
         colors: ['Estampado', 'Branco'],
         category: 'vestido-longo',
         isBestSeller: true
