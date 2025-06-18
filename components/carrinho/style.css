@@ -92,8 +92,8 @@ body {
 }
 
 .checkout-btn {
-  background-color: #D94389;
-  color: white;
+  background-color: #D94389; 
+  color: white;;;
   border: none;
   padding: 15px;
   font-size: 16px;
