@@ -194,6 +194,7 @@ window.productsData = [
         description: 'Vestido curto com decote transpassado e estampa floral Belle, que traz um toque romântico e feminino. Perfeito para eventos casuais e elegantes.',
         images: [
             '../assets/imagens/produtos/vestidos-curtos/VESTIDO-CURTO-TRANSPASSE-FLORAL-BELLE.webp',
+            '../assets/imagens/produtos/vestidos-curtos/VESTIDO-CURTO-TRANSPASSE-FLORAL-BELLE 2.webp'
         ],
         sizes: ['P', 'M', 'G'],
         colors: ['Floral', 'Preto', 'Colorido', 'Estampado'],
@@ -208,6 +209,7 @@ window.productsData = [
         description: 'Um vestido curto com estampa Francisca, que combina modernidade e conforto. Ideal para um visual descontraído e cheio de personalidade.',
         images: [
             '../assets/imagens/produtos/vestidos-curtos/VESTIDO-CURTO-FRANCISCA-S.webp',
+            '../assets/imagens/produtos/vestidos-curtos/VESTIDO-CURTO-FRANCISCA-2.webp'
         ],
         sizes: ['P', 'M', 'G'],
         colors: ['Estampado', 'Branco', 'Floral'],
@@ -223,7 +225,7 @@ window.productsData = [
         description: 'Vestido curto com estampa de jardim florido, trazendo leveza e alegria para o seu dia a dia. Confortável e estiloso, perfeito para um passeio ao ar livre.',
         images: [
             '../assets/imagens/produtos/vestidos-curtos/VESTIDO-CURTO-JARDIM-FLORIDO.webp',
-        ],
+        ],  '../assets/imagens/produtos/vestidos-curtos/VESTIDO-CURTO-JARDIM-FLORIDO 2.wepb'
         sizes: ['P', 'G'],
         colors: ['Floral', 'Preto', 'Estampado', 'Preto'],
         isBestSeller: false,
@@ -237,6 +239,7 @@ window.productsData = [
         description: 'Vestido curto com estampa Marcelle, que une elegância e um toque contemporâneo. O caimento é perfeito, ideal para diversas ocasiões.',
         images: [
             '../assets/imagens/produtos/vestidos-curtos/VESTIDO-CURTO-MARCELLE.webp',
+            '../assets/imagens/produtos/vestidos-curtos/VESTIDO-CURTO-MARCELLE 2.wepb'
         ],
         sizes: ['P', 'M'],
         colors: ['Estampado', 'Preto', 'Floral', 'Verde'],
@@ -251,6 +254,7 @@ window.productsData = [
         description: 'Vestido curto de alça com estampa Jardim Real, trazendo a beleza da natureza para seu visual. Leve e confortável, ideal para dias quentes.',
         images: [
             '../assets/imagens/produtos/vestidos-curtos/VESTIDO-ALCA-LENCO-JARDIM-REAL.webp',
+            '../assets/imagens/produtos/vestidos-curtos/VESTIDO-ALCA-LENCO-JARDIM-REAL 2.wepb'
         ],
         sizes: ['M', 'G'],
         colors: ['Floral', 'Preto', 'Estampado'],
@@ -265,6 +269,7 @@ window.productsData = [
         description: 'Vestido curto com mangas e estampa de coqueiro, perfeito para um look descontraído e tropical. Confortável e com design moderno.',
         images: [
             '../assets/imagens/produtos/vestidos-curtos/VESTIDO-CURTO-MANGA-COQUEIRADA.webp',
+            '../assets/imagens/produtos/vestidos-curtos/VESTIDO-CURTO-MANGA-COQUEIRADA 2.wepb'
         ],
         sizes: ['P', 'M'],
         colors: ['Estampado', 'Preto', 'Branco'],
@@ -279,6 +284,7 @@ window.productsData = [
         description: 'Vestido curto com estampa vibrante tropical, que remete à exuberância da fauna e flora. Ideal para um visual alegre e cheio de vida.',
         images: [
             '../assets/imagens/produtos/vestidos-curtos/VESTIDO-CURTO-TROPICALIA.webp',
+            '../assets/imagens/produtos/vestidos-curtos/VESTIDO-CURTO-TROPICALIA 2.wepb'
         ],
         sizes: ['P', 'M', 'G'],
         colors: ['Estampado', 'Colorido', 'Amarelo', 'Florido'],
@@ -293,6 +299,7 @@ window.productsData = [
         description: 'Vestido curto com estampa floral arabesque, que combina delicadeza e um toque clássico. Perfeito para um visual charmoso e confortável.',
         images: [
             '../assets/imagens/produtos/vestidos-curtos/VESTIDO-CURTO-FLORAL-ARABESQUE.webp',
+             '../assets/imagens/produtos/vestidos-curtos/VESTIDO-CURTO-FLORAL-ARABESQUE 2.webp'
         ],
         sizes: ['P', 'M', 'G'],
         colors: ['Floral', 'Branco', 'Verde', 'Estampado'],
@@ -307,6 +314,7 @@ window.productsData = [
         description: 'Vestido curto com estampa que traz a beleza de um jardim em tecido. Leve e com caimento suave, ideal para um visual romântico.',
         images: [
             '../assets/imagens/produtos/vestidos-curtos/VESTIDO-CURTO-JARDIM-CHINTZ.webp',
+            '../assets/imagens/produtos/vestidos-curtos/VESTIDO-CURTO-JARDIM-CHINTZ 2.webp'
         ],
         sizes: ['P', 'G'],
         colors: ['Floral', 'Estampado', 'Preto', 'Azul'],
@@ -321,6 +329,7 @@ window.productsData = [
         description: 'Vestido curto com estampa que inspira um visual elegante e natural. Confortável e versátil, perfeito para diversas ocasiões.',
         images: [
             '../assets/imagens/produtos/vestidos-curtos/VESTIDO-CURTO-LENCO-JARDIM-REAL.webp',
+             '../assets/imagens/produtos/vestidos-curtos/VESTIDO-CURTO-LENCO-JARDIM-REAL 2.webp'
         ],
         sizes: ['P', 'M', 'G'],
         colors: ['Floral', 'Estampado'],
@@ -335,6 +344,7 @@ window.productsData = [
         description: 'Versão curta do vestido com ombro só e detalhe de lenço. Uma peça moderna e descontraída para o seu dia a dia.',
         images: [
             '../assets/imagens/produtos/vestidos-curtos/VESTIDO-OMBRO-SO-ROSALIA-LENCO-S.webp',
+            '../assets/imagens/produtos/vestidos-curtos/VESTIDO-OMBRO-SO-ROSALIA-LENCO-S 2.webp'
         ],
         sizes: ['P', 'M', 'G'],
         colors: ['Estampado', 'Floral', 'Branco', 'Branco'],
