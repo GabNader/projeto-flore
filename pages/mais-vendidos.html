@@ -1,95 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Floré</title>
-  <link rel="icon" type="image/x-icon" href="../assets/imagens/favicon/favicon.ico">
-  <link rel="stylesheet" href="../assets/css/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Marvel:wght@400&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Floré - Mais Vendidos</title>
+  <link rel="icon" type="image/x-icon" href="../assets/imagens/favicon/favicon.ico">
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Marvel:wght@400&display=swap" rel="stylesheet">
+  
+  <script src="../assets/js/products.js" defer></script>
+  <script src="../assets/js/category-page.js" defer></script> 
+  <script src="../components/app-header/app-header.js" defer></script>
+  <script src="../components/app-menu/app-menu.js" defer></script>
+  <script src="../components/app-cart/app-cart.js" defer></script>
+  <script src="../components/app-product-detail/app-product-detail.js" defer></script>
+  <script src="../components/app-filter/app-filter.js" defer></script>
+  <script src="../components/app-breadcrumb/app-breadcrumb.js" defer></script>
 </head>
 <body>
-  <header class="header">
-    <div class="logo-menu">
-      <button class="hamburger-btn">
-        <img class="hamburger" src="../assets/imagens/svg/menu.svg" alt="Menu">
-      </button>
-      <a href="index.html" class="logo-link">
-      <h1 class="logo">Floré</h1></a>
-    </div>
-    <div class="icons"> 
-      <button>
-        <img class="icon" src="../assets/imagens/svg/heart.svg" alt="Favoritos">
-      </button>
-      <button>
-        <img class="icon" src="../assets/imagens/svg/shopping-cart.svg" alt="Carrinho">
-      </button>
-    </div>
-  </header>
-  <div class="menu-overlay"></div>
-  <div class="sideMenu">
-    <div class="voltar">
-      <img class="icone-voltar" src="../assets/imagens/svg/arrow-ios-back.svg" alt="Voltar">
-      VOLTAR
-    </div>
-    <div class="search-container">
-      <input class="input-busca" type="text" id="buscar" placeholder="Buscar...">
-      <button class="btn-busca">
-        <img class="icone-lupa" src="../assets/imagens/svg/search.svg" alt="Buscar">
-      </button>
-    </div>
+  <app-header></app-header>
 
-    <ul class="sideMenuItem">
-      <li><a href="vestido-longo.html">VESTIDO LONGO</a></li>
-      <li><a href="vestido-curto.html">VESTIDO CURTO</a></li>
-      <li><a href="vestido-midi.html">VESTIDO MIDI</a></li>
-      <li><a href="mais-vendidos.html">MAIS VENDIDOS</a></li>
-      <li><a href="#">SOBRE</a></li>
-    </ul>
+  <app-menu></app-menu>
+  <app-cart></app-cart>
 
-  </div>
+  <app-breadcrumb></app-breadcrumb>
+  <app-filter></app-filter>
 
-  <main>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <p>MAIS VENDIDOS</p>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-<p>aasd</p>
-  </main>  
+  <main>
+
+    <section class="products-container">
+            <div class="category-header-wrapper">
+                <h2 class="section-title" data-category="best-sellers">Mais Vendidos</h2> 
+                <button class="open-filter-btn">
+                    <img src="../assets/imagens/svg/filter.svg" alt="Abrir Filtros">
+                </button>
+            </div>
+            
+            <div class="products-grid" id="product-list-grid">
+            </div>
+          </section>
+
+  </main>
 </body>
-<script src="../assets/js/script.js"></script>
+<script src="../assets/js/script.js" defer></script>
 </html>
