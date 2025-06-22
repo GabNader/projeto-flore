@@ -193,10 +193,3 @@
 .close-btn:hover {
   opacity: 0.7;
 }
-
-@media (max-width: 480px) {
-  .cart-sidebar {
-    width: 100%;
-    right: 0;
-  }
-}
