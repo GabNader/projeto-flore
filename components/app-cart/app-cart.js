@@ -1,4 +1,7 @@
+// components/app-cart/app-cart.js
+
 class AppCartComponent extends HTMLElement {
+  // MÉTODOS AUXILIARES (localStorage) - NO TOPO DA CLASSE
   _loadCartFromLocalStorage() {
     try {
       const savedCart = localStorage.getItem('cartItems');
@@ -24,7 +27,6 @@ class AppCartComponent extends HTMLElement {
     super();
     this.attachShadow({ mode: 'open' });
     this.isOpen = false;
-
     this.cartItems = this._loadCartFromLocalStorage(); 
 
     this._initialRender();
@@ -34,13 +36,16 @@ class AppCartComponent extends HTMLElement {
   connectedCallback() {
     console.log('AppCartComponent: 2. connectedCallback - Carrinho conectado ao DOM.');
 
+    // SELEÇÃO DE ELEMENTOS VISUAIS
     this.overlay = this.shadowRoot.querySelector('.cart-overlay');
     this.sidebar = this.shadowRoot.querySelector('.cart-sidebar');
     this.closeBtn = this.shadowRoot.querySelector('.close-btn');
-    this.checkoutBtn = this.shadowRoot.querySelector('.checkout-btn');
+    // MUDANÇA: Seleciona o botão de checkout que está DENTRO do footer
+    this.checkoutBtn = this.shadowRoot.querySelector('.checkout-btn'); 
     this.cartItemsContainer = this.shadowRoot.querySelector('.cart-items');
-    this.totalPriceEl = this.shadowRoot.querySelector('.total-price');
-
+    // MUDANÇA: Seleciona o elemento que mostra o total
+    this.totalPriceEl = this.shadowRoot.querySelector('.total-price'); 
+    
     console.log('AppCartComponent: 2.1 Elementos visuais selecionados:', {
         overlay: !!this.overlay,
         sidebar: !!this.sidebar,
@@ -53,18 +58,20 @@ class AppCartComponent extends HTMLElement {
     this.setupEventListeners();
     console.log('AppCartComponent: 2.2 setupEventListeners() chamado.');
     
+    // LISTENERS DE EVENTOS GLOBAIS (PARA ABRIR O CARRINHO)
     this._boundOpenCart = this.openCart.bind(this);
     document.addEventListener('openCart', this._boundOpenCart);
     console.log('AppCartComponent: 2.3 Listener "openCart" adicionado ao document.');
 
     this._boundHandleAddToCartEvent = (event) => {
         console.log('AppCartComponent: 3. Evento addToCart recebido no document!', event.detail);
-        this.addItem(event.detail); 
-        this.openCart();
+        this.addItem(event.detail); // Usa o método addItem existente
+        this.openCart(); // Abre o carrinho automaticamente ao adicionar
     };
     document.addEventListener('addToCart', this._boundHandleAddToCartEvent);
     console.log('AppCartComponent: 2.4 Listener "addToCart" adicionado ao document.');
 
+    // Atualiza o display inicial do carrinho (conteúdo e total)
     this.updateCartDisplay();
     console.log('AppCartComponent: 2.5 updateCartDisplay() chamado (conteúdo inicial).');
   }
@@ -92,6 +99,7 @@ class AppCartComponent extends HTMLElement {
 
           <div class="cart-items">
           </div>
+          
           <div class="cart-summary-footer">
             <div class="cart-total-display">
                 <span>Total:</span>
@@ -130,24 +138,24 @@ class AppCartComponent extends HTMLElement {
   }
 
   setupEventListeners() {
-    const overlay = this.shadowRoot.querySelector('.cart-overlay');
-    const closeBtn = this.shadowRoot.querySelector('.close-btn');
-    const checkoutBtn = this.shadowRoot.querySelector('.checkout-btn');
+    // As variáveis overlay, closeBtn, checkoutBtn, cartItemsContainer
+    // já são propriedades da classe (this.overlay etc.) e foram selecionadas em connectedCallback.
+    // Não é necessário selecioná-las novamente aqui, apenas usar this.
 
-    if (closeBtn) {
-      closeBtn.addEventListener('click', this.closeCart.bind(this));
+    if (this.closeBtn) {
+      this.closeBtn.addEventListener('click', this.closeCart.bind(this));
     }
 
-    if (overlay) {
-      overlay.addEventListener('click', (e) => {
-        if (e.target === overlay) {
+    if (this.overlay) {
+      this.overlay.addEventListener('click', (e) => {
+        if (e.target === this.overlay) {
           this.closeCart();
         }
       });
     }
 
-    if (checkoutBtn) {
-      checkoutBtn.addEventListener('click', () => {
+    if (this.checkoutBtn) {
+      this.checkoutBtn.addEventListener('click', () => {
         console.log('Finalizando compra...');
         this.dispatchEvent(new CustomEvent('checkout', { 
           bubbles: true, 
@@ -157,13 +165,12 @@ class AppCartComponent extends HTMLElement {
       });
     }
 
-    const cartItems = this.shadowRoot.querySelector('.cart-items');
-    if (cartItems) {
-      cartItems.addEventListener('click', (e) => {
+    if (this.cartItemsContainer) {
+      this.cartItemsContainer.addEventListener('click', (e) => {
         const target = e.target.closest('button');
         if (!target) return;
 
-        const itemId = target.dataset.id; 
+        const itemId = target.dataset.id; // Corrected: ID is a string, not int
         
         if (target.classList.contains('increase-btn')) {
           this.increaseQuantity(itemId);
@@ -179,16 +186,19 @@ class AppCartComponent extends HTMLElement {
   openCart() {
     console.log('AppCartComponent: MÉTODO openCart() CHAMADO.'); 
     
+    // Verificações para garantir que elementos existem antes de manipular classes
     if (!this.overlay || !this.sidebar) {
       console.error('AppCartComponent: ERRO! Elementos overlay ou sidebar não encontrados para abertura.');
-      return;
+      // Opcional: Tentar re-renderizar o componente se eles estiverem faltando.
+      // this._initialRender();
+      // return;
     }
 
     this.isOpen = true;
-    this.overlay.classList.add('active');
-    this.sidebar.classList.add('active');
+    if (this.overlay) this.overlay.classList.add('active');
+    if (this.sidebar) this.sidebar.classList.add('active');
     document.body.style.overflow = 'hidden';
-    this.updateCartDisplay(); 
+    this.updateCartDisplay(); // Atualiza o display (conteúdo e total)
     console.log('AppCartComponent: Carrinho aberto com sucesso! Classes "active" adicionadas.');
   }
 
@@ -212,7 +222,7 @@ class AppCartComponent extends HTMLElement {
     if (item) {
       item.quantity++;
       this.updateCartDisplay();
-      this._saveCartToLocalStorage(); 
+      this._saveCartToLocalStorage();
       this.dispatchEvent(new CustomEvent('cartUpdated', { 
         bubbles: true, 
         composed: true,
@@ -226,7 +236,7 @@ class AppCartComponent extends HTMLElement {
     if (item && item.quantity > 1) {
       item.quantity--;
       this.updateCartDisplay();
-      this._saveCartToLocalStorage(); 
+      this._saveCartToLocalStorage();
       this.dispatchEvent(new CustomEvent('cartUpdated', { 
         bubbles: true, 
         composed: true,
@@ -238,7 +248,7 @@ class AppCartComponent extends HTMLElement {
   removeItem(itemId) {
     this.cartItems = this.cartItems.filter(item => item.id !== itemId);
     this.updateCartDisplay();
-    this._saveCartToLocalStorage(); 
+    this._saveCartToLocalStorage();
     this.dispatchEvent(new CustomEvent('cartUpdated', { 
       bubbles: true, 
       composed: true,
@@ -249,7 +259,7 @@ class AppCartComponent extends HTMLElement {
   updateCartDisplay() {
     if (this.cartItemsContainer) {
       this.cartItemsContainer.innerHTML = this.renderCartItems();
-      this._updateCartSummary(); 
+      this._updateCartSummary();
     }
   }
 
@@ -261,16 +271,15 @@ class AppCartComponent extends HTMLElement {
       this.cartItems.push({ ...item }); 
     }
     this.updateCartDisplay();
-    this._saveCartToLocalStorage(); 
+    this._saveCartToLocalStorage();
   }
 
   _updateCartSummary() {
     const total = this.getCartTotal();
-    const totalPriceEl = this.shadowRoot.querySelector('.total-price'); 
-    if (totalPriceEl) {
-        totalPriceEl.textContent = `R$ ${total.toFixed(2).replace('.', ',')}`;
+    // Elemento totalPriceEl já é selecionado no connectedCallback
+    if (this.totalPriceEl) {
+        this.totalPriceEl.textContent = `R$ ${total.toFixed(2).replace('.', ',')}`;
     }
-   
   }
 
   getCartTotal() {
