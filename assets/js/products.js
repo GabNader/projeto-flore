@@ -29,7 +29,7 @@ window.productsData = [
         sizes: ['P', 'M', 'GG'],
         colors: ['Vermelho', 'Estampado'],
         category: 'vestido-longo',
-        isBestSeller: true
+        isBestSeller: false
     },
     {
         id: 'vestido-longo-coelhos',
@@ -74,7 +74,7 @@ window.productsData = [
         sizes: ['M', 'GG'],
         colors: ['Preto', 'Estampado', 'colorido'],
         category: 'vestido-longo',
-        isBestSeller: true
+        isBestSeller: false
     },
     {
         id: 'vestido-mangas-estampado-coracao',
@@ -134,7 +134,7 @@ window.productsData = [
         sizes: ['P', 'M', 'G'],
         colors: ['Xadrez', 'Vermelho'],
         category: 'vestido-longo',
-        isBestSeller: true
+        isBestSeller: false
     },
     {
         id: 'vestido-languido-estampado-floral-arabasque',
@@ -164,7 +164,7 @@ window.productsData = [
         sizes: ['P', 'M', 'G'],
         colors: ['Estampado', 'Preto', 'Floral'],
         category: 'vestido-longo',
-        isBestSeller: true
+        isBestSeller: false
     },
     {
         id: 'vestido-longo-estampado-turmalina',
@@ -179,7 +179,7 @@ window.productsData = [
         sizes: ['P', 'M', 'G'],
         colors: ['Colorido', 'Estampado'],
         category: 'vestido-longo',
-        isBestSeller: true
+        isBestSeller: false
     },
     // --- Vestidos Curtos ---
     {
@@ -225,9 +225,8 @@ window.productsData = [
         sizes: ['P', 'M', 'G'],
         colors: ['Estampado', 'Branco', 'Floral'],
         category: 'vestido-curto',
-        isBestSeller: true // Este é o 15º best seller
+        isBestSeller: true
     },
-    // --- O RESTANTE DOS PRODUTOS (CURTO E MIDI) ABAIXO TERÃO isBestSeller: false ou a propriedade omitida ---
     {
         id: 'vestido-curto-estampado-jardim-florido',
         name: 'Vestido Curto Estampado Jardim Florido',
@@ -256,7 +255,7 @@ window.productsData = [
         ],
         sizes: ['P', 'M'],
         colors: ['Estampado', 'Preto', 'Floral', 'Verde'],
-        isBestSeller: false,
+        isBestSeller: true,
         category: 'vestido-curto'
     },
     {
@@ -331,7 +330,7 @@ window.productsData = [
         ],
         sizes: ['P', 'G'],
         colors: ['Floral', 'Estampado', 'Preto', 'Azul'],
-        isBestSeller: false,
+        isBestSeller: true,
         category: 'vestido-curto'
     },
     {
@@ -439,7 +438,7 @@ window.productsData = [
         sizes: ['M', 'G'],
         colors: ['Estampado', 'Branco'],
         category: 'vestido-midi',
-        isBestSeller: false
+        isBestSeller: true
     },
     {
         id: 'vestido-midi-beatrice-floral',
@@ -469,7 +468,7 @@ window.productsData = [
         sizes: ['M', 'G'],
         colors: ['Estampado', 'Branco'],
         category: 'vestido-midi',
-        isBestSeller: false
+        isBestSeller: true
     },
     {
         id: 'vestido-midi-georgia',
@@ -529,7 +528,7 @@ window.productsData = [
         sizes: ['P', 'G'],
         colors: ['Estampado', 'Floral', 'Branco', 'Verde'],
         category: 'vestido-midi',
-        isBestSeller: false
+        isBestSeller: true
     },
     {
         id: 'vestido-midi-estampado-brilho-de-banana',
@@ -544,6 +543,6 @@ window.productsData = [
         sizes: ['P', 'M'],
         colors: ['Verde', 'Estampado'],
         category: 'vestido-midi',
-        isBestSeller: false
+        isBestSeller: true
     },
 ];
