@@ -31,8 +31,8 @@ class AppFilter extends HTMLElement {
                     <div class="filter-group" data-filter-type="price">
                         <h3>Preço</h3>
                         <div class="filter-options-grid">
-                            <label><input type="checkbox" name="price" value="0-300"><span>Até R$300</span></label>
-                            <label><input type="checkbox" name="price" value="300-500"><span>R$201 - R$500</span></label>
+                            <label><input type="checkbox" name="price" value="0-400"><span>Até R$</span></label>
+                            <label><input type="checkbox" name="price" value="400-500"><span>R$201 - R$500</span></label>
                             <label><input type="checkbox" name="price" value="501-1000"><span>R$501 - R$1000</span></label>
                             <label><input type="checkbox" name="price" value="1001-9999"><span>Acima de R$1000</span></label>
                         </div>
