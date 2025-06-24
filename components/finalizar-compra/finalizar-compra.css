@@ -1,5 +1,5 @@
 :host {
-    display: none; /* Simples: oculto por padrão */
+    display: none; 
     position: fixed;
     top: 0;
     left: 0;
@@ -8,7 +8,6 @@
     z-index: 1000;
 }
 
-/* Quando o JS chama show(), ele define display: block */
 :host(.show) {
     display: block;
 }
@@ -94,11 +93,9 @@
 .back-btn img, .close-btn img {
     width: 18px;
     height: 18px;
-    /* Remover filter se SVGs já tiverem a cor correta */
     filter: invert(40%) sepia(50%) saturate(1000%) hue-rotate(300deg) brightness(80%);
 }
 
-/* Conteúdo principal (formulário e resumo) */
 .checkout-content {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -191,7 +188,6 @@ input:invalid {
     border-color: #dc3545;
 }
 
-/* Métodos de Pagamento */
 .payment-methods {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -234,7 +230,6 @@ input:invalid {
     border: 1px solid #e0e0e0;
 }
 
-/* Resumo do Pedido */
 .order-summary {
     background: #f8f9fa;
     padding: 1.5rem;

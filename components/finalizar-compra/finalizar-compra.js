@@ -5,9 +5,8 @@ class AppCheckoutComponent extends HTMLElement {
     super();
     this.attachShadow({ mode: 'open' });
     this.cartItems = [];
-    this.selectedPayment = 'card'; // Método de pagamento padrão
+    this.selectedPayment = 'card';
 
-    // Renderiza a estrutura HTML inicial do componente
     this.shadowRoot.innerHTML = `
       <link rel="stylesheet" href="../components/finalizar-compra/finalizar-compra.css">
       
