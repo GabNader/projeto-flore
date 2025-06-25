@@ -51,7 +51,7 @@ class AppCartComponent extends HTMLElement {
 
     this.setupEventListeners();
     console.log('AppCartComponent: 2.2 setupEventListeners() chamado.');
- 
+    
     this._boundOpenCart = this.openCart.bind(this);
     document.addEventListener('openCart', this._boundOpenCart);
     console.log('AppCartComponent: 2.3 Listener "openCart" adicionado ao document.');
@@ -64,7 +64,6 @@ class AppCartComponent extends HTMLElement {
     document.addEventListener('addToCart', this._boundHandleAddToCartEvent);
     console.log('AppCartComponent: 2.4 Listener "addToCart" adicionado ao document.');
 
-   
     this.updateCartDisplay();
     console.log('AppCartComponent: 2.5 updateCartDisplay() chamado (conteúdo inicial).');
   }
@@ -131,33 +130,49 @@ class AppCartComponent extends HTMLElement {
   }
 
   setupEventListeners() {
-  
+    const overlay = this.shadowRoot.querySelector('.cart-overlay');
+    const closeBtn = this.shadowRoot.querySelector('.close-btn');
+    const checkoutBtn = this.shadowRoot.querySelector('.checkout-btn'); 
 
-    if (this.closeBtn) {
-      this.closeBtn.addEventListener('click', this.closeCart.bind(this));
+    if (closeBtn) {
+      closeBtn.addEventListener('click', this.closeCart.bind(this));
     }
 
-    if (this.overlay) {
-      this.overlay.addEventListener('click', (e) => {
-        if (e.target === this.overlay) {
+    if (overlay) {
+      overlay.addEventListener('click', (e) => {
+        if (e.target === overlay) {
           this.closeCart();
         }
       });
     }
 
-    if (this.checkoutBtn) {
-      this.checkoutBtn.addEventListener('click', () => {
-        console.log('Finalizando compra...');
-        this.dispatchEvent(new CustomEvent('checkout', { 
-          bubbles: true, 
-          composed: true,
-          detail: { items: this.cartItems }
+    if (checkoutBtn) {
+      checkoutBtn.addEventListener('click', () => {
+        console.log('Botão FINALIZAR COMPRA no carrinho clicado! Simulando compra...');
+        
+        if (this.cartItems.length === 0) {
+            alert('Seu carrinho está vazio. Adicione produtos antes de finalizar a compra!');
+            return;
+        }
+
+        alert('Parabéns! Sua compra foi finalizada com sucesso! (Simulação)');
+        this.cartItems = []; 
+        this.updateCartDisplay();
+        this._saveCartToLocalStorage();
+        this.closeCart(); 
+        
+        
+        this.dispatchEvent(new CustomEvent('purchaseSimulated', { 
+            bubbles: true, 
+            composed: true,
+            detail: { message: 'Compra simulada com sucesso', items: [] } 
         }));
       });
     }
 
-    if (this.cartItemsContainer) {
-      this.cartItemsContainer.addEventListener('click', (e) => {
+    const cartItems = this.shadowRoot.querySelector('.cart-items');
+    if (cartItems) {
+      cartItems.addEventListener('click', (e) => {
         const target = e.target.closest('button');
         if (!target) return;
 

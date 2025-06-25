@@ -25,7 +25,6 @@ class AppMenuComponent extends HTMLElement {
           <li><a href="vestido-midi.html">VESTIDO MIDI</a></li>
           <li><a href="vestido-curto.html">VESTIDO CURTO</a></li>
           <li><a href="mais-vendidos.html">MAIS VENDIDOS</a></li>
-          <li><a href="#">SOBRE</a></li>
         </ul>
       </div>
     `;
