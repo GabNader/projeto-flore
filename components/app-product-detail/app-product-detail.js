@@ -1,5 +1,3 @@
-// components/app-product-detail/app-product-detail.js
-
 class AppProductDetail extends HTMLElement {
     constructor() {
         super();
@@ -56,7 +54,6 @@ class AppProductDetail extends HTMLElement {
 
     connectedCallback() {
         this.loadProductData();
-        // MUDANÇA AQUI: Adicionar listener ao botão de adicionar ao carrinho
         const addToCartBtn = this.shadowRoot.querySelector('.add-to-cart-btn');
         if (addToCartBtn) {
             addToCartBtn.addEventListener('click', this._handleAddToCart.bind(this));

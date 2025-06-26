@@ -1,5 +1,3 @@
-// assets/js/products.js
-
 window.productsData = [
     // --- VESTIDO LONGO ---
     {

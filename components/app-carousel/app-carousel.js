@@ -1,5 +1,3 @@
-// components/app-carousel/app-carousel.js
-
 class AppCarousel extends HTMLElement {
   constructor() {
     super();

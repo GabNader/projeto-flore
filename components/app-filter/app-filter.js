@@ -1,5 +1,3 @@
-// components/app-filter/app-filter.js
-
 class AppFilter extends HTMLElement {
     constructor() {
         super();
@@ -17,7 +15,6 @@ class AppFilter extends HTMLElement {
                     <button class="clear-filters-btn">Limpar</button>
                 </div>
                 <div class="filter-sections">
-
                     <div class="filter-group" data-filter-type="sizes">
                         <h3>Tamanho</h3>
                         <div class="filter-options-grid">
@@ -110,11 +107,15 @@ class AppFilter extends HTMLElement {
                 closeFilterSidebar();
             });
         }
-
-        window.addEventListener('openFilterSidebar', () => {
-            filterSidebar.classList.add('active');
-            filterOverlay.classList.add('active');
-            window.dispatchEvent(new CustomEvent('closeMenu', { bubbles: true, composed: true }));
+        document.body.addEventListener('click', (event) => {
+            const clickedButton = event.target.closest('.open-filter-btn');
+            if (clickedButton) {
+                filterSidebar.classList.add('active');
+                filterOverlay.classList.add('active');
+                
+                window.dispatchEvent(new CustomEvent('closeMenu', { bubbles: true, composed: true }));
+               
+            }
         });
     }
 

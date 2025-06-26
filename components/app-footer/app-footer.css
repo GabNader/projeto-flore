@@ -1,5 +1,3 @@
-/* components/app-footer/app-footer.css */
-
 :host {
     display: block;
     margin-top: 60px;
@@ -107,8 +105,6 @@ footer {
     height: 24px;
     filter: brightness(0) saturate(100%);
 }
-
-/* --- RESPONSIVIDADE PARA O FOOTER --- */
 
 @media (max-width: 1024px) {
     .footer-top {

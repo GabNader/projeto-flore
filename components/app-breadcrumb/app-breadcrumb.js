@@ -1,5 +1,3 @@
-// components/app-breadcrumb/app-breadcrumb.js
-
 class AppBreadcrumb extends HTMLElement {
     constructor() {
         super();
