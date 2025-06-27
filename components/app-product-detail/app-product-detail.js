@@ -91,7 +91,7 @@ class AppProductDetail extends HTMLElement {
         const descriptionEl = this.shadowRoot.querySelector('.product-description p');
         const thumbnailGalleryEl = this.shadowRoot.querySelector('.thumbnail-gallery');
         const sizeSelectEl = this.shadowRoot.querySelector('#size-select');
-        const quantityInputEl = this.shadowRoot.querySelector('#quantity-input'); // NOVO: seleciona input de quantidade
+        const quantityInputEl = this.shadowRoot.querySelector('#quantity-input');
 
 
         

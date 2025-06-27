@@ -1,5 +1,3 @@
-// components/app-menu/app-menu.js
-
 class AppMenuComponent extends HTMLElement {
   constructor() {
     super();
